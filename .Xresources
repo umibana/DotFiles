@@ -1,0 +1,51 @@
+#Dpi
+Xft.dpi: 96
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 0
+Xft.antialias: 1
+Xft.rgba: rgb
+
+
+
+emacs*foreground:   #e3e5e8
+emacs*background:   #111212
+#! Colors 0-15.
+#*.color0: #111212
+#*color0:  #111212
+#*.color1: #857B75
+#*color1:  #857B75
+#*.color2: #7F8181
+#*color2:  #7F8181
+#*.color3: #8E9091
+#*color3:  #8E9091
+#*.color4: #A9ACAE
+#*color4:  #A9ACAE
+#*.color5: #BCC0C2
+#*color5:  #BCC0C2
+#*.color6: #CDD1D5
+#*color6:  #CDD1D5
+#*.color7: #e3e5e8
+#*color7:  #e3e5e8
+#*.color8: #9ea0a2
+#*color8:  #9ea0a2
+#*.color9: #857B75
+#*color9:  #857B75
+#*.color10: #7F8181
+#*color10:  #7F8181
+#*.color11: #8E9091
+#*color11:  #8E9091
+#*.color12: #A9ACAE
+#*color12:  #A9ACAE
+#*.color13: #BCC0C2
+#*color13:  #BCC0C2
+#*.color14: #CDD1D5
+#*color14:  #CDD1D5
+#*.color15: #e3e5e8
+#*color15:  #e3e5e8
+#
+#! Black color that will not be affected by bold highlighting.
+#*.color66: #111212
+#*color66:  #111212
+#

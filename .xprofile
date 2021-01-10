@@ -1,0 +1,4 @@
+goblocks &
+picom -b --experimental-backends &
+nitrogen --restore &
+ibus-daemon -drx &

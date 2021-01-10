@@ -1,0 +1,63 @@
+#!/bin/bash
+
+# lock configuration for i3lock
+lock(){
+    i3lock -c 222222 -k --pass-volume-keys --timestr="%H:%M" \
+        --timecolor=$I3LCK_TIME --datecolor=$I3LCK_DATE \
+	--insidevercolor=#00000000 --insidecolor=#00000000 \
+	--line-uses-ring --verifcolor=#eeeeee \
+	--verif-font=Iosevka --wrong-font=Iosevka --insidewrongcolor=#00000000 \	--wrongcolor=#eeeeee
+
+}
+
+# defining dmenu colors
+[ "$NB" ] || NB="#222222"
+[ "$NF" ] || NF="#e3e5e8"
+[ "$SB" ] || SB="#eeeeee"
+[ "$SF" ] || SF="#282828"
+[ "$FN" ] || FN="Terminus:size=10"
+[ "$I3LCK_BG" ] || I3LCK_BG="#9d0006"
+[ "$I3LCK_TIME" ] || I3LCK_TIME="#a89984"
+[ "$I3LCK_DATE" ] || I3LCK_DATE="#a89984"
+
+dmenu_flags=( -i -nb $NB -nf $NF -sb $SB -sf $SF \
+    -fn "$FN" )
+
+# dmenu selection of exit options
+options="shutdown\nsuspend\nreboot\nhibernate\nlogout\nlock"
+operation=$(echo -e "$options" | dmenu "${dmenu_flags[@]}" -p "Action:")
+
+# exit if escape in dmenu
+[ -z $operation ] && exit -1
+
+conf="No\nYes"
+confirmation=`echo -e "$conf" \
+    | dmenu "${dmenu_flags[@]}" -p "Are you sure you want to $operation?:" `
+
+# exit if aborted confirmation
+[ -z $confirmation ] || [ $confirmation = "No" ] && exit -2
+
+case $operation in
+    shutdown )
+        systemctl poweroff
+        ;;
+    suspend )
+        lock && systemctl suspend
+        ;;
+    reboot )
+        systemctl reboot
+        ;;
+    hibernate )
+        lock && systemctl hibernate
+        ;;
+    logout )
+        [ "$DESKTOP_SESSION" ='i3' ] && i3-msg exit
+        id=`loginctl | grep $(whoami) | awk -F' ' '{ print $1 }'`
+        loginctl kill-session $id
+        ;;
+    lock )
+        # i3lock -c "#9d0006" -k --pass-volume-keys
+        lock
+        ;;
+esac
+
