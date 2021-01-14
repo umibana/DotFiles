@@ -1,4 +1,8 @@
-goblocks &
+#!/bin/sh
+[[ -f ~/.zshrc ]] && source ~/.zshrc
+
+dwmblocks &
 picom -b --experimental-backends &
 nitrogen --restore &
 ibus-daemon -drx &
+i3lock -k --datecolor=eeeeee --timecolor=eeeeee --timepos="1370:575" --timesize=50 --time-font=Roboto -n -i ~/Pictures/Wallpapers/lpq6o2autx761.jpg &
