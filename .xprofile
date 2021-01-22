@@ -1,8 +1,12 @@
 #!/bin/sh
-[[ -f ~/.zshrc ]] && source ~/.zshrc
+[[ -f ~/.zshenv ]] && source ~/.zshenv
 
+xinput set-prop 'TPPS/2 IBM TrackPoint' 340 0.1 &
+xinput set-prop 'TPPS/2 IBM TrackPoint' 320 1 &
+xinput set-prop 'Synaptics TM3276-022' 'libinput Natural Scrolling Enabled' 1 &
+xinput set-prop 'Synaptics TM3276-022' 'libinput Tapping Enabled' 1 &
 dwmblocks &
-picom -b --experimental-backends &
+#picom -b --experimental-backends &
 nitrogen --restore &
 ibus-daemon -drx &
-i3lock -k --datecolor=eeeeee --timecolor=eeeeee --timepos="1370:575" --timesize=50 --time-font=Roboto -n -i ~/Pictures/Wallpapers/lpq6o2autx761.jpg &
+xss-lock -- i3lock -k --datecolor=eeeeee --timecolor=eeeeee --timepos="1370:575" --timesize=50 --time-font=Roboto -n -i ~/Pictures/Wallpapers/lpq6o2autx761.jpg &
