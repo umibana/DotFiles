@@ -1,3 +1,4 @@
+#include "/home/hakuya/.cache/wal/colors.Xresources"
 Xft.dpi: 96
 Xft.autohint: 0
 Xft.lcdfilter:  lcddefault
@@ -5,9 +6,7 @@ Xft.hintstyle:  hintfull
 Xft.hinting: 0
 Xft.antialias: 1
 Xft.rgba: rgb
-include "/home/hakuya/.cache/wal/colors.Xresources"
 Sxiv.background: #222222
 Sxiv.foreground: #222222
-
 
 
