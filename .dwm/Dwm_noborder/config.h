@@ -6,11 +6,11 @@
 
 /* appearance */
 static unsigned int borderpx  = 1;        /* border pixel of windows */
-static unsigned int snap      = 8;       /* snap pixel */
-static unsigned int gappih    = 25;       /* horiz inner gap between windows */
-static unsigned int gappiv    = 25;       /* vert inner gap between windows */
-static unsigned int gappoh    = 20;       /* horiz outer gap between windows and screen edge */
-static unsigned int gappov    = 20;       /* vert outer gap between windows and screen edge */
+static unsigned int snap      = 10;       /* snap pixel */
+static unsigned int gappih    = 5;       /* horiz inner gap between windows */
+static unsigned int gappiv    = 5;       /* vert inner gap between windows */
+static unsigned int gappoh    = 5;       /* horiz outer gap between windows and screen edge */
+static unsigned int gappov    = 5;       /* vert outer gap between windows and screen edge */
 static int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static int showbar            = 1;        /* 0 means no bar */
@@ -76,9 +76,9 @@ static const Layout layouts[] = {
  	{ "[M]", 	monocle },		/* All windows on top of eachother */
 
 	{ "|M|",	centeredmaster },	/* Master in middle, slaves on sides */
-	{ "VG", 	centeredfloatingmaster },	                /* Same but master floats */
+	{ "|F|", 	centeredfloatingmaster },	                /* Same but master floats */
 
-	{ "|M|",        grid },       /* Master in middle, slaves on sides */
+	{ "HG",        grid },       /* Master in middle, slaves on sides */
         { "VG",         horizgrid},                       /* Same but master floats */
 
 
@@ -249,18 +249,18 @@ static Key keys[] = {
 	{ MODKEY,			XK_F6,		spawn,		SHCMD("torwrap") },
 	{ MODKEY,			XK_F7,		spawn,		SHCMD("td-toggle") },
 	{ MODKEY,			XK_F8,		spawn,		SHCMD("mw -Y") },
-	{ MODKEY,			XK_F9,		spawn,		SHCMD("dmenumount") },
-	{ MODKEY,			XK_F10,		spawn,		SHCMD("dmenuumount") },
+	{ MODKEY,			XK_F9,		spawn,		SHCMD("dmount") },
+	{ MODKEY,			XK_F10,		spawn,		SHCMD("dunmount") },
 	{ MODKEY,			XK_F11,		spawn,		SHCMD("mpv --no-cache --no-osc --no-input-default-bindings --input-conf=/dev/null --title=webcam $(ls /dev/video[0,2,4,6,8] | tail -n 1)") },
 	/* { MODKEY,			XK_F12,		xrdb,		{.v = NULL } }, */
 	{ MODKEY,			XK_space,	zoom,		{0} },
 	{ MODKEY|ShiftMask,		XK_space,	togglefloating,	{0} },
 
-	{ 0,				XK_Print,	spawn,		SHCMD("maim ~/Pictures/Screenshots/$(date '+%y-%m-%d_%H:%M:%S').png") },
-	{ MODKEY,			XK_Print,	spawn,		SHCMD("maim -s ~/Pictures/Screenshots/$(date '+%y-%m-%d_%H:%M:%S').png" ) },
+	{ 0,				XK_Print,	spawn,		SHCMD("maim ~/Pictures/Screenshots/$(date '+%y-%m-%d_%H:%M:%S').png & notify-send -i ~/.config/icon/screenshot.png '  Screenshot Taken'" ) },
+	{ MODKEY,			XK_Print,	spawn,		SHCMD("maim -s ~/Pictures/Screenshots/$(date '+%y-%m-%d_%H:%M:%S').png & notify-send -i ~/.config/icon/screenshot.png '  Screenshot Taken'"  ) },
 	{ ShiftMask,			XK_Print,	spawn,		SHCMD("maimpick") },
-	{ MODKEY|ShiftMask,		XK_Print,	spawn,		SHCMD("dmenurecord kill") },
-	{ MODKEY,			XK_Delete,	spawn,		SHCMD("dmenurecord kill") },
+	{ MODKEY|ShiftMask,		XK_Print,	spawn,		SHCMD("record kill") },
+	{ MODKEY,			XK_Delete,	spawn,		SHCMD("record kill") },
 	{ MODKEY,			XK_Scroll_Lock,	spawn,		SHCMD("killall screenkey || screenkey &") },
 
 	{ 0, XF86XK_AudioMute,		spawn,		SHCMD("pamixer -t; kill -44 $(pidof dwmblocks)") },
@@ -289,8 +289,8 @@ static Key keys[] = {
 	{ 0, XF86XK_TouchpadToggle,	spawn,		SHCMD("(synclient | grep 'TouchpadOff.*1' && synclient TouchpadOff=0) || synclient TouchpadOff=1") },
 	{ 0, XF86XK_TouchpadOff,	spawn,		SHCMD("synclient TouchpadOff=1") },
 	{ 0, XF86XK_TouchpadOn,		spawn,		SHCMD("synclient TouchpadOff=0") },
-	{ 0, XF86XK_MonBrightnessUp,	spawn,		SHCMD("xbacklight -inc 15") },
-	{ 0, XF86XK_MonBrightnessDown,	spawn,		SHCMD("xbacklight -dec 15") },
+	{ 0, XF86XK_MonBrightnessUp,	spawn,		SHCMD("xbacklight -inc 10") },
+	{ 0, XF86XK_MonBrightnessDown,	spawn,		SHCMD("xbacklight -dec 10") },
 
 	/* { MODKEY|Mod4Mask,              XK_h,      incrgaps,       {.i = +1 } }, */
 	/* { MODKEY|Mod4Mask,              XK_l,      incrgaps,       {.i = -1 } }, */
