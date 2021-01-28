@@ -7,15 +7,15 @@
 /* appearance */
 static unsigned int borderpx  = 1;        /* border pixel of windows */
 static unsigned int snap      = 10;       /* snap pixel */
-static unsigned int gappih    = 5;       /* horiz inner gap between windows */
-static unsigned int gappiv    = 5;       /* vert inner gap between windows */
-static unsigned int gappoh    = 5;       /* horiz outer gap between windows and screen edge */
-static unsigned int gappov    = 5;       /* vert outer gap between windows and screen edge */
+static unsigned int gappih    = 15;       /* horiz inner gap between windows */
+static unsigned int gappiv    = 15;       /* vert inner gap between windows */
+static unsigned int gappoh    = 15;       /* horiz outer gap between windows and screen edge */
+static unsigned int gappov    = 15;       /* vert outer gap between windows and screen edge */
 static int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static int showbar            = 1;        /* 0 means no bar */
 static int topbar             = 1;        /* 0 means bottom bar */
-static char *fonts[]          = { "xos4 Terminus:size=10", "xos4 Terminus:pixelsize=10:antialias=true:autohint=true"  };
+static char *fonts[]          = { "SF Pro Rounded:size=11" };
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
 static char normfgcolor[]           = "#e3e5e8";

@@ -1,2 +1,5 @@
+shell 
+live-filter 
 q
+set status_display_program=/usr/local/bin/cmus-notify
 save

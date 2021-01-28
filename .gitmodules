@@ -1,3 +1,6 @@
 [submodule ".config/kitty/kitty-themes"]
 	path = .config/kitty/kitty-themes
 	url = https://github.com/dexpota/kitty-themes
+[submodule ".ncmpcpp/mpd-notification"]
+	path = .ncmpcpp/mpd-notification
+	url = https://github.com/eworm-de/mpd-notification

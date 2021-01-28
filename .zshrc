@@ -73,7 +73,7 @@ ZSH_THEME="bureau"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git vi-mode zsh-syntax-highlighting zsh-autosuggestions bgnotify)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -128,3 +128,6 @@ alias neo='clear; neofetch'
 alias laptop='ssh -X -YC4 hakuya@t480'
 alias lapfiles='sshfs hakuya@t480:/home/hakuya/Music ~/T480Files/Music'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias rmp='xmodmap ~/.Xmodmap'
+alias doas='sudo'
+alias music='ncmpcpp'

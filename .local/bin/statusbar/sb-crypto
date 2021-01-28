@@ -5,10 +5,8 @@
 
 # Currencies should be ;-separated:
 # human-readable name;urlname;icon
-coins="Bitcoin;btc;💰
-Etherium;eth;🍸
-Basic Attention Token;bat;🦁
-LBC;lbc;📚"
+coins="Avax;AVAX;X"
+
 
 # Directory where currency info is stored.
 dir="${XDG_DATA_HOME:-$HOME/.local/share}/crypto-prices"
