@@ -20,7 +20,7 @@ mpd_music_dir = ~/Music
 ## $(197_yellow)%a$(end).
 
 #### Cover art
-execute_on_song_change="~/.ncmpcpp/mpdnotify/mpdnotify"
+execute_on_song_change="~/.ncmpcpp/ncmpcpp_cover_art.sh"
 
 #### Playlist formatting
 #song_list_format = "$6 {%a »$4 %t $/r                                                                                                                                       $R                             }|{%f$/r                                                                                                                                     }"
@@ -68,12 +68,12 @@ centered_cursor = "yes"
 lastfm_preferred_language = "ja"
 mouse_support = "yes"
 colors_enabled = "yes"
-mpd_crossfade_time = "0"
+mpd_crossfade_time = "5"
 follow_now_playing_lyrics = "yes"
 store_lyrics_in_song_dir = "yes"
 song_window_title_format = ncmpcpp
 ask_before_clearing_playlists = "no"
-volume_change_step = "1"
+volume_change_step = "5"
 
 #### Mappings
 def_key "h"

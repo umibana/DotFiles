@@ -1,8 +1,8 @@
-sw_volume: 98
+sw_volume: 56
 audio_device_state:1:T480 sound
 state: pause
-current: 11
-time: 3.665000
+current: 16
+time: 1.161000
 random: 0
 repeat: 0
 single: 0
@@ -11,16 +11,22 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:ShibayanRecords/2013.12.30 [STAL-1302] RETRO FUTURE GIRLS [C85]/(01) [izna] Super Fine Red.flac
-1:BUTA-OTOME/[C87][BUTAOTOME] ありきたりな脳髄よ、今宵の月と踊れ/01.三つ数えろ.mp3
-2:BUTA-OTOME/[C87][BUTAOTOME] ありきたりな脳髄よ、今宵の月と踊れ/02.ありきたりな脳髄よ、今宵の月と踊れ.mp3
-3:BUTA-OTOME/[C87][BUTAOTOME] ありきたりな脳髄よ、今宵の月と踊れ/04.サーカスのナイフ投げ.mp3
-4:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(03) [10th Avenue Cafetak] Acoustic Image.flac
-5:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(01) [Unity-Gain] Close to your Mind.flac
-6:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(02) [milka] darling, would you catch me.flac
-7:BUTA-OTOME/2010.05.05 幻想ホモ・ルーデンス [M3-10春]/(01) [ランコ] 幻想のサテライト.flac
-8:BUTA-OTOME/2010.05.05 幻想ホモ・ルーデンス [M3-10春]/(06) [ランコ] 明日も晴れますように.flac
-9:BUTA-OTOME/2016.12.29 ぱらだいすろすと [C91]/(02) [豚乙女] 七回目の冬.flac
-10:BUTA-OTOME/2016.12.29 ぱらだいすろすと [C91]/(04) [豚乙女] 狂人日記.flac
-11:BUTA-OTOME/2017.08.11 CHILD HOOD'S END [C92]/(05) [ランコ] 青いミレン、蒼いナミダ (chillax ver).flac
+0:BUTA-OTOME/2010.03.14 東方回転木馬 [例大祭7]/(06) [ランコ] The fear is oneself.flac
+1:BUTA-OTOME/2010.03.14 東方回転木馬 [例大祭7]/(03) [ランコ] 孤独と虚無感と雨と月.flac
+2:BUTA-OTOME/2010.03.14 東方回転木馬 [例大祭7]/(01) [パプリカ] trip of the heart.flac
+3:BUTA-OTOME/2017.08.11 CHILD HOOD'S END [C92]/(05) [ランコ] 青いミレン、蒼いナミダ (chillax ver).flac
+4:BUTA-OTOME/2016.12.29 ぱらだいすろすと [C91]/(04) [豚乙女] 狂人日記.flac
+5:BUTA-OTOME/2016.12.29 ぱらだいすろすと [C91]/(02) [豚乙女] 七回目の冬.flac
+6:BUTA-OTOME/2010.05.05 幻想ホモ・ルーデンス [M3-10春]/(01) [ランコ] 幻想のサテライト.flac
+7:BUTA-OTOME/2010.05.05 幻想ホモ・ルーデンス [M3-10春]/(06) [ランコ] 明日も晴れますように.flac
+8:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(02) [milka] darling, would you catch me.flac
+9:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(03) [10th Avenue Cafetak] Acoustic Image.flac
+10:BUTA-OTOME/[C87][BUTAOTOME] ありきたりな脳髄よ、今宵の月と踊れ/04.サーカスのナイフ投げ.mp3
+11:BUTA-OTOME/[C87][BUTAOTOME] ありきたりな脳髄よ、今宵の月と踊れ/02.ありきたりな脳髄よ、今宵の月と踊れ.mp3
+12:BUTA-OTOME/[C87][BUTAOTOME] ありきたりな脳髄よ、今宵の月と踊れ/01.三つ数えろ.mp3
+13:ShibayanRecords/2013.12.30 [STAL-1302] RETRO FUTURE GIRLS [C85]/(01) [izna] Super Fine Red.flac
+14:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(03) [10th Avenue Cafetak] Acoustic Image.flac
+15:BUTA-OTOME/2013.12.30 TRASH BOX [C85]/(01) [ランコ] 星の軌跡.flac
+16:BUTA-OTOME/2013.12.30 TRASH BOX [C85]/(03) [ランコ] 創めの一歩.flac
+17:BUTA-OTOME/2013.12.30 TRASH BOX [C85]/(04) [ランコ] 勝手人情.flac
 playlist_end

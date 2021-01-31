@@ -4,26 +4,29 @@ static const Block blocks[] = {
 	/* {"⌨", "sb-kbselect", 0, 30}, */
 	{"", "cat /tmp/recordingicon 2>/dev/null",	0,	9},
 /*	{"",	"sb-tasks",	10,	26},*/
-	{"",	"sb-music",	0,	11},
+	{"",	"sb-music",	1,	11},
 /*	{"",	"sb-pacpackages",	0,	8},*/
 /*	{"",	"sb-news",		0,	6},*/
 /*	 {"",	"sb-crypto",	0,	13},*/ 
     	{"",	"playing-now",	1,	12}, 
 	/* {"",	"sb-price lbc \"LBRY Token\" 📚",			9000,	22}, */
-	 {"",	"sb-price link \"Chainlink\" 🔗",			300,	25}, 
+	/* {"",	"sb-price link \"Chainlink\" 🔗",			300,	25}, */
 	/* {"",	"sb-price xmr \"Monero\" 🔒",			9000,	24}, */
 	/* {"",	"sb-price eth Ethereum 🍸",	9000,	23}, */
-	 {"",	"sb-price btc \"Bitcoin\" 💰",				9000,	21}, 
+	/* {"",	"sb-price btc \"Bitcoin\" 💰",				9000,	21}, */
 /*	{"",	"sb-torrent",	20,	7},*/
-	{"",	"battery",	5,	3},
-	{"",	"battery1",	5,	3},
-	 {"",	"sb-memory",	10,	14}, 
-	 {"",	"sb-cpubars",		10,	18},
+	{"",	"sb-cpubars",		10,	18},
 	{"",	"sb-cpu",		10,	18},
 	/* {"",	"sb-moonphase",	18000,	17}, */
 /*	{"",	"sb-forecast",	18000,	5},*/
 /*	{"",	"sb-mailbox",	180,	12},*/
 /*	{"",	"sb-nettraf",	1,	16},*/
+
+	{"",	"sb-memory",	10,	14},
+	{"",	"battery",	5,	3},
+	{"",	"battery1",	5,	3},
+	{"",	"sb-brightness",	0,	5},
+	{"",	"sb-bluetooth",	10,	8},
 	{"",	"sb-volume",	0,	10},
 	{"",	"sb-internet",	5,	4},
 	{"",	"sb-clock",	60,	1},
