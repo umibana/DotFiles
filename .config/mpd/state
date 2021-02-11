@@ -1,32 +1,220 @@
-sw_volume: 56
+sw_volume: 71
 audio_device_state:1:T480 sound
-state: pause
-current: 16
-time: 1.161000
+state: stop
+current: 29
 random: 0
-repeat: 0
+repeat: 1
 single: 0
 consume: 0
 crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:BUTA-OTOME/2010.03.14 東方回転木馬 [例大祭7]/(06) [ランコ] The fear is oneself.flac
-1:BUTA-OTOME/2010.03.14 東方回転木馬 [例大祭7]/(03) [ランコ] 孤独と虚無感と雨と月.flac
-2:BUTA-OTOME/2010.03.14 東方回転木馬 [例大祭7]/(01) [パプリカ] trip of the heart.flac
-3:BUTA-OTOME/2017.08.11 CHILD HOOD'S END [C92]/(05) [ランコ] 青いミレン、蒼いナミダ (chillax ver).flac
-4:BUTA-OTOME/2016.12.29 ぱらだいすろすと [C91]/(04) [豚乙女] 狂人日記.flac
-5:BUTA-OTOME/2016.12.29 ぱらだいすろすと [C91]/(02) [豚乙女] 七回目の冬.flac
-6:BUTA-OTOME/2010.05.05 幻想ホモ・ルーデンス [M3-10春]/(01) [ランコ] 幻想のサテライト.flac
-7:BUTA-OTOME/2010.05.05 幻想ホモ・ルーデンス [M3-10春]/(06) [ランコ] 明日も晴れますように.flac
-8:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(02) [milka] darling, would you catch me.flac
-9:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(03) [10th Avenue Cafetak] Acoustic Image.flac
-10:BUTA-OTOME/[C87][BUTAOTOME] ありきたりな脳髄よ、今宵の月と踊れ/04.サーカスのナイフ投げ.mp3
-11:BUTA-OTOME/[C87][BUTAOTOME] ありきたりな脳髄よ、今宵の月と踊れ/02.ありきたりな脳髄よ、今宵の月と踊れ.mp3
-12:BUTA-OTOME/[C87][BUTAOTOME] ありきたりな脳髄よ、今宵の月と踊れ/01.三つ数えろ.mp3
-13:ShibayanRecords/2013.12.30 [STAL-1302] RETRO FUTURE GIRLS [C85]/(01) [izna] Super Fine Red.flac
-14:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(03) [10th Avenue Cafetak] Acoustic Image.flac
-15:BUTA-OTOME/2013.12.30 TRASH BOX [C85]/(01) [ランコ] 星の軌跡.flac
-16:BUTA-OTOME/2013.12.30 TRASH BOX [C85]/(03) [ランコ] 創めの一歩.flac
-17:BUTA-OTOME/2013.12.30 TRASH BOX [C85]/(04) [ランコ] 勝手人情.flac
+0:BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 0-178253
+Time: 1491.706000
+Playlist: yes
+Date: 2018.08.10
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 01
+Title: ファビュラス
+Artist: ランコ
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 178253-382280
+Time: 1491.706000
+Playlist: yes
+Date: 2018.08.10
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 02
+Title: 世界は思うより広く面白いはず
+Artist: ランコ
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 382280-533066
+Time: 1491.706000
+Playlist: yes
+Date: 2018.08.10
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 03
+Title: 高慢ちき
+Artist: ランコ
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 533066-746093
+Time: 1491.706000
+Playlist: yes
+Date: 2018.08.10
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 04
+Title: 黎明
+Artist: ランコ
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 746093-918506
+Time: 1491.706000
+Playlist: yes
+Date: 2018.08.10
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 05
+Title: 言葉イラズ 
+Artist: ランコ
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 918506-1102293
+Time: 1491.706000
+Playlist: yes
+Date: 2018.08.10
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 06
+Title: ハシル
+Artist: ランコ
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 1102293-1296320
+Time: 1491.706000
+Playlist: yes
+Date: 2018.08.10
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 07
+Title: 今並べ(大富豪ver.)
+Artist: ランコ
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 1296320-
+Time: 1491.706000
+Playlist: yes
+Date: 2018.08.10
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 08
+Title: 越-ETSU-
+Artist: ランコ
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 0-178253
+Time: 1491.706000
+Playlist: yes
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 01
+Title: ファビュラス
+Artist: ランコ
+Date: 2018.08.10
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 178253-382280
+Time: 1491.706000
+Playlist: yes
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 02
+Title: 世界は思うより広く面白いはず
+Artist: ランコ
+Date: 2018.08.10
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 382280-533066
+Time: 1491.706000
+Playlist: yes
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 03
+Title: 高慢ちき
+Artist: ランコ
+Date: 2018.08.10
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 533066-746093
+Time: 1491.706000
+Playlist: yes
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 04
+Title: 黎明
+Artist: ランコ
+Date: 2018.08.10
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 746093-918506
+Time: 1491.706000
+Playlist: yes
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 05
+Title: 言葉イラズ 
+Artist: ランコ
+Date: 2018.08.10
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 918506-1102293
+Time: 1491.706000
+Playlist: yes
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 06
+Title: ハシル
+Artist: ランコ
+Date: 2018.08.10
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 1102293-1296320
+Time: 1491.706000
+Playlist: yes
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 07
+Title: 今並べ(大富豪ver.)
+Artist: ランコ
+Date: 2018.08.10
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 1296320-
+Time: 1491.706000
+Playlist: yes
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 08
+Title: 越-ETSU-
+Artist: ランコ
+Date: 2018.08.10
+mtime: 1609184691
+song_end
+17:wowaka/Unhappy Refrain/01 - アンハッピーリフレイン.flac
+18:wowaka/Unhappy Refrain/02 - ローリンガール.flac
+19:wowaka/Unhappy Refrain/03 - 積み木の人形.flac
+20:wowaka/Unhappy Refrain/04 - 僕のサイノウ.flac
+21:wowaka/Unhappy Refrain/05 - 日常と地球の額縁.flac
+22:wowaka/Unhappy Refrain/06 - テノヒラ.flac
+23:wowaka/Unhappy Refrain/07 - とおせんぼ.flac
+24:wowaka/Unhappy Refrain/08 - ラインアート.flac
+25:wowaka/Unhappy Refrain/09 - 裏表ラバーズ.flac
+26:wowaka/Unhappy Refrain/10 - グレーゾーンにて。.flac
+27:wowaka/Unhappy Refrain/11 - ずれていく.flac
+28:wowaka/Unhappy Refrain/12 - リバシブルドール.flac
+29:wowaka/Unhappy Refrain/13 - ワールズエンド・ダンスホール.flac
+30:wowaka/Unhappy Refrain/14 - プリズムキューブ.flac
 playlist_end

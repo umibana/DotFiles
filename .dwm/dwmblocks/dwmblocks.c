@@ -1,12 +1,11 @@
 #include<stdlib.h>
-
 #include<stdio.h>
 #include<string.h>
 #include<unistd.h>
 #include<signal.h>
 #include<X11/Xlib.h>
 #define LENGTH(X)               (sizeof(X) / sizeof (X[0]))
-#define CMDLENGTH		50
+#define CMDLENGTH		100
 
 typedef struct {
 	char* icon;
