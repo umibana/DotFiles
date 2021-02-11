@@ -8,9 +8,15 @@ For a quick Install please install the following packages:
 Enable the following services:
 
 > systemctl --user enable mpd
+
 > systemctl --user enable mpd-notification
+
 > systemctl enable tlp
+
 > systemctl enable throttled
+
 > systemctl enable bluetooth
+
 > systemctl enable sshd
+
 > systemctl enable lightdm
