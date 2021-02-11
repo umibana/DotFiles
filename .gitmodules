@@ -4,3 +4,12 @@
 [submodule ".ncmpcpp/mpd-notification"]
 	path = .ncmpcpp/mpd-notification
 	url = https://github.com/eworm-de/mpd-notification
+[submodule "ohmyzsh"]
+	path = ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh
+[submodule "zsh-syntax-highlighting"]
+	path = zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
