@@ -15,7 +15,7 @@ lock(){
 [ "$NF" ] || NF="#e3e5e8"
 [ "$SB" ] || SB="#eeeeee"
 [ "$SF" ] || SF="#282828"
-[ "$FN" ] || FN="Terminus:size=10"
+[ "$FN" ] || FN="SF Pro Rounded:size=11"
 [ "$I3LCK_BG" ] || I3LCK_BG="#9d0006"
 [ "$I3LCK_TIME" ] || I3LCK_TIME="#a89984"
 [ "$I3LCK_DATE" ] || I3LCK_DATE="#a89984"

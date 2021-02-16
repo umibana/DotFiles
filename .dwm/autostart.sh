@@ -6,4 +6,8 @@ xmodmap ~/.Xmodmap &
 dunst &
 # Restores wallpaper
 nitrogen --restore &
+# Faster Repeating
+xset r rate 300 50 &
+# RedShift
+redshift &
 

@@ -55,6 +55,7 @@ static const Rule rules[] = {
 	{ "steam_app_851100",       "touhou luna night's",       NULL,   0,            0,           0,         1,        -1 },
 	{ "Origin.exe",       "Origin",       NULL,   0,            0,           0,         1,        -1 },
 	{ "Steam",      NULL,    "Friends List",       	    0,     1,           0,         0,        -1 },
+    { "feh",      NULL,    "feh",       	    0,     1,           0,         0,        -1 },
 	{ NULL,      "spcalc",    NULL,       	    SPTAG(1),     1,           1,         0,        -1 },
 };
 
@@ -203,6 +204,8 @@ static Key keys[] = {
 	{ MODKEY,			XK_g,		shiftview,	{ .i = -1 } },
 	{ MODKEY|ShiftMask,		XK_g,		shifttag,	{ .i = -1 } },
 	{ MODKEY,			XK_h,		setmfact,	{.f = -0.05} },
+	{ MODKEY|ShiftMask,             XK_l,      setcfact,       {.f = +0.25} },
+	{ MODKEY|ShiftMask,             XK_h,      setcfact,       {.f = -0.25} },
 	/* J and K are automatically bound above in STACKEYS */
 	{ MODKEY,			XK_l,		setmfact,      	{.f = +0.05} },
 	{ MODKEY,			XK_semicolon,	shiftview,	{ .i = 1 } },

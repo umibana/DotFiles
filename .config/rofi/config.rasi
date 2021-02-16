@@ -1,5 +1,0 @@
-configuration {
-	show-icons: true;
-	font: "Monospace 9";
-}
-@import "/usr/share/rofi/themes/dmenu.rasi"

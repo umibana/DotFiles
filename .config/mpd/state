@@ -1,7 +1,8 @@
 sw_volume: 71
 audio_device_state:1:T480 sound
-state: stop
-current: 29
+state: play
+current: 33
+time: 111.970000
 random: 0
 repeat: 1
 single: 0
@@ -206,9 +207,9 @@ song_end
 17:wowaka/Unhappy Refrain/01 - アンハッピーリフレイン.flac
 18:wowaka/Unhappy Refrain/02 - ローリンガール.flac
 19:wowaka/Unhappy Refrain/03 - 積み木の人形.flac
-20:wowaka/Unhappy Refrain/04 - 僕のサイノウ.flac
-21:wowaka/Unhappy Refrain/05 - 日常と地球の額縁.flac
-22:wowaka/Unhappy Refrain/06 - テノヒラ.flac
+20:wowaka/Unhappy Refrain/05 - 日常と地球の額縁.flac
+21:wowaka/Unhappy Refrain/06 - テノヒラ.flac
+22:wowaka/Unhappy Refrain/04 - 僕のサイノウ.flac
 23:wowaka/Unhappy Refrain/07 - とおせんぼ.flac
 24:wowaka/Unhappy Refrain/08 - ラインアート.flac
 25:wowaka/Unhappy Refrain/09 - 裏表ラバーズ.flac
@@ -217,4 +218,110 @@ song_end
 28:wowaka/Unhappy Refrain/12 - リバシブルドール.flac
 29:wowaka/Unhappy Refrain/13 - ワールズエンド・ダンスホール.flac
 30:wowaka/Unhappy Refrain/14 - プリズムキューブ.flac
+31:ShibayanRecords/2014.05.11 [STAL-1402] DISCO METRIC [例大祭11]/(02) [nachi] シンデレラは魔法使い(Tomohiko Togashi remix).flac
+32:ShibayanRecords/2014.05.11 [STAL-1402] DISCO METRIC [例大祭11]/(03) [yana] オズネイ・ハマンはもういらない(CYTOKINE remix).flac
+song_begin: ShibayanRecords/2017.12.29 [STAL-1702] Solar [C93]/ShibayanRecords - Solar.flac
+Range: 0-385613
+Time: 3301.160000
+Playlist: yes
+Genre: Remix
+Date: 2017.12.29
+AlbumArtist: ShibayanRecords
+Album: Solar
+Track: 01
+Title: 紅涙にしづむは供人の憂い(CYTOKINE Remix)
+Artist: 3L
+mtime: 1610139880
+song_end
+song_begin: ShibayanRecords/2017.12.29 [STAL-1702] Solar [C93]/ShibayanRecords - Solar.flac
+Range: 763693-1134533
+Time: 3301.160000
+Playlist: yes
+Genre: Remix
+Date: 2017.12.29
+AlbumArtist: ShibayanRecords
+Album: Solar
+Track: 03
+Title: 月齢11.3のキャンドルマジック(LAZ Remix)
+Artist: 3L
+mtime: 1610139880
+song_end
+song_begin: ShibayanRecords/2017.12.29 [STAL-1702] Solar [C93]/ShibayanRecords - Solar.flac
+Range: 1134533-1411653
+Time: 3301.160000
+Playlist: yes
+Genre: Remix
+Date: 2017.12.29
+AlbumArtist: ShibayanRecords
+Album: Solar
+Track: 04
+Title: クライム・ストーリーときみのウソ(D.watt OER Remix)
+Artist: milka
+mtime: 1610139880
+song_end
+song_begin: ShibayanRecords/2017.12.29 [STAL-1702] Solar [C93]/ShibayanRecords - Solar.flac
+Range: 1411653-1680973
+Time: 3301.160000
+Playlist: yes
+Genre: Remix
+Date: 2017.12.29
+AlbumArtist: ShibayanRecords
+Album: Solar
+Track: 05
+Title: うさぎ大爆発(Nhato Remix)
+Artist: nachi
+mtime: 1610139880
+song_end
+song_begin: ShibayanRecords/2017.12.29 [STAL-1702] Solar [C93]/ShibayanRecords - Solar.flac
+Range: 1680973-1965066
+Time: 3301.160000
+Playlist: yes
+Genre: Remix
+Date: 2017.12.29
+AlbumArtist: ShibayanRecords
+Album: Solar
+Track: 06
+Title: オズネイ・ハマンはもういらない(signum/ii Remix)
+Artist: yana
+mtime: 1610139880
+song_end
+song_begin: ShibayanRecords/2017.12.29 [STAL-1702] Solar [C93]/ShibayanRecords - Solar.flac
+Range: 1965066-2577200
+Time: 3301.160000
+Playlist: yes
+Genre: Remix
+Date: 2017.12.29
+AlbumArtist: ShibayanRecords
+Album: Solar
+Track: 07
+Title: Desert Years(mochiya00 Remix)
+Artist: yana
+mtime: 1610139880
+song_end
+song_begin: ShibayanRecords/2017.12.29 [STAL-1702] Solar [C93]/ShibayanRecords - Solar.flac
+Range: 2577200-2934826
+Time: 3301.160000
+Playlist: yes
+Genre: Remix
+Date: 2017.12.29
+AlbumArtist: ShibayanRecords
+Album: Solar
+Track: 08
+Title: クライム・ストーリーときみのウソ(izna Remix)
+Artist: milka
+mtime: 1610139880
+song_end
+song_begin: ShibayanRecords/2017.12.29 [STAL-1702] Solar [C93]/ShibayanRecords - Solar.flac
+Range: 2934826-
+Time: 3301.160000
+Playlist: yes
+Genre: Remix
+Date: 2017.12.29
+AlbumArtist: ShibayanRecords
+Album: Solar
+Track: 09
+Title: オズネイ・ハマンはもういらない(Tomohiko Togashi Remix)
+Artist: yana
+mtime: 1610139880
+song_end
 playlist_end
