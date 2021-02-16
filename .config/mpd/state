@@ -1,8 +1,8 @@
-sw_volume: 71
+sw_volume: 76
 audio_device_state:1:T480 sound
-state: play
-current: 33
-time: 111.970000
+state: pause
+current: 45
+time: 93.114000
 random: 0
 repeat: 1
 single: 0
@@ -323,5 +323,103 @@ Track: 09
 Title: オズネイ・ハマンはもういらない(Tomohiko Togashi Remix)
 Artist: yana
 mtime: 1610139880
+song_end
+41:BUTA-OTOME/2013.12.30 東方猫鍵盤8 [C85]_/(04) [パプリカ] 儚きもの人間.flac
+42:BUTA-OTOME/2016.12.29 ぱらだいすろすと [C91]/(01) [豚乙女] 螺旋絶望.flac
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 0-178253
+Time: 1491.706000
+Playlist: yes
+Date: 2018.08.10
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 01
+Title: ファビュラス
+Artist: ランコ
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 178253-382280
+Time: 1491.706000
+Playlist: yes
+Date: 2018.08.10
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 02
+Title: 世界は思うより広く面白いはず
+Artist: ランコ
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 382280-533066
+Time: 1491.706000
+Playlist: yes
+Date: 2018.08.10
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 03
+Title: 高慢ちき
+Artist: ランコ
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 533066-746093
+Time: 1491.706000
+Playlist: yes
+Date: 2018.08.10
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 04
+Title: 黎明
+Artist: ランコ
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 746093-918506
+Time: 1491.706000
+Playlist: yes
+Date: 2018.08.10
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 05
+Title: 言葉イラズ 
+Artist: ランコ
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 918506-1102293
+Time: 1491.706000
+Playlist: yes
+Date: 2018.08.10
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 06
+Title: ハシル
+Artist: ランコ
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 1102293-1296320
+Time: 1491.706000
+Playlist: yes
+Date: 2018.08.10
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 07
+Title: 今並べ(大富豪ver.)
+Artist: ランコ
+mtime: 1609184691
+song_end
+song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+Range: 1296320-
+Time: 1491.706000
+Playlist: yes
+Date: 2018.08.10
+AlbumArtist: 豚乙女
+Album: 大富豪
+Track: 08
+Title: 越-ETSU-
+Artist: ランコ
+mtime: 1609184691
 song_end
 playlist_end
