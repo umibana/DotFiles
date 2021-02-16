@@ -1,0 +1,80 @@
+#This should be used within the TreeStyleTabs extension of firefox
+
+    #tabbar {
+      font-family:"berry";
+      font-size:12px;
+      background:none;
+      box-shadow: none !important;
+      border:none;
+      scrollbar-width: none;
+    }
+    tab-item .twisty {
+      visibility: hidden;
+      margin-left: -12px;
+    }
+    tab-item .label {
+      margin-left: 7px;
+    }
+    .closebox {
+      display:none;
+    }
+    .newtab-button-box {
+      display:none;
+    }
+    tab-item {
+      box-shadow: none !important;
+      border-color:#010204;
+      background:#162329;
+    }
+    tab-item.active, tab-item:hover {
+      background:#1c2b33;
+    }
+    tab-label {
+      margin-bottom:-6px;
+      color:#ffffff;
+    }
+    .highlighter {
+      display:none;
+    }
+    tab-item[data-level][data-level="0"] {
+      margin-left: 0 !important;
+    }
+    tab-item[data-level][data-level="1"] {
+      margin-left: -1px !important;
+    }
+    tab-item[data-level][data-level="2"] {
+      margin-left: -1px !important;
+    }
+    tab-item[data-level][data-level="3"] {
+      margin-left: -1px !important;
+    }
+    tab-item[data-level][data-level="4"] {
+      margin-left: -1px !important;
+    }
+    tab-item[data-level][data-level="5"] {
+      margin-left: -1px !important;
+    }
+    tab-item[data-level][data-level="6"] {
+      margin-left: -1px !important;
+    }
+    #tabbar:hover tab-item[data-level][data-level="0"] {
+      margin-left: 0 !important;
+    }
+    #tabbar:hover tab-item[data-level][data-level="1"] {
+      margin-left: 2% !important;
+    }
+    #tabbar:hover tab-item[data-level][data-level="2"] {
+      margin-left: 4% !important;
+    }
+    #tabbar:hover tab-item[data-level][data-level="3"] {
+      margin-left: 6% !important;
+    }
+    #tabbar:hover tab-item[data-level][data-level="4"] {
+      margin-left: 8% !important;
+    }
+    #tabbar:hover tab-item[data-level][data-level="5"] {
+      margin-left: 10% !important;
+    }
+    #tabbar:hover tab-item[data-level][data-level="6"] {
+      margin-left: 12% !important;
+    }
