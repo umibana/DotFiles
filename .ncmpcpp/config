@@ -17,19 +17,18 @@ playlist_display_mode = "classic"
 
 
 #### Progressbar
-#### can consider »─▬▐▌░▒▓█━⠤ ⠤ ▪▃
 progressbar_look = "━━─"
-progressbar_elapsed_color = "white"
-progressbar_color = "black"
+#progressbar_elapsed_color = "white"
+#progressbar_color = "black"
 connected_message_on_startup = no
 
 song_columns_list_format = "(50)[6]{t} (50)[4]{ar} $b(3f)[9]{lr}$/b"
 #song_columns_list_format = "(25)[6]{a} (25)[4]{tr} (5)[6]{lr:Length}"
 
 #### Colors
-header_window_color = "white"
-main_window_color =  magenta
-alternative_ui_separator_color = black
+#header_window_color = "white"
+#main_window_color =  magenta
+#alternative_ui_separator_color = black
 
 #### General formatting
 titles_visibility = "no"
