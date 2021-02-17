@@ -2,8 +2,8 @@ sw_volume: 73
 audio_device_state:1:T480 sound
 audio_device_state:1:My fifo
 state: play
-current: 889
-time: 1482.505000
+current: 950
+time: 76.882000
 random: 0
 repeat: 0
 single: 0
@@ -1517,4 +1517,6 @@ Title: ／彁
 Artist: めらみぽっぷ
 mtime: 1579174620
 song_end
+949:COOL&CREATE - #GensokyoHoloism/01.【第0話】老人会必聴・古の東方アレンジ縛り歌枠.mp3
+950:DDBY - Cafe de Touhou 1-8/2010 - Cafe de Touhou 1/2-faraway-country.flac
 playlist_end

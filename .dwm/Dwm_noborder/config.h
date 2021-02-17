@@ -33,12 +33,14 @@ typedef struct {
 	const char *name;
 	const void *cmd;
 } Sp;
-const char *spcmd1[] = {TERMINAL, "-n", "spterm", "-g", "120x34", NULL };
-const char *spcmd2[] = {TERMINAL, "-n", "spcalc", "-f", "monospace:size=16", "-g", "50x20", "-e", "bc", "-lq", NULL };
+const char *spcmd1[] = {TERMINAL, "--name", "spterm",                             NULL };
+const char *spcmd2[] = {TERMINAL, "--name", "spranger", "-e", "ranger",           NULL };
+const char *spcmd3[] = {TERMINAL, "--name", "spmusic", "-e",  "ncmpcpp-ueberzug", NULL };
 static Sp scratchpads[] = {
 	/* name          cmd  */
 	{"spterm",      spcmd1},
 	{"spranger",    spcmd2},
+	{"spmusic",    spcmd3},
 };
 
 /* tagging */
@@ -49,14 +51,13 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	*/
-	/* class    instance      title       	 tags mask    isfloating   isterminal  noswallow  monitor */
-	{ "Gimp",     NULL,       NULL,       	    1 << 8,       0,          0,         0,        -1 },
-	{ TERMCLASS,   NULL,       NULL,       	    0,            0,           1,         0,        -1 },
-	{ "steam_app_851100",       "touhou luna night's",       NULL,   0,            0,           0,         1,        -1 },
-	{ "Origin.exe",       "Origin",       NULL,   0,            0,           0,         1,        -1 },
-	{ "Steam",      NULL,    "Friends List",       	    0,     1,           0,         0,        -1 },
-    { "feh",      NULL,    "feh",       	    0,     1,           0,         0,        -1 },
-	{ NULL,      "spcalc",    NULL,       	    SPTAG(1),     1,           1,         0,        -1 },
+	/* class        instance      title       	 tags mask    isfloating   isterminal  noswallow  monitor */
+	{ TERMCLASS,    NULL,         NULL,       	    0,            0,           1,         0,        -1 },
+	{ "Steam",      NULL,     "Friends List",       0,            1,           0,         0,        -1 },
+    { "feh",        NULL,        "feh",       	    0,            1,           0,         0,        -1 },
+	{ NULL,       "spterm",       NULL,       	    SPTAG(0),     1,           1,         0,        -1 },
+	{ NULL,       "spranger",     NULL,       	    SPTAG(1),     1,           1,         0,        -1 },
+	{ NULL,       "spmusic",     NULL,       	    SPTAG(2),     1,           1,         0,        -1 }
 };
 
 /* layout(s) */
@@ -227,7 +228,8 @@ static Key keys[] = {
 	{ MODKEY,			XK_n,		spawn,		SHCMD("mpc seek 0%") },
 	{ MODKEY|ShiftMask,		XK_n,		spawn,		SHCMD("mpc stop") },
 	{ MODKEY,			XK_m,		spawn,		SHCMD(TERMINAL " -e ncmpcpp-ueberzug") },
-	{ MODKEY|ShiftMask,		XK_m,		spawn,		SHCMD("pamixer -t; kill -44 $(pidof dwmblocks)") },
+	{ MODKEY|ShiftMask,		XK_m,	togglescratch,	{.ui = 2} },
+
 	{ MODKEY,			XK_comma,	spawn,		SHCMD("mpc next") },
 	{ MODKEY|ShiftMask,		XK_comma,	spawn,		SHCMD("mpc prev") },
 	{ MODKEY,			XK_period,	spawn,		SHCMD("mpc play") },
