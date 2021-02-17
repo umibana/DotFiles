@@ -31,7 +31,7 @@ Various of these dots contain my username so they won't work for you outside of 
 
 # For a quick Install please install the following packages:
 
-> paru -S firefox neovim ranger dragon-drag-and-drop zsh terminus-font adobe-source-han-sans-jp-fonts ttf-joypixels otf-san-francisco-pro kitty blueman ncmpcpp dunst i3lock-color-git xss-lock ibus ibus-mozc libxft-bgra lxappearance lxrandr maim mpc mpd mpv neofetch throttled nitrogen pcmanfm qbittorrent rofi thunderbird tlp tlpui ueberzug zathura youtube-dl lightdm picom terminus-font-ttf xdg-utils-mimeo feh sxiv code bpytop htop pavucontrol xbacklight
+> paru -S firefox neovim ranger dragon-drag-and-drop zsh terminus-font adobe-source-han-sans-jp-fonts ttf-joypixels otf-san-francisco-pro kitty blueman ncmpcpp dunst i3lock-color-git xss-lock ibus ibus-mozc libxft-bgra lxappearance lxrandr maim mpc mpd mpv neofetch throttled nitrogen pcmanfm qbittorrent rofi thunderbird tlp tlpui ueberzug zathura youtube-dl lightdm picom terminus-font-ttf xdg-utils-mimeo feh sxiv code bpytop htop pavucontrol xbacklight redshift
 
 # Enable the following services:
 
