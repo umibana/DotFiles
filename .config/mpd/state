@@ -1,11 +1,11 @@
-sw_volume: 76
+sw_volume: 73
 audio_device_state:1:T480 sound
 audio_device_state:1:My fifo
 state: play
-current: 35
-time: 7.148000
+current: 889
+time: 1482.505000
 random: 0
-repeat: 1
+repeat: 0
 single: 0
 consume: 0
 crossfade: 0
@@ -682,82 +682,18 @@ song_end
 547:BUTA-OTOME/2017.12.29 あやかし横丁 [C93]/(06) [ランコ] 他人の顔.flac
 548:BUTA-OTOME/2017.12.29 あやかし横丁 [C93]/(07) [ランコ] 隠然.flac
 549:BUTA-OTOME/2017.12.29 あやかし横丁 [C93]/(08) [ランコ] ひとかけら.flac
-song_begin: BUTA-OTOME/2017.12.29 あやかし横丁 [C93]/豚乙女 - あやかし横丁.wav.cue/track0001
-Range: 0-204226
-AlbumArtist: 豚乙女
-Album: あやかし横丁
-Track: 01
-Title: 目線
-Artist: ランコ
-song_end
-song_begin: BUTA-OTOME/2017.12.29 あやかし横丁 [C93]/豚乙女 - あやかし横丁.wav.cue/track0002
-Range: 204226-436720
-AlbumArtist: 豚乙女
-Album: あやかし横丁
-Track: 02
-Title: 美しい人
-Artist: ランコ
-song_end
-song_begin: BUTA-OTOME/2017.12.29 あやかし横丁 [C93]/豚乙女 - あやかし横丁.wav.cue/track0003
-Range: 436720-717960
-AlbumArtist: 豚乙女
-Album: あやかし横丁
-Track: 03
-Title: 恋の病(路地裏ver)
-Artist: ランコ
-song_end
-song_begin: BUTA-OTOME/2017.12.29 あやかし横丁 [C93]/豚乙女 - あやかし横丁.wav.cue/track0004
-Range: 717960-975200
-AlbumArtist: 豚乙女
-Album: あやかし横丁
-Track: 04
-Title: うたかた
-Artist: ランコ
-song_end
-song_begin: BUTA-OTOME/2017.12.29 あやかし横丁 [C93]/豚乙女 - あやかし横丁.wav.cue/track0005
-Range: 975200-1208200
-AlbumArtist: 豚乙女
-Album: あやかし横丁
-Track: 05
-Title: 誰にも言えないブルース
-Artist: ランコ
-song_end
-song_begin: BUTA-OTOME/2017.12.29 あやかし横丁 [C93]/豚乙女 - あやかし横丁.wav.cue/track0006
-Range: 1208200-1442826
-AlbumArtist: 豚乙女
-Album: あやかし横丁
-Track: 06
-Title: 他人の顔
-Artist: ランコ
-song_end
-song_begin: BUTA-OTOME/2017.12.29 あやかし横丁 [C93]/豚乙女 - あやかし横丁.wav.cue/track0007
-Range: 1442826-1664573
-AlbumArtist: 豚乙女
-Album: あやかし横丁
-Track: 07
-Title: 隠然
-Artist: ランコ
-song_end
-song_begin: BUTA-OTOME/2017.12.29 あやかし横丁 [C93]/豚乙女 - あやかし横丁.wav.cue/track0008
-Range: 1664573-
-AlbumArtist: 豚乙女
-Album: あやかし横丁
-Track: 08
-Title: ひとかけら
-Artist: ランコ
-song_end
-558:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(01) [パプリカ] 禁忌「レーヴァテイン」.flac
-559:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(02) [パプリカ] 抑制「スーパーエゴ」本能「イドの解放」.flac
-560:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(03) [パプリカ] 化鉄「置き傘特急ナイトカーニバル」.flac
-561:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(04) [パプリカ] 紫奥義「弾幕結界」.flac
-562:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(05) [パプリカ] 飛頭「ナインズヘッド」.flac
-563:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(06) [パプリカ] フェイクアポロ」.flac
-564:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(07) [パプリカ] 滅罪「正直者の死」.flac
-565:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(08) [パプリカ] 「地獄の人工太陽」.flac
-566:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(09) [パプリカ] 恋風「スターライトタイフーン」.flac
-567:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(10) [パプリカ] 「幻想風靡」.flac
-568:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(11) [パプリカ] 華符「彩光蓮華掌」.flac
-569:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(12) [パプリカ] 花咲爺「シロの灰」.flac
+550:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(01) [パプリカ] 禁忌「レーヴァテイン」.flac
+551:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(02) [パプリカ] 抑制「スーパーエゴ」本能「イドの解放」.flac
+552:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(03) [パプリカ] 化鉄「置き傘特急ナイトカーニバル」.flac
+553:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(04) [パプリカ] 紫奥義「弾幕結界」.flac
+554:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(05) [パプリカ] 飛頭「ナインズヘッド」.flac
+555:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(06) [パプリカ] フェイクアポロ」.flac
+556:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(07) [パプリカ] 滅罪「正直者の死」.flac
+557:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(08) [パプリカ] 「地獄の人工太陽」.flac
+558:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(09) [パプリカ] 恋風「スターライトタイフーン」.flac
+559:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(10) [パプリカ] 「幻想風靡」.flac
+560:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(11) [パプリカ] 華符「彩光蓮華掌」.flac
+561:BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/(12) [パプリカ] 花咲爺「シロの灰」.flac
 song_begin: BUTA-OTOME/2017.12.29 東方猫鍵盤15 [C93]/豚乙女 - 東方猫鍵盤15.wav.cue/track0001
 Range: 0-137466
 Album: 東方猫鍵盤15
@@ -842,192 +778,60 @@ Track: 12
 Title: 花咲爺「シロの灰」
 Artist: パプリカ
 song_end
-582:BUTA-OTOME/2018.05.06 大貧民 [例大祭15]/(01) [ランコ] ソリッド.flac
-583:BUTA-OTOME/2018.05.06 大貧民 [例大祭15]/(02) [ランコ] 過密世帯メサイヤ.flac
-584:BUTA-OTOME/2018.05.06 大貧民 [例大祭15]/(03) [ランコ] イン・ザ・ブラック.flac
-585:BUTA-OTOME/2018.05.06 大貧民 [例大祭15]/(04) [ランコ] くるくる使い.flac
-586:BUTA-OTOME/2018.05.06 大貧民 [例大祭15]/(05) [ランコ] ともだちは水の中.flac
-587:BUTA-OTOME/2018.05.06 大貧民 [例大祭15]/(06) [ランコ] ない。(大貧民ver.).flac
-588:BUTA-OTOME/2018.05.06 大貧民 [例大祭15]/(07) [ランコ] スリープジャンキー.flac
-589:BUTA-OTOME/2018.05.06 大貧民 [例大祭15]/(08) [ランコ] 緊縛の夜明け.flac
-590:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(01) [コンプ] 違った世界.flac
-591:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(02) [ランコ] その先の奥.flac
-592:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(03) [パプリカ] 死 ~shi~(inst).flac
-593:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(03) [パプリカ] 死 ～shi～(inst).flac
-594:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(04) [ランコ] 夜桜花見.flac
-595:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(05) [ランコ] 月光.flac
-596:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(06) [パプリカ] 丁か半か色即是空(inst).flac
-597:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(07) [ランコ] 少し昔のお話.flac
-598:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(08) [ランコ] 無限物語.flac
-599:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(09) [パプリカ] 夢じゃない何か(inst).flac
-600:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(10) [ランコ] outcast.flac
-song_begin: BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/豚乙女 - 魔女たちの音楽室.cue/track0001
-Range: 0-257133
-Genre: Other
-Date: 2018.05.06
-AlbumArtist: ????Ů
-Album: ħŮ???��????S??
-Track: 01
-Title: ?`?ä??��?
-Artist: ??????
-song_end
-song_begin: BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/豚乙女 - 魔女たちの音楽室.cue/track0002
-Range: 257133-445413
-Genre: Other
-Date: 2018.05.06
-AlbumArtist: ????Ů
-Album: ħŮ???��????S??
-Track: 02
-Title: ?????Ȥΰ?
-Artist: ??????
-song_end
-song_begin: BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/豚乙女 - 魔女たちの音楽室.cue/track0003
-Range: 445413-648440
-Genre: Other
-Date: 2018.05.06
-AlbumArtist: ????Ů
-Album: ħŮ???��????S??
-Track: 03
-Title: ?? ??shi??(inst)
-Artist: ?ѥץꥫ
-song_end
-song_begin: BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/豚乙女 - 魔女たちの音楽室.cue/track0004
-Range: 648440-887466
-Genre: Other
-Date: 2018.05.06
-AlbumArtist: ????Ů
-Album: ħŮ???��????S??
-Track: 04
-Title: ҹ?@??Ҋ
-Artist: ??????
-song_end
-song_begin: BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/豚乙女 - 魔女たちの音楽室.cue/track0005
-Range: 887466-1164493
-Genre: Other
-Date: 2018.05.06
-AlbumArtist: ????Ů
-Album: ħŮ???��????S??
-Track: 05
-Title: ?¹?
-Artist: ??????
-song_end
-song_begin: BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/豚乙女 - 魔女たちの音楽室.cue/track0006
-Range: 1164493-1369026
-Genre: Other
-Date: 2018.05.06
-AlbumArtist: ????Ů
-Album: ħŮ???��????S??
-Track: 06
-Title: ?????뤫ɫ???ǿ?(inst)
-Artist: ?ѥץꥫ
-song_end
-song_begin: BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/豚乙女 - 魔女たちの音楽室.cue/track0007
-Range: 1369026-1582933
-Genre: Other
-Date: 2018.05.06
-AlbumArtist: ????Ů
-Album: ħŮ???��????S??
-Track: 07
-Title: ?٤????Τ?Ԓ
-Artist: ??????
-song_end
-song_begin: BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/豚乙女 - 魔女たちの音楽室.cue/track0008
-Range: 1582933-1795213
-Genre: Other
-Date: 2018.05.06
-AlbumArtist: ????Ů
-Album: ħŮ???��????S??
-Track: 08
-Title: ?o?????Z
-Artist: ??????
-song_end
-song_begin: BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/豚乙女 - 魔女たちの音楽室.cue/track0009
-Range: 1795213-2079000
-Genre: Other
-Date: 2018.05.06
-AlbumArtist: ????Ů
-Album: ħŮ???��????S??
-Track: 09
-Title: ?����??ʤ??Τ?(inst)
-Artist: ?ѥץꥫ
-song_end
-song_begin: BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/豚乙女 - 魔女たちの音楽室.cue/track0010
-Range: 2079000-
-Genre: Other
-Date: 2018.05.06
-AlbumArtist: ????Ů
-Album: ħŮ???��????S??
-Track: 10
-Title: outcast
-Artist: ??????
-song_end
-611:BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
+574:BUTA-OTOME/2018.05.06 大貧民 [例大祭15]/(01) [ランコ] ソリッド.flac
+575:BUTA-OTOME/2018.05.06 大貧民 [例大祭15]/(02) [ランコ] 過密世帯メサイヤ.flac
+576:BUTA-OTOME/2018.05.06 大貧民 [例大祭15]/(03) [ランコ] イン・ザ・ブラック.flac
+577:BUTA-OTOME/2018.05.06 大貧民 [例大祭15]/(04) [ランコ] くるくる使い.flac
+578:BUTA-OTOME/2018.05.06 大貧民 [例大祭15]/(05) [ランコ] ともだちは水の中.flac
+579:BUTA-OTOME/2018.05.06 大貧民 [例大祭15]/(06) [ランコ] ない。(大貧民ver.).flac
+580:BUTA-OTOME/2018.05.06 大貧民 [例大祭15]/(07) [ランコ] スリープジャンキー.flac
+581:BUTA-OTOME/2018.05.06 大貧民 [例大祭15]/(08) [ランコ] 緊縛の夜明け.flac
+582:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(01) [コンプ] 違った世界.flac
+583:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(02) [ランコ] その先の奥.flac
+584:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(03) [パプリカ] 死 ~shi~(inst).flac
+585:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(03) [パプリカ] 死 ～shi～(inst).flac
+586:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(04) [ランコ] 夜桜花見.flac
+587:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(05) [ランコ] 月光.flac
+588:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(06) [パプリカ] 丁か半か色即是空(inst).flac
+589:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(07) [ランコ] 少し昔のお話.flac
+590:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(08) [ランコ] 無限物語.flac
+591:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(09) [パプリカ] 夢じゃない何か(inst).flac
+592:BUTA-OTOME/2018.05.06 魔女たちの音楽室 [例大祭15]/(10) [ランコ] outcast.flac
+593:BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.flac
 song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.cue/track0001
 Range: 0-178253
-mtime: 1609184690
+mtime: 1609184691
 song_end
 song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.cue/track0002
 Range: 178253-382280
-mtime: 1609184690
+mtime: 1609184691
 song_end
 song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.cue/track0003
 Range: 382280-533066
-mtime: 1609184690
+mtime: 1609184691
 song_end
 song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.cue/track0004
 Range: 533066-746093
-mtime: 1609184690
+mtime: 1609184691
 song_end
 song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.cue/track0005
 Range: 746093-918506
-mtime: 1609184690
+mtime: 1609184691
 song_end
 song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.cue/track0006
 Range: 918506-1102293
-mtime: 1609184690
+mtime: 1609184691
 song_end
 song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.cue/track0007
 Range: 1102293-1296320
-mtime: 1609184690
+mtime: 1609184691
 song_end
 song_begin: BUTA-OTOME/2018.08.10 大富豪 [C94]/豚乙女 - 大富豪.cue/track0008
 Range: 1296320-
-mtime: 1609184690
+mtime: 1609184691
 song_end
-620:BUTA-OTOME/2018.08.10 少女煉獄第四巻 [C94]/豚乙女 - 少女煉獄第四巻.flac
-song_begin: BUTA-OTOME/2018.08.10 少女煉獄第四巻 [C94]/豚乙女 - 少女煉獄第四巻.cue/track0001
-Range: 0-165640
-mtime: 1609182960
-song_end
-song_begin: BUTA-OTOME/2018.08.10 少女煉獄第四巻 [C94]/豚乙女 - 少女煉獄第四巻.cue/track0002
-Range: 165640-385053
-mtime: 1609182960
-song_end
-song_begin: BUTA-OTOME/2018.08.10 少女煉獄第四巻 [C94]/豚乙女 - 少女煉獄第四巻.cue/track0003
-Range: 385053-597586
-mtime: 1609182960
-song_end
-song_begin: BUTA-OTOME/2018.08.10 少女煉獄第四巻 [C94]/豚乙女 - 少女煉獄第四巻.cue/track0004
-Range: 597586-765120
-mtime: 1609182960
-song_end
-song_begin: BUTA-OTOME/2018.08.10 少女煉獄第四巻 [C94]/豚乙女 - 少女煉獄第四巻.cue/track0005
-Range: 765120-1054906
-mtime: 1609182960
-song_end
-song_begin: BUTA-OTOME/2018.08.10 少女煉獄第四巻 [C94]/豚乙女 - 少女煉獄第四巻.cue/track0006
-Range: 1054906-1248933
-mtime: 1609182960
-song_end
-song_begin: BUTA-OTOME/2018.08.10 少女煉獄第四巻 [C94]/豚乙女 - 少女煉獄第四巻.cue/track0007
-Range: 1248933-1477840
-mtime: 1609182960
-song_end
-song_begin: BUTA-OTOME/2018.08.10 少女煉獄第四巻 [C94]/豚乙女 - 少女煉獄第四巻.cue/track0008
-Range: 1477840-
-mtime: 1609182960
-song_end
-629:BUTA-OTOME/2018.08.10 東方猫鍵盤16 [C94]/豚乙女 - 東方猫鍵盤16.flac
+602:BUTA-OTOME/2018.08.10 少女煉獄第四巻 [C94]/豚乙女 - 少女煉獄第四巻.flac
+603:BUTA-OTOME/2018.08.10 東方猫鍵盤16 [C94]/豚乙女 - 東方猫鍵盤16.flac
 song_begin: BUTA-OTOME/2018.08.10 東方猫鍵盤16 [C94]/豚乙女 - 東方猫鍵盤16.cue/track0001
 Range: 0-174253
 mtime: 1609187698
@@ -1068,782 +872,298 @@ song_begin: BUTA-OTOME/2018.08.10 東方猫鍵盤16 [C94]/豚乙女 - 東方猫�
 Range: 1586266-1800800
 mtime: 1609187698
 song_end
-song_begin: BUTA-OTOME/2018.08.10 東方猫鍵盤16 [C94]/豚乙女 - 東方猫鍵盤16.cue/track0011
-Range: 1800800-2035826
-mtime: 1609187698
-song_end
 song_begin: BUTA-OTOME/2018.08.10 東方猫鍵盤16 [C94]/豚乙女 - 東方猫鍵盤16.cue/track0012
 Range: 2035826-
 mtime: 1609187698
 song_end
-642:BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.flac
-song_begin: BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.cue/track0001
-Range: 0-231253
-mtime: 1609185350
+song_begin: BUTA-OTOME/2018.08.10 東方猫鍵盤16 [C94]/豚乙女 - 東方猫鍵盤16.cue/track0011
+Range: 1800800-2035826
+mtime: 1609187698
 song_end
-song_begin: BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.cue/track0002
-Range: 231253-512280
-mtime: 1609185350
-song_end
-song_begin: BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.cue/track0003
-Range: 512280-712066
-mtime: 1609185350
-song_end
-song_begin: BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.cue/track0004
-Range: 712066-983093
-mtime: 1609185350
-song_end
-song_begin: BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.cue/track0005
-Range: 983093-1192746
-mtime: 1609185350
-song_end
-song_begin: BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.cue/track0006
-Range: 1192746-1472653
-mtime: 1609185350
-song_end
-song_begin: BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.cue/track0007
-Range: 1472653-1661680
-mtime: 1609185350
-song_end
-song_begin: BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.cue/track0008
-Range: 1661680-1818213
-mtime: 1609185350
-song_end
-song_begin: BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.cue/track0009
-Range: 1818213-2125240
-mtime: 1609185350
-song_end
-song_begin: BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.cue/track0010
-Range: 2125240-2341266
-mtime: 1609185350
-song_end
-song_begin: BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.cue/track0011
-Range: 2341266-2598800
-mtime: 1609185350
-song_end
-song_begin: BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.cue/track0012
-Range: 2598800-2835826
-mtime: 1609185350
-song_end
-song_begin: BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.cue/track0013
-Range: 2835826-2980853
-mtime: 1609185350
-song_end
-song_begin: BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.cue/track0014
-Range: 2980853-3203880
-mtime: 1609185350
-song_end
-song_begin: BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.cue/track0015
-Range: 3203880-3324600
-mtime: 1609185350
-song_end
-song_begin: BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.cue/track0016
-Range: 3324600-3527133
-mtime: 1609185350
-song_end
-song_begin: BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.cue/track0017
-Range: 3527133-3705666
-mtime: 1609185350
-song_end
-song_begin: BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.cue/track0018
-Range: 3705666-3932946
-mtime: 1609185350
-song_end
-song_begin: BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.cue/track0019
-Range: 3932946-
-mtime: 1609185350
-song_end
-662:BUTA-OTOME/2018.12.30 アビス [C95]/豚乙女 - アビス.flac
-song_begin: BUTA-OTOME/2018.12.30 アビス [C95]/豚乙女 - アビス.cue/track0001
-Range: 0-173680
-mtime: 1609184362
-song_end
-song_begin: BUTA-OTOME/2018.12.30 アビス [C95]/豚乙女 - アビス.cue/track0002
-Range: 173680-387706
-mtime: 1609184362
-song_end
-song_begin: BUTA-OTOME/2018.12.30 アビス [C95]/豚乙女 - アビス.cue/track0003
-Range: 387706-636733
-mtime: 1609184362
-song_end
-song_begin: BUTA-OTOME/2018.12.30 アビス [C95]/豚乙女 - アビス.cue/track0004
-Range: 636733-823266
-mtime: 1609184362
-song_end
-song_begin: BUTA-OTOME/2018.12.30 アビス [C95]/豚乙女 - アビス.cue/track0005
-Range: 823266-1064800
-mtime: 1609184362
-song_end
-song_begin: BUTA-OTOME/2018.12.30 アビス [C95]/豚乙女 - アビス.cue/track0006
-Range: 1064800-1311826
-mtime: 1609184362
-song_end
-song_begin: BUTA-OTOME/2018.12.30 アビス [C95]/豚乙女 - アビス.cue/track0007
-Range: 1311826-1487240
-mtime: 1609184362
-song_end
-song_begin: BUTA-OTOME/2018.12.30 アビス [C95]/豚乙女 - アビス.cue/track0008
-Range: 1487240-
-mtime: 1609184362
-song_end
-671:BUTA-OTOME/2018.12.30 ゲリラ [C95]/豚乙女 - ゲリラ.flac
+616:BUTA-OTOME/2018.10.14 遊星博覧会 [秋例大祭5]/豚乙女 - 遊星博覧会.flac
+617:BUTA-OTOME/2018.12.30 アビス [C95]/豚乙女 - アビス.flac
+618:BUTA-OTOME/2018.12.30 ゲリラ [C95]/豚乙女 - ゲリラ.flac
 song_begin: BUTA-OTOME/2018.12.30 ゲリラ [C95]/豚乙女 - ゲリラ.cue/track0001
 Range: 0-171253
-mtime: 1609186948
+mtime: 1609186949
 song_end
 song_begin: BUTA-OTOME/2018.12.30 ゲリラ [C95]/豚乙女 - ゲリラ.cue/track0002
 Range: 171253-310533
-mtime: 1609186948
+mtime: 1609186949
 song_end
 song_begin: BUTA-OTOME/2018.12.30 ゲリラ [C95]/豚乙女 - ゲリラ.cue/track0003
 Range: 310533-641560
-mtime: 1609186948
+mtime: 1609186949
 song_end
 song_begin: BUTA-OTOME/2018.12.30 ゲリラ [C95]/豚乙女 - ゲリラ.cue/track0004
 Range: 641560-804586
-mtime: 1609186948
+mtime: 1609186949
 song_end
 song_begin: BUTA-OTOME/2018.12.30 ゲリラ [C95]/豚乙女 - ゲリラ.cue/track0005
 Range: 804586-1065613
-mtime: 1609186948
+mtime: 1609186949
 song_end
 song_begin: BUTA-OTOME/2018.12.30 ゲリラ [C95]/豚乙女 - ゲリラ.cue/track0006
 Range: 1065613-1232640
-mtime: 1609186948
+mtime: 1609186949
 song_end
 song_begin: BUTA-OTOME/2018.12.30 ゲリラ [C95]/豚乙女 - ゲリラ.cue/track0007
 Range: 1232640-1605666
-mtime: 1609186948
+mtime: 1609186949
 song_end
 song_begin: BUTA-OTOME/2018.12.30 ゲリラ [C95]/豚乙女 - ゲリラ.cue/track0008
 Range: 1605666-
-mtime: 1609186948
+mtime: 1609186949
 song_end
-680:BUTA-OTOME/2018.12.30 東方猫鍵盤17 [C95]/豚乙女 - 東方猫鍵盤17.flac
-song_begin: BUTA-OTOME/2018.12.30 東方猫鍵盤17 [C95]/豚乙女 - 東方猫鍵盤17.cue/track0001
-Range: 0-260253
-mtime: 1609182392
-song_end
-song_begin: BUTA-OTOME/2018.12.30 東方猫鍵盤17 [C95]/豚乙女 - 東方猫鍵盤17.cue/track0002
-Range: 260253-506906
-mtime: 1609182392
-song_end
-song_begin: BUTA-OTOME/2018.12.30 東方猫鍵盤17 [C95]/豚乙女 - 東方猫鍵盤17.cue/track0003
-Range: 506906-743186
-mtime: 1609182392
-song_end
-song_begin: BUTA-OTOME/2018.12.30 東方猫鍵盤17 [C95]/豚乙女 - 東方猫鍵盤17.cue/track0004
-Range: 743186-1008840
-mtime: 1609182392
-song_end
-song_begin: BUTA-OTOME/2018.12.30 東方猫鍵盤17 [C95]/豚乙女 - 東方猫鍵盤17.cue/track0005
-Range: 1008840-1335866
-mtime: 1609182392
-song_end
-song_begin: BUTA-OTOME/2018.12.30 東方猫鍵盤17 [C95]/豚乙女 - 東方猫鍵盤17.cue/track0006
-Range: 1335866-1620026
-mtime: 1609182392
-song_end
-song_begin: BUTA-OTOME/2018.12.30 東方猫鍵盤17 [C95]/豚乙女 - 東方猫鍵盤17.cue/track0007
-Range: 1620026-1897813
-mtime: 1609182392
-song_end
-song_begin: BUTA-OTOME/2018.12.30 東方猫鍵盤17 [C95]/豚乙女 - 東方猫鍵盤17.cue/track0008
-Range: 1897813-2141840
-mtime: 1609182392
-song_end
-song_begin: BUTA-OTOME/2018.12.30 東方猫鍵盤17 [C95]/豚乙女 - 東方猫鍵盤17.cue/track0009
-Range: 2141840-2406373
-mtime: 1609182392
-song_end
-song_begin: BUTA-OTOME/2018.12.30 東方猫鍵盤17 [C95]/豚乙女 - 東方猫鍵盤17.cue/track0010
-Range: 2406373-2717906
-mtime: 1609182392
-song_end
-song_begin: BUTA-OTOME/2018.12.30 東方猫鍵盤17 [C95]/豚乙女 - 東方猫鍵盤17.cue/track0011
-Range: 2717906-2996933
-mtime: 1609182392
-song_end
-song_begin: BUTA-OTOME/2018.12.30 東方猫鍵盤17 [C95]/豚乙女 - 東方猫鍵盤17.cue/track0012
-Range: 2996933-
-mtime: 1609182392
-song_end
-693:BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/(01) [ランコ] エゴ.flac
-694:BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/(02) [ランコ] 一言芳恩.flac
-695:BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/(03) [ランコ] 桃色ファイブスター.flac
-696:BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/(04) [ランコ] きりり.flac
-697:BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/(05) [ランコ] 垂れ下がる心.flac
-698:BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/(06) [ランコ] 猫と杓子.flac
-699:BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/(07) [ランコ] 白い朝.flac
-700:BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/(08) [ランコ] 春の雪.flac
-song_begin: BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/豚乙女 - エピタフ.cue/track0001
-Range: 0-201506
-AlbumArtist: 豚乙女
-Album: エピタフ
-Composer: ZUN
-Track: 01
-Title: エゴ
-Artist: ランコ
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/豚乙女 - エピタフ.cue/track0002
-Range: 201506-388666
-AlbumArtist: 豚乙女
-Album: エピタフ
-Composer: ZUN
-Track: 02
-Title: 一言芳恩
-Artist: ランコ
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/豚乙女 - エピタフ.cue/track0003
-Range: 388666-565666
-AlbumArtist: 豚乙女
-Album: エピタフ
-Composer: ZUN
-Track: 03
-Title: 桃色ファイブスター
-Artist: ランコ
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/豚乙女 - エピタフ.cue/track0004
-Range: 565666-767200
-AlbumArtist: 豚乙女
-Album: エピタフ
-Composer: ZUN
-Track: 04
-Title: きりり
-Artist: ランコ
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/豚乙女 - エピタフ.cue/track0005
-Range: 767200-968226
-AlbumArtist: 豚乙女
-Album: エピタフ
-Composer: ZUN
-Track: 05
-Title: 垂れ下がる心
-Artist: ランコ
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/豚乙女 - エピタフ.cue/track0006
-Range: 968226-1143506
-AlbumArtist: 豚乙女
-Album: エピタフ
-Composer: ZUN
-Track: 06
-Title: 猫と杓子
-Artist: ランコ
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/豚乙女 - エピタフ.cue/track0007
-Range: 1143506-1414666
-AlbumArtist: 豚乙女
-Album: エピタフ
-Composer: ZUN
-Track: 07
-Title: 白い朝
-Artist: ランコ
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/豚乙女 - エピタフ.cue/track0008
-Range: 1414666-
-AlbumArtist: 豚乙女
-Album: エピタフ
-Composer: ZUN
-Track: 08
-Title: 春の雪
-Artist: ランコ
-Composer: ZUN
-song_end
-709:BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/(01) [ジュクチョー] おてんば切分法.flac
-710:BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/(02) [パプリカ] 東風吹けば雨.flac
-711:BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/(03) [ジュクチョー] レレレのお時間.flac
-712:BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/(04) [パプリカ] とある深夜の奇想曲.flac
-713:BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/(05) [ジュクチョー] 秘密の11th.flac
-714:BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/(06) [パプリカ] つむじ風のサウダージ.flac
-715:BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/(07) [ジュクチョー] 暴走スヌーズ.flac
-716:BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/(08) [パプリカ] ガール・イン・ザ・ミラー.flac
-717:BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/(09) [ジュクチョー] ハンドくんがやってくる.flac
-718:BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/(10) [パプリカ] 揺りかごから墓場まで.flac
-song_begin: BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/豚乙女 - フィンガー21.cue/track0001
-Range: 0-212680
-AlbumArtist: 豚乙女
-Album: フィンガー21
-Composer: ZUN
-Track: 01
-Title: おてんば切分法
-Artist: ジュクチョー
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/豚乙女 - フィンガー21.cue/track0002
-Range: 212680-497813
-AlbumArtist: 豚乙女
-Album: フィンガー21
-Composer: ZUN
-Track: 02
-Title: 東風吹けば雨
-Artist: パプリカ
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/豚乙女 - フィンガー21.cue/track0003
-Range: 497813-702840
-AlbumArtist: 豚乙女
-Album: フィンガー21
-Composer: ZUN
-Track: 03
-Title: レレレのお時間
-Artist: ジュクチョー
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/豚乙女 - フィンガー21.cue/track0004
-Range: 702840-900253
-AlbumArtist: 豚乙女
-Album: フィンガー21
-Composer: ZUN
-Track: 04
-Title: とある深夜の奇想曲
-Artist: パプリカ
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/豚乙女 - フィンガー21.cue/track0005
-Range: 900253-1097253
-AlbumArtist: 豚乙女
-Album: フィンガー21
-Composer: ZUN
-Track: 05
-Title: 秘密の11th
-Artist: ジュクチョー
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/豚乙女 - フィンガー21.cue/track0006
-Range: 1097253-1425040
-AlbumArtist: 豚乙女
-Album: フィンガー21
-Composer: ZUN
-Track: 06
-Title: つむじ風のサウダージ
-Artist: パプリカ
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/豚乙女 - フィンガー21.cue/track0007
-Range: 1425040-1654573
-AlbumArtist: 豚乙女
-Album: フィンガー21
-Composer: ZUN
-Track: 07
-Title: 暴走スヌーズ
-Artist: ジュクチョー
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/豚乙女 - フィンガー21.cue/track0008
-Range: 1654573-1879600
-AlbumArtist: 豚乙女
-Album: フィンガー21
-Composer: ZUN
-Track: 08
-Title: ガール・イン・ザ・ミラー
-Artist: パプリカ
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/豚乙女 - フィンガー21.cue/track0009
-Range: 1879600-2104626
-AlbumArtist: 豚乙女
-Album: フィンガー21
-Composer: ZUN
-Track: 09
-Title: ハンドくんがやってくる
-Artist: ジュクチョー
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/豚乙女 - フィンガー21.cue/track0010
-Range: 2104626-
-AlbumArtist: 豚乙女
-Album: フィンガー21
-Composer: ZUN
-Track: 10
-Title: 揺りかごから墓場まで
-Artist: パプリカ
-Composer: ZUN
-song_end
-729:BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/(01) [ランコ] 欲望の小槌.flac
-730:BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/(02) [ランコ] 悪霊の見た悪夢.flac
-731:BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/(03) [ランコ] リバーサイドパレード.flac
-732:BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/(04) [ランコ] 紅く揺らめく月夜は永く.flac
-733:BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/(05) [ランコ] 嫌々.flac
-734:BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/(06) [ランコ] もう二度と裏切らない.flac
-735:BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/(07) [ランコ] 楽しい戦争のうた.flac
-736:BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/(08) [ランコ] ナニカシラ.flac
-song_begin: BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/豚乙女 - リバーサイドパレード.cue/track0001
-Range: 0-242773
-AlbumArtist: 豚乙女
-Album: リバーサイドパレード
-Composer: ZUN
-Track: 01
-Title: 欲望の小槌
-Artist: ランコ
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/豚乙女 - リバーサイドパレード.cue/track0002
-Range: 242773-450426
-AlbumArtist: 豚乙女
-Album: リバーサイドパレード
-Composer: ZUN
-Track: 02
-Title: 悪霊の見た悪夢
-Artist: ランコ
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/豚乙女 - リバーサイドパレード.cue/track0003
-Range: 450426-672213
-AlbumArtist: 豚乙女
-Album: リバーサイドパレード
-Composer: ZUN
-Track: 03
-Title: リバーサイドパレード
-Artist: ランコ
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/豚乙女 - リバーサイドパレード.cue/track0004
-Range: 672213-911746
-AlbumArtist: 豚乙女
-Album: リバーサイドパレード
-Composer: ZUN
-Track: 04
-Title: 紅く揺らめく月夜は永く
-Artist: ランコ
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/豚乙女 - リバーサイドパレード.cue/track0005
-Range: 911746-1129533
-AlbumArtist: 豚乙女
-Album: リバーサイドパレード
-Composer: ZUN
-Track: 05
-Title: 嫌々
-Artist: ランコ
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/豚乙女 - リバーサイドパレード.cue/track0006
-Range: 1129533-1369560
-AlbumArtist: 豚乙女
-Album: リバーサイドパレード
-Composer: ZUN
-Track: 06
-Title: もう二度と裏切らない
-Artist: ランコ
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/豚乙女 - リバーサイドパレード.cue/track0007
-Range: 1369560-1577466
-AlbumArtist: 豚乙女
-Album: リバーサイドパレード
-Composer: ZUN
-Track: 07
-Title: 楽しい戦争のうた
-Artist: ランコ
-Composer: ZUN
-song_end
-song_begin: BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/豚乙女 - リバーサイドパレード.cue/track0008
-Range: 1577466-
-AlbumArtist: 豚乙女
-Album: リバーサイドパレード
-Composer: ZUN
-Track: 08
-Title: ナニカシラ
-Artist: ランコ
-Composer: ZUN
-song_end
-745:BUTA-OTOME/2019.08.12 獄 [C96]/(01) [豚乙女] 黄泉の風.flac
-746:BUTA-OTOME/2019.08.12 獄 [C96]/(02) [豚乙女] 無力な歌.flac
-747:BUTA-OTOME/2019.08.12 獄 [C96]/(03) [豚乙女] 踊れ.flac
-748:BUTA-OTOME/2019.08.12 獄 [C96]/(04) [豚乙女] 白黒.flac
-749:BUTA-OTOME/2019.08.12 獄 [C96]/(05) [豚乙女] 契り酒(獄ver.).flac
-750:BUTA-OTOME/2019.08.12 獄 [C96]/(06) [豚乙女] FUWAFUWA.flac
-751:BUTA-OTOME/2019.08.12 獄 [C96]/(07) [豚乙女] 二人にとって大切なもの.flac
-752:BUTA-OTOME/2019.08.12 獄 [C96]/(08) [豚乙女] 夜明け声.flac
-753:BUTA-OTOME/2019.12.31 東方猫鍵盤19 [C97]/豚乙女 - 東方猫鍵盤19.flac
+627:BUTA-OTOME/2018.12.30 東方猫鍵盤17 [C95]/豚乙女 - 東方猫鍵盤17.flac
+628:BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/(01) [ランコ] エゴ.flac
+629:BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/(02) [ランコ] 一言芳恩.flac
+630:BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/(03) [ランコ] 桃色ファイブスター.flac
+631:BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/(04) [ランコ] きりり.flac
+632:BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/(05) [ランコ] 垂れ下がる心.flac
+633:BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/(06) [ランコ] 猫と杓子.flac
+634:BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/(07) [ランコ] 白い朝.flac
+635:BUTA-OTOME/2019.05.05 エピタフ [例大祭16]/(08) [ランコ] 春の雪.flac
+636:BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/(01) [ジュクチョー] おてんば切分法.flac
+637:BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/(02) [パプリカ] 東風吹けば雨.flac
+638:BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/(03) [ジュクチョー] レレレのお時間.flac
+639:BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/(04) [パプリカ] とある深夜の奇想曲.flac
+640:BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/(05) [ジュクチョー] 秘密の11th.flac
+641:BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/(06) [パプリカ] つむじ風のサウダージ.flac
+642:BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/(07) [ジュクチョー] 暴走スヌーズ.flac
+643:BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/(08) [パプリカ] ガール・イン・ザ・ミラー.flac
+644:BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/(09) [ジュクチョー] ハンドくんがやってくる.flac
+645:BUTA-OTOME/2019.05.05 フィンガー21 [例大祭16]/(10) [パプリカ] 揺りかごから墓場まで.flac
+646:BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/(01) [ランコ] 欲望の小槌.flac
+647:BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/(02) [ランコ] 悪霊の見た悪夢.flac
+648:BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/(03) [ランコ] リバーサイドパレード.flac
+649:BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/(04) [ランコ] 紅く揺らめく月夜は永く.flac
+650:BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/(05) [ランコ] 嫌々.flac
+651:BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/(06) [ランコ] もう二度と裏切らない.flac
+652:BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/(07) [ランコ] 楽しい戦争のうた.flac
+653:BUTA-OTOME/2019.05.05 リバーサイドパレード [例大祭16]/(08) [ランコ] ナニカシラ.flac
+654:BUTA-OTOME/2019.08.12 獄 [C96]/(01) [豚乙女] 黄泉の風.flac
+655:BUTA-OTOME/2019.08.12 獄 [C96]/(02) [豚乙女] 無力な歌.flac
+656:BUTA-OTOME/2019.08.12 獄 [C96]/(03) [豚乙女] 踊れ.flac
+657:BUTA-OTOME/2019.08.12 獄 [C96]/(04) [豚乙女] 白黒.flac
+658:BUTA-OTOME/2019.08.12 獄 [C96]/(05) [豚乙女] 契り酒(獄ver.).flac
+659:BUTA-OTOME/2019.08.12 獄 [C96]/(06) [豚乙女] FUWAFUWA.flac
+660:BUTA-OTOME/2019.08.12 獄 [C96]/(07) [豚乙女] 二人にとって大切なもの.flac
+661:BUTA-OTOME/2019.08.12 獄 [C96]/(08) [豚乙女] 夜明け声.flac
+662:BUTA-OTOME/2019.12.31 東方猫鍵盤19 [C97]/豚乙女 - 東方猫鍵盤19.flac
 song_begin: BUTA-OTOME/2019.12.31 東方猫鍵盤19 [C97]/豚乙女 - 東方猫鍵盤19.cue/track0001
 Range: 0-215253
-mtime: 1609184868
+mtime: 1609184869
 song_end
 song_begin: BUTA-OTOME/2019.12.31 東方猫鍵盤19 [C97]/豚乙女 - 東方猫鍵盤19.cue/track0002
 Range: 215253-456280
-mtime: 1609184868
+mtime: 1609184869
 song_end
 song_begin: BUTA-OTOME/2019.12.31 東方猫鍵盤19 [C97]/豚乙女 - 東方猫鍵盤19.cue/track0003
 Range: 456280-731306
-mtime: 1609184868
+mtime: 1609184869
 song_end
 song_begin: BUTA-OTOME/2019.12.31 東方猫鍵盤19 [C97]/豚乙女 - 東方猫鍵盤19.cue/track0004
 Range: 731306-972333
-mtime: 1609184868
+mtime: 1609184869
 song_end
 song_begin: BUTA-OTOME/2019.12.31 東方猫鍵盤19 [C97]/豚乙女 - 東方猫鍵盤19.cue/track0005
 Range: 972333-1103360
-mtime: 1609184868
+mtime: 1609184869
 song_end
 song_begin: BUTA-OTOME/2019.12.31 東方猫鍵盤19 [C97]/豚乙女 - 東方猫鍵盤19.cue/track0006
 Range: 1103360-1350386
-mtime: 1609184868
+mtime: 1609184869
 song_end
 song_begin: BUTA-OTOME/2019.12.31 東方猫鍵盤19 [C97]/豚乙女 - 東方猫鍵盤19.cue/track0007
 Range: 1350386-1639413
-mtime: 1609184868
+mtime: 1609184869
 song_end
 song_begin: BUTA-OTOME/2019.12.31 東方猫鍵盤19 [C97]/豚乙女 - 東方猫鍵盤19.cue/track0008
 Range: 1639413-1882440
-mtime: 1609184868
+mtime: 1609184869
 song_end
 song_begin: BUTA-OTOME/2019.12.31 東方猫鍵盤19 [C97]/豚乙女 - 東方猫鍵盤19.cue/track0009
 Range: 1882440-2076226
-mtime: 1609184868
+mtime: 1609184869
 song_end
 song_begin: BUTA-OTOME/2019.12.31 東方猫鍵盤19 [C97]/豚乙女 - 東方猫鍵盤19.cue/track0010
 Range: 2076226-2363786
-mtime: 1609184868
+mtime: 1609184869
 song_end
 song_begin: BUTA-OTOME/2019.12.31 東方猫鍵盤19 [C97]/豚乙女 - 東方猫鍵盤19.cue/track0011
 Range: 2363786-2524813
-mtime: 1609184868
+mtime: 1609184869
 song_end
 song_begin: BUTA-OTOME/2019.12.31 東方猫鍵盤19 [C97]/豚乙女 - 東方猫鍵盤19.cue/track0012
 Range: 2524813-
-mtime: 1609184868
+mtime: 1609184869
 song_end
-766:BUTA-OTOME/2020.03.22 似非葬列指南 [例大祭17]/豚乙女 - 似非葬列指南.flac
-song_begin: BUTA-OTOME/2020.03.22 似非葬列指南 [例大祭17]/豚乙女 - 似非葬列指南.cue/track0001
-Range: 0-228253
-mtime: 1609294484
-song_end
-song_begin: BUTA-OTOME/2020.03.22 似非葬列指南 [例大祭17]/豚乙女 - 似非葬列指南.cue/track0002
-Range: 228253-437480
-mtime: 1609294484
-song_end
-song_begin: BUTA-OTOME/2020.03.22 似非葬列指南 [例大祭17]/豚乙女 - 似非葬列指南.cue/track0003
-Range: 437480-612640
-mtime: 1609294484
-song_end
-song_begin: BUTA-OTOME/2020.03.22 似非葬列指南 [例大祭17]/豚乙女 - 似非葬列指南.cue/track0004
-Range: 612640-752173
-mtime: 1609294484
-song_end
-song_begin: BUTA-OTOME/2020.03.22 似非葬列指南 [例大祭17]/豚乙女 - 似非葬列指南.cue/track0005
-Range: 752173-1007960
-mtime: 1609294484
-song_end
-song_begin: BUTA-OTOME/2020.03.22 似非葬列指南 [例大祭17]/豚乙女 - 似非葬列指南.cue/track0006
-Range: 1007960-1236080
-mtime: 1609294484
-song_end
-song_begin: BUTA-OTOME/2020.03.22 似非葬列指南 [例大祭17]/豚乙女 - 似非葬列指南.cue/track0007
-Range: 1236080-1478493
-mtime: 1609294484
-song_end
-song_begin: BUTA-OTOME/2020.03.22 似非葬列指南 [例大祭17]/豚乙女 - 似非葬列指南.cue/track0008
-Range: 1478493-
-mtime: 1609294484
-song_end
-775:ShibayanRecords/2008.05.11 東方Project+αアレンジのデモCDである。 [M3-08春]/ShibayanRecords - 東方Project+αアレンジのデモCDである。.flac
-song_begin: ShibayanRecords/2008.05.11 東方Project+αアレンジのデモCDである。 [M3-08春]/ShibayanRecords - 東方Project+αアレンジのデモCDである。.cue/track0001
-Range: 0-259346
-Date: 2008.05.11
-AlbumArtist: ShibayanRecords
-Album: 東方Project+αアレンジのデモCDである。
-Track: 01
-Title: 風神少女 ～ eXceed mix
-Artist: Shibayan
-song_end
-song_begin: ShibayanRecords/2008.05.11 東方Project+αアレンジのデモCDである。 [M3-08春]/ShibayanRecords - 東方Project+αアレンジのデモCDである。.cue/track0002
-Range: 259346-783426
-Date: 2008.05.11
-AlbumArtist: ShibayanRecords
-Album: 東方Project+αアレンジのデモCDである。
-Track: 02
-Title: Dream of utopia
-Artist: Shibayan
-song_end
-song_begin: ShibayanRecords/2008.05.11 東方Project+αアレンジのデモCDである。 [M3-08春]/ShibayanRecords - 東方Project+αアレンジのデモCDである。.cue/track0003
-Range: 783426-913160
-Date: 2008.05.11
-AlbumArtist: ShibayanRecords
-Album: 東方Project+αアレンジのデモCDである。
-Track: 03
-Title: Unconfirmed frog fights syndrome
-Artist: Shibayan
-song_end
-song_begin: ShibayanRecords/2008.05.11 東方Project+αアレンジのデモCDである。 [M3-08春]/ShibayanRecords - 東方Project+αアレンジのデモCDである。.cue/track0004
-Range: 913160-
-Date: 2008.05.11
-AlbumArtist: ShibayanRecords
-Album: 東方Project+αアレンジのデモCDである。
-Track: 04
-Title: 今は静かに千年を
-Artist: 831
-song_end
-780:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(01) [3L] スキマパラダイス.flac
-781:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(02) [831] 幻視の娘.flac
-782:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(03) [Shibayan] オーエンハウスへようこそ.flac
-783:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(04) [Shibayan] fof.flac
-784:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(05) [Shibayan] 厄神様が恋した幻想郷.flac
-785:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(06) [Shibayan] night falls.flac
-786:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(07) [Shibayan] 空に輝く流れ星~Meteor of magic.flac
-787:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(07) [Shibayan] 空に輝く流れ星～Meteor of magic.flac
-788:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(08) [Shibayan] Dream of utopia.flac
-789:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(09) [831] 失くした幻視.flac
-790:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(10) [831] 今は静かに千年を.flac
-791:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(11) [Shibayan] 風神少女~eXceed mix.flac
-792:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(11) [Shibayan] 風神少女～eXceed mix.flac
-793:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(12) [Shibayan] Unconfirmed frog fights syndrome.flac
-794:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(13) [831] ○月×日 大きな機械と戦いました。.flac
-795:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(01) [831] かつての廃獄は.flac
-796:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(02) [831] 風通る橋.flac
-797:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(03) [Shibayan] 宴.flac
-798:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(04) [831] 快適風穴ライフ.flac
-799:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(05) [Shibayan] 少女の悟り.flac
-800:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(06) [Shibayan] こゝろの迷宮.flac
-801:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(07) [Shibayan] 銀のヘリクス.flac
-802:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(08) [3L] 地獄の苦輪.flac
-803:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(09) [831] 華は春に還り.flac
-804:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(10) [Shibayan] けろ~りずむ.flac
-805:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(10) [Shibayan] けろ～りずむ.flac
-806:ShibayanRecords/2009.08.15 MyonMyonMyon! [C76]/(01) [Shibayan] MyonMyonMyon.flac
-807:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(01) [Shibayan] この船は藺草の香り.flac
-808:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(02) [深水チエ] 蝶ノ華.flac
-809:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(03) [Shibayan] CRASH ME!.flac
-810:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(04) [3L] アナタガモトメルモノ.flac
-811:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(05) [yana] わたしはこねこ.flac
-812:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(06) [Shibayan] MyonMyonMyon!.flac
-813:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(07) [Shibayan] スノウアスレチツク.flac
-814:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(08) [yana] ちるのりずむ.flac
-815:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(09) [Shibayan] Noise.flac
-816:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(10) [Shibayan] MyonMyonMyon! preCD ReMaster.flac
-817:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(11) [yana] ちるのりずむ Second Master Ver.flac
-818:ShibayanRecords/2010.03.14 [STAL-1001] オトメキュート [例大祭7]/(01) [深水チエ] カラフル・メロウ・メドレー.flac
-819:ShibayanRecords/2010.03.14 [STAL-1001] オトメキュート [例大祭7]/(02) [yana] 彼と彼女とわたしの話.flac
-820:ShibayanRecords/2010.03.14 [STAL-1001] オトメキュート [例大祭7]/(03) [3L] dear Miss Daydreamer.flac
-821:ShibayanRecords/2010.03.14 [STAL-1001] オトメキュート [例大祭7]/(04) [Nissy] 環式行進曲.flac
-822:ShibayanRecords/2010.03.14 [STAL-1001] オトメキュート [例大祭7]/(05) [Shibayan] MyonMyonMyonMyon！.flac
-823:ShibayanRecords/2010.03.14 [STAL-1001] オトメキュート [例大祭7]/(06) [Shibayan] FlipFlop.flac
-824:ShibayanRecords/2010.03.14 [STAL-1001] オトメキュート [例大祭7]/(07) [Shibayan] Interstice of gams.flac
-825:ShibayanRecords/2010.03.14 [STAL-1001] オトメキュート [例大祭7]/(08) [kuma] Dead Body_s Voyage.flac
-826:ShibayanRecords/2010.12.30 [STAL-1002] ココロバイブレーション [C79]/(01) [Shibayan] WAP-WA.flac
-827:ShibayanRecords/2010.12.30 [STAL-1002] ココロバイブレーション [C79]/(02) [℃iel] 秋扇.flac
-828:ShibayanRecords/2010.12.30 [STAL-1002] ココロバイブレーション [C79]/(03) [Shibayan] 荊の城.flac
-829:ShibayanRecords/2010.12.30 [STAL-1002] ココロバイブレーション [C79]/(04) [3L] MyonMyonMyonMyonMyon!.flac
-830:ShibayanRecords/2010.12.30 [STAL-1002] ココロバイブレーション [C79]/(05) [Shibayan] 花のいろは.flac
-831:ShibayanRecords/2010.12.30 [STAL-1002] ココロバイブレーション [C79]/(06) [3L] 月齢11.3のキャンドルマジック.flac
-832:ShibayanRecords/2010.12.30 [STAL-1002] ココロバイブレーション [C79]/(07) [Shibayan] ホシノナミダ.flac
-833:ShibayanRecords/2010.12.30 [STAL-1002] ココロバイブレーション [C79]/(08) [坂上なち] うさぎ大爆発.flac
-834:ShibayanRecords/2011.10.30 [STAL-1101] ムソウマテリアライズ [M3-28]/(01) [Shibayan] 躍る夜雀~Invitation to evening.flac
-835:ShibayanRecords/2011.10.30 [STAL-1101] ムソウマテリアライズ [M3-28]/(01) [Shibayan] 躍る夜雀～Invitation to evening.flac
-836:ShibayanRecords/2011.10.30 [STAL-1101] ムソウマテリアライズ [M3-28]/(02) [Shibayan] 深紅の瞳.flac
-837:ShibayanRecords/2011.10.30 [STAL-1101] ムソウマテリアライズ [M3-28]/(03) [3L] 紅涙にしづむは供人の憂い.flac
-838:ShibayanRecords/2011.10.30 [STAL-1101] ムソウマテリアライズ [M3-28]/(04) [yana] オズネイ・ハマンはもういらない.flac
-839:ShibayanRecords/2011.10.30 [STAL-1101] ムソウマテリアライズ [M3-28]/(05) [Shibayan] エコーゲイト.flac
-840:ShibayanRecords/2011.10.30 [STAL-1101] ムソウマテリアライズ [M3-28]/(06) [坂上なち] シンデレラは魔法使い.flac
-841:ShibayanRecords/2011.10.30 [STAL-1101] ムソウマテリアライズ [M3-28]/(07) [3L] MyonMyonMyonMyonMyonMyon!.flac
-842:ShibayanRecords/2011.10.30 [STAL-1101] ムソウマテリアライズ [M3-28]/(08) [Shibayan] プライベートビジョン.flac
-843:ShibayanRecords/2011.12.30 [STAL-1102] A procura de felicidade [C81]/(01) [深水チエ] レテとふたりのわるいこと.flac
-844:ShibayanRecords/2011.12.30 [STAL-1102] A procura de felicidade [C81]/(02) [だ] meu querido.flac
-845:ShibayanRecords/2011.12.30 [STAL-1102] A procura de felicidade [C81]/(03) [Shibayan] campo de girassol.flac
-846:ShibayanRecords/2011.12.30 [STAL-1102] A procura de felicidade [C81]/(04) [tak] Heart Strings.flac
-847:ShibayanRecords/2012.05.27 [STAL-1201] TOHO BOSSA NOVA [例大祭9]/(01) [坂上なち] フリフリおじょうさま.flac
-848:ShibayanRecords/2012.05.27 [STAL-1201] TOHO BOSSA NOVA [例大祭9]/(02) [liebe] Fraud, I promise.flac
-849:ShibayanRecords/2012.05.27 [STAL-1201] TOHO BOSSA NOVA [例大祭9]/(03) [深水チエ] Je cherche un oiseau.flac
-850:ShibayanRecords/2012.05.27 [STAL-1201] TOHO BOSSA NOVA [例大祭9]/(04) [3L] 迷子のエコー.flac
-851:ShibayanRecords/2012.05.27 [STAL-1201] TOHO BOSSA NOVA [例大祭9]/(05) [鯛の小骨] たまにはSUNを.flac
-852:ShibayanRecords/2012.05.27 [STAL-1201] TOHO BOSSA NOVA [例大祭9]/(06) [cittan] Otemba de Jane-yo.flac
-853:ShibayanRecords/2012.05.27 [STAL-1201] TOHO BOSSA NOVA [例大祭9]/(07) [田辺] Shadow of the boundary.flac
-854:ShibayanRecords/2012.05.27 [STAL-1201] TOHO BOSSA NOVA [例大祭9]/(08) [℃iel] 渡し舟の娘.flac
-855:ShibayanRecords/2012.05.27 [STAL-1201] TOHO BOSSA NOVA [例大祭9]/(09) [だ] Bom dia.flac
-856:ShibayanRecords/2012.05.27 [STAL-1201] TOHO BOSSA NOVA [例大祭9]/(10) [深水チエ] 泡沫と繭.flac
-857:ShibayanRecords/2012.12.30 [STAL-1202] マジコカタストロフィ - Magico Catastrofe [C83]/(01) [Shibayan] 雲がくれにし夜半の月かな.flac
-858:ShibayanRecords/2012.12.30 [STAL-1202] マジコカタストロフィ - Magico Catastrofe [C83]/(02) [yana] Fall in the Dark.flac
-859:ShibayanRecords/2012.12.30 [STAL-1202] マジコカタストロフィ - Magico Catastrofe [C83]/(03) [Shibayan] Curse mind.flac
-860:ShibayanRecords/2012.12.30 [STAL-1202] マジコカタストロフィ - Magico Catastrofe [C83]/(04) [Shibayan] Myoisia.flac
-861:ShibayanRecords/2012.12.30 [STAL-1202] マジコカタストロフィ - Magico Catastrofe [C83]/(05) [ランコ] Clockup Flowers.flac
-862:ShibayanRecords/2012.12.30 [STAL-1202] マジコカタストロフィ - Magico Catastrofe [C83]/(06) [坂上なち] 雨はりらりら.flac
-863:ShibayanRecords/2012.12.30 [STAL-1202] マジコカタストロフィ - Magico Catastrofe [C83]/(07) [Shibayan] いつか見たもの.flac
-864:ShibayanRecords/2012.12.30 [STAL-1202] マジコカタストロフィ - Magico Catastrofe [C83]/(08) [3L] ・－・・ －－－ ・・・－ ・.flac
-865:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(01) [Unity-Gain] Close to your Mind.flac
-866:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(02) [milka] darling, would you catch me.flac
-867:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(03) [10th Avenue Cafetak] Acoustic Image.flac
-868:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(04) [amm] アリスのボサノバ.flac
-869:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(05) [蒼-aoi-] relative relation (it_s all about).flac
-870:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(06) [坂上なち] Etupirka, Angelica.flac
-871:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(07) [LIQU@。] 白玉茶屋in冥土.flac
-872:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(08) [yana] ナルキッソスにさよなら.flac
-873:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(09) [3L] タイニーリトル・アジアンタム.flac
-874:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(10) [だ] Full Moon Samba.flac
-875:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(11) [witch] なんてことない日.flac
-876:ShibayanRecords/2013.12.30 [STAL-1302] RETRO FUTURE GIRLS [C85]/(01) [izna] Super Fine Red.flac
-877:ShibayanRecords/2013.12.30 [STAL-1302] RETRO FUTURE GIRLS [C85]/(02) [milka] レディメイド・シティライフ.flac
-878:ShibayanRecords/2013.12.30 [STAL-1302] RETRO FUTURE GIRLS [C85]/(03) [LAZ] サクラ クラッシュ.flac
-879:ShibayanRecords/2013.12.30 [STAL-1302] RETRO FUTURE GIRLS [C85]/(04) [3L] MyonMyonMyonMyonMyonMyonMyon!.flac
-880:ShibayanRecords/2013.12.30 [STAL-1302] RETRO FUTURE GIRLS [C85]/(05) [坂上なち] とびだせ！バンキッキ.flac
-881:ShibayanRecords/2013.12.30 [STAL-1302] RETRO FUTURE GIRLS [C85]/(06) [inza] Spring Rouge.flac
-882:ShibayanRecords/2013.12.30 [STAL-1302] RETRO FUTURE GIRLS [C85]/(07) [yana] Desert Years.flac
-883:ShibayanRecords/2013.12.30 [STAL-1302] RETRO FUTURE GIRLS [C85]/(08) [itori] Phoenix.flac
-884:ShibayanRecords/2014.05.11 [STAL-1401] TOHO BOSSA NOVA 3 [例大祭11]/(01) [Milka] ring-a-ring.flac
-885:ShibayanRecords/2014.05.11 [STAL-1401] TOHO BOSSA NOVA 3 [例大祭11]/(02) [Shibayan  vocal.nachi] Que ela vem.flac
-886:ShibayanRecords/2014.05.11 [STAL-1401] TOHO BOSSA NOVA 3 [例大祭11]/(03) [ハム] 雨のち青天.flac
-887:ShibayanRecords/2014.05.11 [STAL-1401] TOHO BOSSA NOVA 3 [例大祭11]/(04) [まさみティー] トラブル黒猫漫遊記.flac
-888:ShibayanRecords/2014.05.11 [STAL-1401] TOHO BOSSA NOVA 3 [例大祭11]/(05) [ハム] 恋心ひとつ.flac
-889:ShibayanRecords/2014.05.11 [STAL-1401] TOHO BOSSA NOVA 3 [例大祭11]/(06) [鯛の小骨  Vocal.あさな] 重力FREEの恋.flac
-890:ShibayanRecords/2014.05.11 [STAL-1401] TOHO BOSSA NOVA 3 [例大祭11]/(07) [Shibayan  vocal.yana] Garota de venda medicamento.flac
-891:ShibayanRecords/2014.05.11 [STAL-1401] TOHO BOSSA NOVA 3 [例大祭11]/(08) [Mano  Chorus.蒼-aoi-] ユーレカ.flac
-892:ShibayanRecords/2014.05.11 [STAL-1402] DISCO METRIC [例大祭11]/(01) [3L] ・－・・ －－－ ・・・－ ・(signumii remix).flac
-893:ShibayanRecords/2014.05.11 [STAL-1402] DISCO METRIC [例大祭11]/(02) [nachi] シンデレラは魔法使い(Tomohiko Togashi remix).flac
-894:ShibayanRecords/2014.05.11 [STAL-1402] DISCO METRIC [例大祭11]/(03) [yana] オズネイ・ハマンはもういらない(CYTOKINE remix).flac
-895:ShibayanRecords/2014.05.11 [STAL-1402] DISCO METRIC [例大祭11]/(04) [yana] Fall in the Dark(izna remix).flac
-896:ShibayanRecords/2014.05.11 [STAL-1402] DISCO METRIC [例大祭11]/(05) [yana] Desert years(Nhato remix).flac
-897:ShibayanRecords/2014.05.11 [STAL-1402] DISCO METRIC [例大祭11]/(06) [yana] Desert years(LAZ remix).flac
-898:ShibayanRecords/2014.05.11 [STAL-1402] DISCO METRIC [例大祭11]/(07) [nachi] うさぎ大爆発(D.watt remix).flac
-899:ShibayanRecords/2014.12.29 [STAL-1403] Adrastea [C87]/(01) [Shibayan] Cosmic flower.flac
-900:ShibayanRecords/2014.12.29 [STAL-1403] Adrastea [C87]/(02) [Shibayan] AURORA.flac
-901:ShibayanRecords/2014.12.29 [STAL-1403] Adrastea [C87]/(03) [市松椿] SUPER MOON.flac
-902:ShibayanRecords/2014.12.29 [STAL-1403] Adrastea [C87]/(04) [Shibayan] スイングバイ.flac
-903:ShibayanRecords/2014.12.29 [STAL-1403] Adrastea [C87]/(05) [3L] モノクロ・インザナイト.flac
-904:ShibayanRecords/2014.12.29 [STAL-1403] Adrastea [C87]/(06) [nachi] 賢者の極北.flac
-905:ShibayanRecords/2014.12.29 [STAL-1403] Adrastea [C87]/(07) [Shibayan] MyonMyonMyonMyonMyonMyonMyonMyon!.flac
-906:ShibayanRecords/2014.12.29 [STAL-1403] Adrastea [C87]/(08) [milka] クライム・ストーリーときみのウソ.flac
-907:ShibayanRecords/2015.05.10 [STAL-1501] TOHO BOSSA NOVA 4 [例大祭12]/(01) [3L] Don_t let me down.flac
-908:ShibayanRecords/2015.05.10 [STAL-1501] TOHO BOSSA NOVA 4 [例大祭12]/(02) [ハム] サクラモチ.flac
-909:ShibayanRecords/2015.05.10 [STAL-1501] TOHO BOSSA NOVA 4 [例大祭12]/(03) [まさみティー] お花畑で週末.flac
-910:ShibayanRecords/2015.05.10 [STAL-1501] TOHO BOSSA NOVA 4 [例大祭12]/(04) [nachi] Certifique Flan..flac
-911:ShibayanRecords/2015.05.10 [STAL-1501] TOHO BOSSA NOVA 4 [例大祭12]/(05) [×1-1+1] stay by my side ~ 素直のままで.flac
-912:ShibayanRecords/2015.05.10 [STAL-1501] TOHO BOSSA NOVA 4 [例大祭12]/(05) [×1-1+1] stay by my side ～ 素直のままで.flac
-913:ShibayanRecords/2015.05.10 [STAL-1501] TOHO BOSSA NOVA 4 [例大祭12]/(06) [ハム] ペストリカ.flac
-914:ShibayanRecords/2015.05.10 [STAL-1501] TOHO BOSSA NOVA 4 [例大祭12]/(07) [鯛の小骨] 落火流水.flac
-915:ShibayanRecords/2015.05.10 [STAL-1501] TOHO BOSSA NOVA 4 [例大祭12]/(08) [milka] 星をつむぐよ.flac
-916:ShibayanRecords/2015.11.01 [STAL-1502] Sedecim [東方紅楼夢11]/(01) [nachi] 賢者の極北(Nhato Remix).flac
-917:ShibayanRecords/2015.11.01 [STAL-1502] Sedecim [東方紅楼夢11]/(02) [3L] 地獄の苦輪(Overlord Remix).flac
-918:ShibayanRecords/2015.11.01 [STAL-1502] Sedecim [東方紅楼夢11]/(03) [nachi] とびだせ！バンキッキ(Casual Killer remix).flac
-919:ShibayanRecords/2015.11.01 [STAL-1502] Sedecim [東方紅楼夢11]/(04) [yana] オズネイ・ハマンはもういらない(Eon Remix).flac
-920:ShibayanRecords/2015.11.01 [STAL-1502] Sedecim [東方紅楼夢11]/(05) [ランコ] Clockup Flowers(izna remix).flac
-921:ShibayanRecords/2015.11.01 [STAL-1502] Sedecim [東方紅楼夢11]/(06) [nachi] とびだせ！バンキッキ(D.watt remix).flac
-922:ShibayanRecords/2015.11.01 [STAL-1502] Sedecim [東方紅楼夢11]/(07) [3L] アナタガモトメルモノ(LAZ remix).flac
-923:ShibayanRecords/2015.11.01 [STAL-1502] Sedecim [東方紅楼夢11]/(08) [3L] モノクロ・インザナイト(CYTOKINE remix).flac
-924:ShibayanRecords/2015.11.01 [STAL-1502] Sedecim [東方紅楼夢11]/(09) [yana] Fall in the Dark(signumii remix).flac
-925:ShibayanRecords/2016.05.08 [STAL-1601] TOHO BOSSANOVA 5 [例大祭13]/(01) [まさみティー]  町中ドライブ [デザイアドライブ] .flac
-926:ShibayanRecords/2016.05.08 [STAL-1601] TOHO BOSSANOVA 5 [例大祭13]/(02) [Shibayan] 春のおとずれ [東方妖々夢 ~Ancient Temple] .flac
-927:ShibayanRecords/2016.05.08 [STAL-1601] TOHO BOSSANOVA 5 [例大祭13]/(02) [Shibayan] 春のおとずれ [東方妖々夢 ～Ancient Temple] .flac
-928:ShibayanRecords/2016.05.08 [STAL-1601] TOHO BOSSANOVA 5 [例大祭13]/(07) [鯛の小骨]  サグメさま３分クッキング [逆転するホイールオブフォーチューン _ 凍り付いた永遠の都] .flac
-929:ShibayanRecords/2016.05.08 [STAL-1601] TOHO BOSSANOVA 5 [例大祭13]/(03) [ハム] ヴェルニゲローデの車窓から [上海紅茶館　~ Chinese Tea] .flac
-930:ShibayanRecords/2016.05.08 [STAL-1601] TOHO BOSSANOVA 5 [例大祭13]/(03) [ハム] ヴェルニゲローデの車窓から [上海紅茶館　～ Chinese Tea] .flac
-931:ShibayanRecords/2016.05.08 [STAL-1601] TOHO BOSSANOVA 5 [例大祭13]/(04) [milka] 黄昏は真珠色 [大神神話伝] .flac
-932:ShibayanRecords/2016.05.08 [STAL-1601] TOHO BOSSANOVA 5 [例大祭13]/(05) [cittan(signumii)]  Give up on it [デザイアドライブ] .flac
-933:ShibayanRecords/2016.05.08 [STAL-1601] TOHO BOSSANOVA 5 [例大祭13]/(06) [だ] marisanha [恋色マスタースパーク].flac
-934:ShibayanRecords/2017.05.07 [STAL-1701] TOHO BOSSA NOVA 6 [例大祭14]/(01) [まさみティー] 慰めの永遠亭.flac
-935:ShibayanRecords/2017.05.07 [STAL-1701] TOHO BOSSA NOVA 6 [例大祭14]/(02) [milka] 風舞う春に.flac
-936:ShibayanRecords/2017.05.07 [STAL-1701] TOHO BOSSA NOVA 6 [例大祭14]/(03) [だ] Céu e flores e da cidade.flac
-937:ShibayanRecords/2017.05.07 [STAL-1701] TOHO BOSSA NOVA 6 [例大祭14]/(04) [Shibayan  Vocal.nachi] もちもちさんぽみち.flac
-938:ShibayanRecords/2017.05.07 [STAL-1701] TOHO BOSSA NOVA 6 [例大祭14]/(05) [鯛の小骨] 風の滝.flac
-939:ShibayanRecords/2017.05.07 [STAL-1701] TOHO BOSSA NOVA 6 [例大祭14]/(06) [Unity-Gain-6dB+1] Scarlet Samba.flac
-940:ShibayanRecords/2017.05.07 [STAL-1701] TOHO BOSSA NOVA 6 [例大祭14]/(07) [LEVIATH ft. Goodmorning Guitar _ 齋藤庸介] Highness is the law.flac
-941:ShibayanRecords/2017.05.07 [STAL-1701] TOHO BOSSA NOVA 6 [例大祭14]/(08) [ハム] カモミール気分な昼下がり.flac
-942:ShibayanRecords/2017.12.29 [STAL-1702] Solar [C93]/ShibayanRecords - Solar.flac
+675:BUTA-OTOME/2020.03.22 似非葬列指南 [例大祭17]/豚乙女 - 似非葬列指南.flac
+676:ShibayanRecords/2008.05.11 東方Project+αアレンジのデモCDである。 [M3-08春]/ShibayanRecords - 東方Project+αアレンジのデモCDである。.flac
+677:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(01) [3L] スキマパラダイス.flac
+678:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(02) [831] 幻視の娘.flac
+679:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(03) [Shibayan] オーエンハウスへようこそ.flac
+680:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(04) [Shibayan] fof.flac
+681:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(05) [Shibayan] 厄神様が恋した幻想郷.flac
+682:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(06) [Shibayan] night falls.flac
+683:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(07) [Shibayan] 空に輝く流れ星~Meteor of magic.flac
+684:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(07) [Shibayan] 空に輝く流れ星～Meteor of magic.flac
+685:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(08) [Shibayan] Dream of utopia.flac
+686:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(09) [831] 失くした幻視.flac
+687:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(10) [831] 今は静かに千年を.flac
+688:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(11) [Shibayan] 風神少女~eXceed mix.flac
+689:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(11) [Shibayan] 風神少女～eXceed mix.flac
+690:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(12) [Shibayan] Unconfirmed frog fights syndrome.flac
+691:ShibayanRecords/2008.08.16 [STAL-0801] Assortment of sense [C74]/(13) [831] ○月×日 大きな機械と戦いました。.flac
+692:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(01) [831] かつての廃獄は.flac
+693:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(02) [831] 風通る橋.flac
+694:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(03) [Shibayan] 宴.flac
+695:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(04) [831] 快適風穴ライフ.flac
+696:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(05) [Shibayan] 少女の悟り.flac
+697:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(06) [Shibayan] こゝろの迷宮.flac
+698:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(07) [Shibayan] 銀のヘリクス.flac
+699:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(08) [3L] 地獄の苦輪.flac
+700:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(09) [831] 華は春に還り.flac
+701:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(10) [Shibayan] けろ~りずむ.flac
+702:ShibayanRecords/2009.03.08 [STAL-0901] Crystal Stone [例大祭6]/(10) [Shibayan] けろ～りずむ.flac
+703:ShibayanRecords/2009.08.15 MyonMyonMyon! [C76]/(01) [Shibayan] MyonMyonMyon.flac
+704:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(01) [Shibayan] この船は藺草の香り.flac
+705:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(02) [深水チエ] 蝶ノ華.flac
+706:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(03) [Shibayan] CRASH ME!.flac
+707:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(04) [3L] アナタガモトメルモノ.flac
+708:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(05) [yana] わたしはこねこ.flac
+709:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(06) [Shibayan] MyonMyonMyon!.flac
+710:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(07) [Shibayan] スノウアスレチツク.flac
+711:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(08) [yana] ちるのりずむ.flac
+712:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(09) [Shibayan] Noise.flac
+713:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(10) [Shibayan] MyonMyonMyon! preCD ReMaster.flac
+714:ShibayanRecords/2009.10.11 [STAL-0902] キセキ☆インパルス Emotional Feedback [M3-09秋]/(11) [yana] ちるのりずむ Second Master Ver.flac
+715:ShibayanRecords/2010.03.14 [STAL-1001] オトメキュート [例大祭7]/(01) [深水チエ] カラフル・メロウ・メドレー.flac
+716:ShibayanRecords/2010.03.14 [STAL-1001] オトメキュート [例大祭7]/(02) [yana] 彼と彼女とわたしの話.flac
+717:ShibayanRecords/2010.03.14 [STAL-1001] オトメキュート [例大祭7]/(03) [3L] dear Miss Daydreamer.flac
+718:ShibayanRecords/2010.03.14 [STAL-1001] オトメキュート [例大祭7]/(04) [Nissy] 環式行進曲.flac
+719:ShibayanRecords/2010.03.14 [STAL-1001] オトメキュート [例大祭7]/(05) [Shibayan] MyonMyonMyonMyon！.flac
+720:ShibayanRecords/2010.03.14 [STAL-1001] オトメキュート [例大祭7]/(06) [Shibayan] FlipFlop.flac
+721:ShibayanRecords/2010.03.14 [STAL-1001] オトメキュート [例大祭7]/(07) [Shibayan] Interstice of gams.flac
+722:ShibayanRecords/2010.03.14 [STAL-1001] オトメキュート [例大祭7]/(08) [kuma] Dead Body_s Voyage.flac
+723:ShibayanRecords/2010.12.30 [STAL-1002] ココロバイブレーション [C79]/(01) [Shibayan] WAP-WA.flac
+724:ShibayanRecords/2010.12.30 [STAL-1002] ココロバイブレーション [C79]/(02) [℃iel] 秋扇.flac
+725:ShibayanRecords/2010.12.30 [STAL-1002] ココロバイブレーション [C79]/(03) [Shibayan] 荊の城.flac
+726:ShibayanRecords/2010.12.30 [STAL-1002] ココロバイブレーション [C79]/(04) [3L] MyonMyonMyonMyonMyon!.flac
+727:ShibayanRecords/2010.12.30 [STAL-1002] ココロバイブレーション [C79]/(05) [Shibayan] 花のいろは.flac
+728:ShibayanRecords/2010.12.30 [STAL-1002] ココロバイブレーション [C79]/(06) [3L] 月齢11.3のキャンドルマジック.flac
+729:ShibayanRecords/2010.12.30 [STAL-1002] ココロバイブレーション [C79]/(07) [Shibayan] ホシノナミダ.flac
+730:ShibayanRecords/2010.12.30 [STAL-1002] ココロバイブレーション [C79]/(08) [坂上なち] うさぎ大爆発.flac
+731:ShibayanRecords/2011.10.30 [STAL-1101] ムソウマテリアライズ [M3-28]/(01) [Shibayan] 躍る夜雀~Invitation to evening.flac
+732:ShibayanRecords/2011.10.30 [STAL-1101] ムソウマテリアライズ [M3-28]/(01) [Shibayan] 躍る夜雀～Invitation to evening.flac
+733:ShibayanRecords/2011.10.30 [STAL-1101] ムソウマテリアライズ [M3-28]/(02) [Shibayan] 深紅の瞳.flac
+734:ShibayanRecords/2011.10.30 [STAL-1101] ムソウマテリアライズ [M3-28]/(03) [3L] 紅涙にしづむは供人の憂い.flac
+735:ShibayanRecords/2011.10.30 [STAL-1101] ムソウマテリアライズ [M3-28]/(04) [yana] オズネイ・ハマンはもういらない.flac
+736:ShibayanRecords/2011.10.30 [STAL-1101] ムソウマテリアライズ [M3-28]/(05) [Shibayan] エコーゲイト.flac
+737:ShibayanRecords/2011.10.30 [STAL-1101] ムソウマテリアライズ [M3-28]/(06) [坂上なち] シンデレラは魔法使い.flac
+738:ShibayanRecords/2011.10.30 [STAL-1101] ムソウマテリアライズ [M3-28]/(07) [3L] MyonMyonMyonMyonMyonMyon!.flac
+739:ShibayanRecords/2011.10.30 [STAL-1101] ムソウマテリアライズ [M3-28]/(08) [Shibayan] プライベートビジョン.flac
+740:ShibayanRecords/2011.12.30 [STAL-1102] A procura de felicidade [C81]/(01) [深水チエ] レテとふたりのわるいこと.flac
+741:ShibayanRecords/2011.12.30 [STAL-1102] A procura de felicidade [C81]/(02) [だ] meu querido.flac
+742:ShibayanRecords/2011.12.30 [STAL-1102] A procura de felicidade [C81]/(03) [Shibayan] campo de girassol.flac
+743:ShibayanRecords/2011.12.30 [STAL-1102] A procura de felicidade [C81]/(04) [tak] Heart Strings.flac
+744:ShibayanRecords/2012.05.27 [STAL-1201] TOHO BOSSA NOVA [例大祭9]/(01) [坂上なち] フリフリおじょうさま.flac
+745:ShibayanRecords/2012.05.27 [STAL-1201] TOHO BOSSA NOVA [例大祭9]/(02) [liebe] Fraud, I promise.flac
+746:ShibayanRecords/2012.05.27 [STAL-1201] TOHO BOSSA NOVA [例大祭9]/(03) [深水チエ] Je cherche un oiseau.flac
+747:ShibayanRecords/2012.05.27 [STAL-1201] TOHO BOSSA NOVA [例大祭9]/(04) [3L] 迷子のエコー.flac
+748:ShibayanRecords/2012.05.27 [STAL-1201] TOHO BOSSA NOVA [例大祭9]/(05) [鯛の小骨] たまにはSUNを.flac
+749:ShibayanRecords/2012.05.27 [STAL-1201] TOHO BOSSA NOVA [例大祭9]/(06) [cittan] Otemba de Jane-yo.flac
+750:ShibayanRecords/2012.05.27 [STAL-1201] TOHO BOSSA NOVA [例大祭9]/(07) [田辺] Shadow of the boundary.flac
+751:ShibayanRecords/2012.05.27 [STAL-1201] TOHO BOSSA NOVA [例大祭9]/(08) [℃iel] 渡し舟の娘.flac
+752:ShibayanRecords/2012.05.27 [STAL-1201] TOHO BOSSA NOVA [例大祭9]/(09) [だ] Bom dia.flac
+753:ShibayanRecords/2012.05.27 [STAL-1201] TOHO BOSSA NOVA [例大祭9]/(10) [深水チエ] 泡沫と繭.flac
+754:ShibayanRecords/2012.12.30 [STAL-1202] マジコカタストロフィ - Magico Catastrofe [C83]/(01) [Shibayan] 雲がくれにし夜半の月かな.flac
+755:ShibayanRecords/2012.12.30 [STAL-1202] マジコカタストロフィ - Magico Catastrofe [C83]/(02) [yana] Fall in the Dark.flac
+756:ShibayanRecords/2012.12.30 [STAL-1202] マジコカタストロフィ - Magico Catastrofe [C83]/(03) [Shibayan] Curse mind.flac
+757:ShibayanRecords/2012.12.30 [STAL-1202] マジコカタストロフィ - Magico Catastrofe [C83]/(04) [Shibayan] Myoisia.flac
+758:ShibayanRecords/2012.12.30 [STAL-1202] マジコカタストロフィ - Magico Catastrofe [C83]/(05) [ランコ] Clockup Flowers.flac
+759:ShibayanRecords/2012.12.30 [STAL-1202] マジコカタストロフィ - Magico Catastrofe [C83]/(06) [坂上なち] 雨はりらりら.flac
+760:ShibayanRecords/2012.12.30 [STAL-1202] マジコカタストロフィ - Magico Catastrofe [C83]/(07) [Shibayan] いつか見たもの.flac
+761:ShibayanRecords/2012.12.30 [STAL-1202] マジコカタストロフィ - Magico Catastrofe [C83]/(08) [3L] ・－・・ －－－ ・・・－ ・.flac
+762:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(01) [Unity-Gain] Close to your Mind.flac
+763:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(02) [milka] darling, would you catch me.flac
+764:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(03) [10th Avenue Cafetak] Acoustic Image.flac
+765:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(04) [amm] アリスのボサノバ.flac
+766:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(05) [蒼-aoi-] relative relation (it_s all about).flac
+767:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(06) [坂上なち] Etupirka, Angelica.flac
+768:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(07) [LIQU@。] 白玉茶屋in冥土.flac
+769:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(08) [yana] ナルキッソスにさよなら.flac
+770:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(09) [3L] タイニーリトル・アジアンタム.flac
+771:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(10) [だ] Full Moon Samba.flac
+772:ShibayanRecords/2013.05.26 [STAL-1301] TOHO BOSSA NOVA 2 [例大祭10]/(11) [witch] なんてことない日.flac
+773:ShibayanRecords/2013.12.30 [STAL-1302] RETRO FUTURE GIRLS [C85]/(01) [izna] Super Fine Red.flac
+774:ShibayanRecords/2013.12.30 [STAL-1302] RETRO FUTURE GIRLS [C85]/(02) [milka] レディメイド・シティライフ.flac
+775:ShibayanRecords/2013.12.30 [STAL-1302] RETRO FUTURE GIRLS [C85]/(03) [LAZ] サクラ クラッシュ.flac
+776:ShibayanRecords/2013.12.30 [STAL-1302] RETRO FUTURE GIRLS [C85]/(04) [3L] MyonMyonMyonMyonMyonMyonMyon!.flac
+777:ShibayanRecords/2013.12.30 [STAL-1302] RETRO FUTURE GIRLS [C85]/(05) [坂上なち] とびだせ！バンキッキ.flac
+778:ShibayanRecords/2013.12.30 [STAL-1302] RETRO FUTURE GIRLS [C85]/(06) [inza] Spring Rouge.flac
+779:ShibayanRecords/2013.12.30 [STAL-1302] RETRO FUTURE GIRLS [C85]/(07) [yana] Desert Years.flac
+780:ShibayanRecords/2013.12.30 [STAL-1302] RETRO FUTURE GIRLS [C85]/(08) [itori] Phoenix.flac
+781:ShibayanRecords/2014.05.11 [STAL-1401] TOHO BOSSA NOVA 3 [例大祭11]/(01) [Milka] ring-a-ring.flac
+782:ShibayanRecords/2014.05.11 [STAL-1401] TOHO BOSSA NOVA 3 [例大祭11]/(02) [Shibayan  vocal.nachi] Que ela vem.flac
+783:ShibayanRecords/2014.05.11 [STAL-1401] TOHO BOSSA NOVA 3 [例大祭11]/(03) [ハム] 雨のち青天.flac
+784:ShibayanRecords/2014.05.11 [STAL-1401] TOHO BOSSA NOVA 3 [例大祭11]/(04) [まさみティー] トラブル黒猫漫遊記.flac
+785:ShibayanRecords/2014.05.11 [STAL-1401] TOHO BOSSA NOVA 3 [例大祭11]/(05) [ハム] 恋心ひとつ.flac
+786:ShibayanRecords/2014.05.11 [STAL-1401] TOHO BOSSA NOVA 3 [例大祭11]/(06) [鯛の小骨  Vocal.あさな] 重力FREEの恋.flac
+787:ShibayanRecords/2014.05.11 [STAL-1401] TOHO BOSSA NOVA 3 [例大祭11]/(07) [Shibayan  vocal.yana] Garota de venda medicamento.flac
+788:ShibayanRecords/2014.05.11 [STAL-1401] TOHO BOSSA NOVA 3 [例大祭11]/(08) [Mano  Chorus.蒼-aoi-] ユーレカ.flac
+789:ShibayanRecords/2014.05.11 [STAL-1402] DISCO METRIC [例大祭11]/(01) [3L] ・－・・ －－－ ・・・－ ・(signumii remix).flac
+790:ShibayanRecords/2014.05.11 [STAL-1402] DISCO METRIC [例大祭11]/(02) [nachi] シンデレラは魔法使い(Tomohiko Togashi remix).flac
+791:ShibayanRecords/2014.05.11 [STAL-1402] DISCO METRIC [例大祭11]/(03) [yana] オズネイ・ハマンはもういらない(CYTOKINE remix).flac
+792:ShibayanRecords/2014.05.11 [STAL-1402] DISCO METRIC [例大祭11]/(04) [yana] Fall in the Dark(izna remix).flac
+793:ShibayanRecords/2014.05.11 [STAL-1402] DISCO METRIC [例大祭11]/(05) [yana] Desert years(Nhato remix).flac
+794:ShibayanRecords/2014.05.11 [STAL-1402] DISCO METRIC [例大祭11]/(06) [yana] Desert years(LAZ remix).flac
+795:ShibayanRecords/2014.05.11 [STAL-1402] DISCO METRIC [例大祭11]/(07) [nachi] うさぎ大爆発(D.watt remix).flac
+796:ShibayanRecords/2014.12.29 [STAL-1403] Adrastea [C87]/(01) [Shibayan] Cosmic flower.flac
+797:ShibayanRecords/2014.12.29 [STAL-1403] Adrastea [C87]/(02) [Shibayan] AURORA.flac
+798:ShibayanRecords/2014.12.29 [STAL-1403] Adrastea [C87]/(03) [市松椿] SUPER MOON.flac
+799:ShibayanRecords/2014.12.29 [STAL-1403] Adrastea [C87]/(04) [Shibayan] スイングバイ.flac
+800:ShibayanRecords/2014.12.29 [STAL-1403] Adrastea [C87]/(05) [3L] モノクロ・インザナイト.flac
+801:ShibayanRecords/2014.12.29 [STAL-1403] Adrastea [C87]/(06) [nachi] 賢者の極北.flac
+802:ShibayanRecords/2014.12.29 [STAL-1403] Adrastea [C87]/(07) [Shibayan] MyonMyonMyonMyonMyonMyonMyonMyon!.flac
+803:ShibayanRecords/2014.12.29 [STAL-1403] Adrastea [C87]/(08) [milka] クライム・ストーリーときみのウソ.flac
+804:ShibayanRecords/2015.05.10 [STAL-1501] TOHO BOSSA NOVA 4 [例大祭12]/(01) [3L] Don_t let me down.flac
+805:ShibayanRecords/2015.05.10 [STAL-1501] TOHO BOSSA NOVA 4 [例大祭12]/(02) [ハム] サクラモチ.flac
+806:ShibayanRecords/2015.05.10 [STAL-1501] TOHO BOSSA NOVA 4 [例大祭12]/(03) [まさみティー] お花畑で週末.flac
+807:ShibayanRecords/2015.05.10 [STAL-1501] TOHO BOSSA NOVA 4 [例大祭12]/(04) [nachi] Certifique Flan..flac
+808:ShibayanRecords/2015.05.10 [STAL-1501] TOHO BOSSA NOVA 4 [例大祭12]/(05) [×1-1+1] stay by my side ~ 素直のままで.flac
+809:ShibayanRecords/2015.05.10 [STAL-1501] TOHO BOSSA NOVA 4 [例大祭12]/(05) [×1-1+1] stay by my side ～ 素直のままで.flac
+810:ShibayanRecords/2015.05.10 [STAL-1501] TOHO BOSSA NOVA 4 [例大祭12]/(06) [ハム] ペストリカ.flac
+811:ShibayanRecords/2015.05.10 [STAL-1501] TOHO BOSSA NOVA 4 [例大祭12]/(07) [鯛の小骨] 落火流水.flac
+812:ShibayanRecords/2015.05.10 [STAL-1501] TOHO BOSSA NOVA 4 [例大祭12]/(08) [milka] 星をつむぐよ.flac
+813:ShibayanRecords/2015.11.01 [STAL-1502] Sedecim [東方紅楼夢11]/(01) [nachi] 賢者の極北(Nhato Remix).flac
+814:ShibayanRecords/2015.11.01 [STAL-1502] Sedecim [東方紅楼夢11]/(02) [3L] 地獄の苦輪(Overlord Remix).flac
+815:ShibayanRecords/2015.11.01 [STAL-1502] Sedecim [東方紅楼夢11]/(03) [nachi] とびだせ！バンキッキ(Casual Killer remix).flac
+816:ShibayanRecords/2015.11.01 [STAL-1502] Sedecim [東方紅楼夢11]/(04) [yana] オズネイ・ハマンはもういらない(Eon Remix).flac
+817:ShibayanRecords/2015.11.01 [STAL-1502] Sedecim [東方紅楼夢11]/(05) [ランコ] Clockup Flowers(izna remix).flac
+818:ShibayanRecords/2015.11.01 [STAL-1502] Sedecim [東方紅楼夢11]/(06) [nachi] とびだせ！バンキッキ(D.watt remix).flac
+819:ShibayanRecords/2015.11.01 [STAL-1502] Sedecim [東方紅楼夢11]/(07) [3L] アナタガモトメルモノ(LAZ remix).flac
+820:ShibayanRecords/2015.11.01 [STAL-1502] Sedecim [東方紅楼夢11]/(08) [3L] モノクロ・インザナイト(CYTOKINE remix).flac
+821:ShibayanRecords/2015.11.01 [STAL-1502] Sedecim [東方紅楼夢11]/(09) [yana] Fall in the Dark(signumii remix).flac
+822:ShibayanRecords/2016.05.08 [STAL-1601] TOHO BOSSANOVA 5 [例大祭13]/(01) [まさみティー]  町中ドライブ [デザイアドライブ] .flac
+823:ShibayanRecords/2016.05.08 [STAL-1601] TOHO BOSSANOVA 5 [例大祭13]/(02) [Shibayan] 春のおとずれ [東方妖々夢 ~Ancient Temple] .flac
+824:ShibayanRecords/2016.05.08 [STAL-1601] TOHO BOSSANOVA 5 [例大祭13]/(02) [Shibayan] 春のおとずれ [東方妖々夢 ～Ancient Temple] .flac
+825:ShibayanRecords/2016.05.08 [STAL-1601] TOHO BOSSANOVA 5 [例大祭13]/(07) [鯛の小骨]  サグメさま３分クッキング [逆転するホイールオブフォーチューン _ 凍り付いた永遠の都] .flac
+826:ShibayanRecords/2016.05.08 [STAL-1601] TOHO BOSSANOVA 5 [例大祭13]/(03) [ハム] ヴェルニゲローデの車窓から [上海紅茶館　~ Chinese Tea] .flac
+827:ShibayanRecords/2016.05.08 [STAL-1601] TOHO BOSSANOVA 5 [例大祭13]/(03) [ハム] ヴェルニゲローデの車窓から [上海紅茶館　～ Chinese Tea] .flac
+828:ShibayanRecords/2016.05.08 [STAL-1601] TOHO BOSSANOVA 5 [例大祭13]/(04) [milka] 黄昏は真珠色 [大神神話伝] .flac
+829:ShibayanRecords/2016.05.08 [STAL-1601] TOHO BOSSANOVA 5 [例大祭13]/(05) [cittan(signumii)]  Give up on it [デザイアドライブ] .flac
+830:ShibayanRecords/2016.05.08 [STAL-1601] TOHO BOSSANOVA 5 [例大祭13]/(06) [だ] marisanha [恋色マスタースパーク].flac
+831:ShibayanRecords/2017.05.07 [STAL-1701] TOHO BOSSA NOVA 6 [例大祭14]/(01) [まさみティー] 慰めの永遠亭.flac
+832:ShibayanRecords/2017.05.07 [STAL-1701] TOHO BOSSA NOVA 6 [例大祭14]/(02) [milka] 風舞う春に.flac
+833:ShibayanRecords/2017.05.07 [STAL-1701] TOHO BOSSA NOVA 6 [例大祭14]/(03) [だ] Céu e flores e da cidade.flac
+834:ShibayanRecords/2017.05.07 [STAL-1701] TOHO BOSSA NOVA 6 [例大祭14]/(04) [Shibayan  Vocal.nachi] もちもちさんぽみち.flac
+835:ShibayanRecords/2017.05.07 [STAL-1701] TOHO BOSSA NOVA 6 [例大祭14]/(05) [鯛の小骨] 風の滝.flac
+836:ShibayanRecords/2017.05.07 [STAL-1701] TOHO BOSSA NOVA 6 [例大祭14]/(06) [Unity-Gain-6dB+1] Scarlet Samba.flac
+837:ShibayanRecords/2017.05.07 [STAL-1701] TOHO BOSSA NOVA 6 [例大祭14]/(07) [LEVIATH ft. Goodmorning Guitar _ 齋藤庸介] Highness is the law.flac
+838:ShibayanRecords/2017.05.07 [STAL-1701] TOHO BOSSA NOVA 6 [例大祭14]/(08) [ハム] カモミール気分な昼下がり.flac
+839:ShibayanRecords/2017.12.29 [STAL-1702] Solar [C93]/ShibayanRecords - Solar.flac
 song_begin: ShibayanRecords/2017.12.29 [STAL-1702] Solar [C93]/ShibayanRecords - Solar.cue/track0001
 Range: 0-385613
 mtime: 1610139880
@@ -1880,24 +1200,23 @@ song_begin: ShibayanRecords/2017.12.29 [STAL-1702] Solar [C93]/ShibayanRecords -
 Range: 2934826-
 mtime: 1610139880
 song_end
-952:ShibayanRecords/2018.05.06 [STAL-1801] TOHO BOSSA NOVA 7 [例大祭15]/(01) [ハム] 木漏れ日の書斎から.flac
-953:ShibayanRecords/2018.05.06 [STAL-1801] TOHO BOSSA NOVA 7 [例大祭15]/(02) [nachi] fluindo.flac
-954:ShibayanRecords/2018.05.06 [STAL-1801] TOHO BOSSA NOVA 7 [例大祭15]/(03) [milka] solitary girl.flac
-955:ShibayanRecords/2018.05.06 [STAL-1801] TOHO BOSSA NOVA 7 [例大祭15]/(04) [signum] Read Some Romance.flac
-956:ShibayanRecords/2018.05.06 [STAL-1801] TOHO BOSSA NOVA 7 [例大祭15]/(05) [Unity-Gain-6dB+1] おひるやすみの絵宇宙話.flac
-957:ShibayanRecords/2018.05.06 [STAL-1801] TOHO BOSSA NOVA 7 [例大祭15]/(06) [まさみティー] ムーンライト・アニマルトレイル.flac
-958:ShibayanRecords/2018.05.06 [STAL-1801] TOHO BOSSA NOVA 7 [例大祭15]/(07) [鯛の小骨] Girls loved by breeze.flac
-959:ShibayanRecords/2018.05.06 [STAL-1801] TOHO BOSSA NOVA 7 [例大祭15]/(08) [3L] Black lily Princess.flac
-960:ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/(01) [milka] soda pop ice cream.flac
-961:ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/(02) [鯛の小骨] Ghost flight in the sky.flac
-962:ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/(03) [ハム] 流星をくぐって.flac
-963:ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/(04) [3L] Love me do.flac
-964:ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/(05) [signum_ii，Irus，Yousuke Saito] Insane Stoicism.flac
-965:ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/(05) [signum／ii，Irus，Yousuke Saito] Insane Stoicism.flac
-966:ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/(06) [まさみティー] 食べ歩き魂.flac
-967:ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/(07) [Unity-Gain-6dB+1] もくもくのくも、隣でいっしょに.flac
-968:ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/(08) [だ] querida iluso.flac
-969:ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/(09) [nachi] ふわふわどれみー.flac
+849:ShibayanRecords/2018.05.06 [STAL-1801] TOHO BOSSA NOVA 7 [例大祭15]/(01) [ハム] 木漏れ日の書斎から.flac
+850:ShibayanRecords/2018.05.06 [STAL-1801] TOHO BOSSA NOVA 7 [例大祭15]/(02) [nachi] fluindo.flac
+851:ShibayanRecords/2018.05.06 [STAL-1801] TOHO BOSSA NOVA 7 [例大祭15]/(03) [milka] solitary girl.flac
+852:ShibayanRecords/2018.05.06 [STAL-1801] TOHO BOSSA NOVA 7 [例大祭15]/(04) [signum] Read Some Romance.flac
+853:ShibayanRecords/2018.05.06 [STAL-1801] TOHO BOSSA NOVA 7 [例大祭15]/(05) [Unity-Gain-6dB+1] おひるやすみの絵宇宙話.flac
+854:ShibayanRecords/2018.05.06 [STAL-1801] TOHO BOSSA NOVA 7 [例大祭15]/(06) [まさみティー] ムーンライト・アニマルトレイル.flac
+855:ShibayanRecords/2018.05.06 [STAL-1801] TOHO BOSSA NOVA 7 [例大祭15]/(08) [3L] Black lily Princess.flac
+856:ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/(01) [milka] soda pop ice cream.flac
+857:ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/(02) [鯛の小骨] Ghost flight in the sky.flac
+858:ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/(03) [ハム] 流星をくぐって.flac
+859:ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/(04) [3L] Love me do.flac
+860:ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/(05) [signum_ii，Irus，Yousuke Saito] Insane Stoicism.flac
+861:ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/(05) [signum／ii，Irus，Yousuke Saito] Insane Stoicism.flac
+862:ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/(06) [まさみティー] 食べ歩き魂.flac
+863:ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/(07) [Unity-Gain-6dB+1] もくもくのくも、隣でいっしょに.flac
+864:ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/(08) [だ] querida iluso.flac
+865:ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/(09) [nachi] ふわふわどれみー.flac
 song_begin: ShibayanRecords/2019.04.28 [STAL-1901] TOHO BOSSA NOVA 8 [M3-43]/ShibayanRecords - TOHO BOSSA NOVA 8.cue/track0001
 Range: 0-236626
 AlbumArtist: ShibayanRecords
@@ -1970,99 +1289,232 @@ Track: 09
 Title: ふわふわどれみー
 Artist: nachi
 song_end
-979:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/Adrastea/SUPER MOON - instrumental.flac
-980:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/Adrastea/クライム・ストーリーときみのウソ - instrumental.flac
-981:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/Adrastea/モノクロ・インザナイト - instrumental.flac
-982:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/Adrastea/賢者の極北 - instrumental.flac
-983:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/RETRO FUTURE GIRLS/Desert Years - instrumental.flac
-984:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/RETRO FUTURE GIRLS/MyonMyonMyonMyonMyonMyonMyon! - instrumental.flac
-985:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/RETRO FUTURE GIRLS/とびだせ！バンキッキ - instrumental.flac
-986:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/RETRO FUTURE GIRLS/レディメイド・シティライフ - instrumental.flac
-987:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/TOHO BOSSA NOVA 2/Etupirka,Angelica - instrumental.flac
-988:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/TOHO BOSSA NOVA 2/タイニーリトル・アジアンタム - instrumental.flac
-989:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/TOHO BOSSA NOVA 2/ナルキッソスにさよなら - instrumental.flac
-990:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/TOHO BOSSA NOVA 3/Garota de venda medicamento - instrumental.flac
-991:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/TOHO BOSSA NOVA 3/Que ela vem - instrumental.flac
-992:ShibayanRecords/2019.12.31 [STAL-1903] Broad Border [C97]/ShibayanRecords - Broad Border.flac
+875:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/Adrastea/SUPER MOON - instrumental.flac
+876:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/Adrastea/クライム・ストーリーときみのウソ - instrumental.flac
+877:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/Adrastea/モノクロ・インザナイト - instrumental.flac
+878:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/Adrastea/賢者の極北 - instrumental.flac
+879:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/RETRO FUTURE GIRLS/Desert Years - instrumental.flac
+880:ShibayanRecords/2018.05.06 [STAL-1801] TOHO BOSSA NOVA 7 [例大祭15]/(07) [鯛の小骨] Girls loved by breeze.flac
+881:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/RETRO FUTURE GIRLS/MyonMyonMyonMyonMyonMyonMyon! - instrumental.flac
+882:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/RETRO FUTURE GIRLS/とびだせ！バンキッキ - instrumental.flac
+883:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/RETRO FUTURE GIRLS/レディメイド・シティライフ - instrumental.flac
+884:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/TOHO BOSSA NOVA 2/Etupirka,Angelica - instrumental.flac
+885:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/TOHO BOSSA NOVA 2/タイニーリトル・アジアンタム - instrumental.flac
+886:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/TOHO BOSSA NOVA 2/ナルキッソスにさよなら - instrumental.flac
+887:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/TOHO BOSSA NOVA 3/Garota de venda medicamento - instrumental.flac
+888:ShibayanRecords/2019.09.20 [STAL-1902] ShibayanRecords Instrumental Vol.3/TOHO BOSSA NOVA 3/Que ela vem - instrumental.flac
+889:ShibayanRecords/2019.12.31 [STAL-1903] Broad Border [C97]/ShibayanRecords - Broad Border.flac
 song_begin: ShibayanRecords/2019.12.31 [STAL-1903] Broad Border [C97]/ShibayanRecords - Broad Border.cue/track0001
 Range: 0-235133
-mtime: 1610086196
+mtime: 1610086197
 song_end
 song_begin: ShibayanRecords/2019.12.31 [STAL-1903] Broad Border [C97]/ShibayanRecords - Broad Border.cue/track0002
 Range: 235133-559266
-mtime: 1610086196
+mtime: 1610086197
 song_end
 song_begin: ShibayanRecords/2019.12.31 [STAL-1903] Broad Border [C97]/ShibayanRecords - Broad Border.cue/track0003
 Range: 559266-919360
-mtime: 1610086196
+mtime: 1610086197
 song_end
 song_begin: ShibayanRecords/2019.12.31 [STAL-1903] Broad Border [C97]/ShibayanRecords - Broad Border.cue/track0004
 Range: 919360-1346973
-mtime: 1610086196
+mtime: 1610086197
 song_end
 song_begin: ShibayanRecords/2019.12.31 [STAL-1903] Broad Border [C97]/ShibayanRecords - Broad Border.cue/track0005
 Range: 1346973-1700560
-mtime: 1610086196
+mtime: 1610086197
 song_end
 song_begin: ShibayanRecords/2019.12.31 [STAL-1903] Broad Border [C97]/ShibayanRecords - Broad Border.cue/track0006
 Range: 1700560-1988666
-mtime: 1610086196
+mtime: 1610086197
 song_end
 song_begin: ShibayanRecords/2019.12.31 [STAL-1903] Broad Border [C97]/ShibayanRecords - Broad Border.cue/track0007
 Range: 1988666-2531546
-mtime: 1610086196
+mtime: 1610086197
 song_end
 song_begin: ShibayanRecords/2019.12.31 [STAL-1903] Broad Border [C97]/ShibayanRecords - Broad Border.cue/track0008
 Range: 2531546-2893173
-mtime: 1610086196
+mtime: 1610086197
 song_end
 song_begin: ShibayanRecords/2019.12.31 [STAL-1903] Broad Border [C97]/ShibayanRecords - Broad Border.cue/track0009
 Range: 2893173-3342306
-mtime: 1610086196
+mtime: 1610086197
 song_end
 song_begin: ShibayanRecords/2019.12.31 [STAL-1903] Broad Border [C97]/ShibayanRecords - Broad Border.cue/track0010
 Range: 3342306-3829920
-mtime: 1610086196
+mtime: 1610086197
 song_end
 song_begin: ShibayanRecords/2019.12.31 [STAL-1903] Broad Border [C97]/ShibayanRecords - Broad Border.cue/track0011
 Range: 3829920-
-mtime: 1610086196
+mtime: 1610086197
 song_end
-1004:ShibayanRecords/2020.03.22 [STAL-2001] TOHO BOSSA NOVA 9 [例大祭17]/(01) [まさみティー] ハッピー・チキン・ポップ.flac
-1005:ShibayanRecords/2020.03.22 [STAL-2001] TOHO BOSSA NOVA 9 [例大祭17]/(02) [ハム] 風花の帳.flac
-1006:ShibayanRecords/2020.03.22 [STAL-2001] TOHO BOSSA NOVA 9 [例大祭17]/(03) [じんぞう] アスタ・ラ・ビスタ.flac
-1007:ShibayanRecords/2020.03.22 [STAL-2001] TOHO BOSSA NOVA 9 [例大祭17]/(04) [だ] música noturna.flac
-1008:ShibayanRecords/2020.03.22 [STAL-2001] TOHO BOSSA NOVA 9 [例大祭17]/(05) [Unity-Gain-6dB+1] ふじやま、登るけぇの.flac
-1009:ShibayanRecords/2020.03.22 [STAL-2001] TOHO BOSSA NOVA 9 [例大祭17]/(06) [鯛の小骨] MUKOU NO BEACH.flac
-1010:ShibayanRecords/2020.03.22 [STAL-2001] TOHO BOSSA NOVA 9 [例大祭17]/(07) [milka] さかさまバブル.flac
-1011:ShibayanRecords/2020.03.22 [STAL-2001] TOHO BOSSA NOVA 9 [例大祭17]/(08) [signum-ii (w- Irus _ Yousuke Saito)] First note.flac
-1012:ShibayanRecords/2020.03.22 [STAL-2001] TOHO BOSSA NOVA 9 [例大祭17]/(09) [3L] sunset chant.flac
-1013:wowaka/Unhappy Refrain/01 - アンハッピーリフレイン.flac
-1014:wowaka/Unhappy Refrain/02 - ローリンガール.flac
-1015:wowaka/Unhappy Refrain/03 - 積み木の人形.flac
-1016:wowaka/Unhappy Refrain/04 - 僕のサイノウ.flac
-1017:wowaka/Unhappy Refrain/05 - 日常と地球の額縁.flac
-1018:wowaka/Unhappy Refrain/06 - テノヒラ.flac
-1019:wowaka/Unhappy Refrain/07 - とおせんぼ.flac
-1020:wowaka/Unhappy Refrain/08 - ラインアート.flac
-1021:wowaka/Unhappy Refrain/09 - 裏表ラバーズ.flac
-1022:wowaka/Unhappy Refrain/10 - グレーゾーンにて。.flac
-1023:wowaka/Unhappy Refrain/11 - ずれていく.flac
-1024:wowaka/Unhappy Refrain/12 - リバシブルドール.flac
-1025:wowaka/Unhappy Refrain/13 - ワールズエンド・ダンスホール.flac
-1026:wowaka/Unhappy Refrain/14 - プリズムキューブ.flac
-1027:wowaka/Unhappy Refrain/01 - アンハッピーリフレイン.flac
-1028:wowaka/Unhappy Refrain/02 - ローリンガール.flac
-1029:wowaka/Unhappy Refrain/03 - 積み木の人形.flac
-1030:wowaka/Unhappy Refrain/04 - 僕のサイノウ.flac
-1031:wowaka/Unhappy Refrain/05 - 日常と地球の額縁.flac
-1032:wowaka/Unhappy Refrain/06 - テノヒラ.flac
-1033:wowaka/Unhappy Refrain/07 - とおせんぼ.flac
-1034:wowaka/Unhappy Refrain/08 - ラインアート.flac
-1035:wowaka/Unhappy Refrain/09 - 裏表ラバーズ.flac
-1036:wowaka/Unhappy Refrain/10 - グレーゾーンにて。.flac
-1037:wowaka/Unhappy Refrain/11 - ずれていく.flac
-1038:wowaka/Unhappy Refrain/12 - リバシブルドール.flac
-1039:wowaka/Unhappy Refrain/13 - ワールズエンド・ダンスホール.flac
-1040:wowaka/Unhappy Refrain/14 - プリズムキューブ.flac
+901:ShibayanRecords/2020.03.22 [STAL-2001] TOHO BOSSA NOVA 9 [例大祭17]/(01) [まさみティー] ハッピー・チキン・ポップ.flac
+902:ShibayanRecords/2020.03.22 [STAL-2001] TOHO BOSSA NOVA 9 [例大祭17]/(02) [ハム] 風花の帳.flac
+903:ShibayanRecords/2020.03.22 [STAL-2001] TOHO BOSSA NOVA 9 [例大祭17]/(03) [じんぞう] アスタ・ラ・ビスタ.flac
+904:ShibayanRecords/2020.03.22 [STAL-2001] TOHO BOSSA NOVA 9 [例大祭17]/(04) [だ] música noturna.flac
+905:ShibayanRecords/2020.03.22 [STAL-2001] TOHO BOSSA NOVA 9 [例大祭17]/(05) [Unity-Gain-6dB+1] ふじやま、登るけぇの.flac
+906:ShibayanRecords/2020.03.22 [STAL-2001] TOHO BOSSA NOVA 9 [例大祭17]/(06) [鯛の小骨] MUKOU NO BEACH.flac
+907:ShibayanRecords/2020.03.22 [STAL-2001] TOHO BOSSA NOVA 9 [例大祭17]/(07) [milka] さかさまバブル.flac
+908:ShibayanRecords/2020.03.22 [STAL-2001] TOHO BOSSA NOVA 9 [例大祭17]/(08) [signum-ii (w- Irus _ Yousuke Saito)] First note.flac
+909:ShibayanRecords/2020.03.22 [STAL-2001] TOHO BOSSA NOVA 9 [例大祭17]/(09) [3L] sunset chant.flac
+910:wowaka/Unhappy Refrain/01 - アンハッピーリフレイン.flac
+911:wowaka/Unhappy Refrain/02 - ローリンガール.flac
+912:wowaka/Unhappy Refrain/03 - 積み木の人形.flac
+913:wowaka/Unhappy Refrain/04 - 僕のサイノウ.flac
+914:wowaka/Unhappy Refrain/05 - 日常と地球の額縁.flac
+915:wowaka/Unhappy Refrain/06 - テノヒラ.flac
+916:wowaka/Unhappy Refrain/07 - とおせんぼ.flac
+917:wowaka/Unhappy Refrain/08 - ラインアート.flac
+918:wowaka/Unhappy Refrain/09 - 裏表ラバーズ.flac
+919:wowaka/Unhappy Refrain/10 - グレーゾーンにて。.flac
+920:wowaka/Unhappy Refrain/11 - ずれていく.flac
+921:wowaka/Unhappy Refrain/12 - リバシブルドール.flac
+922:wowaka/Unhappy Refrain/13 - ワールズエンド・ダンスホール.flac
+923:wowaka/Unhappy Refrain/14 - プリズムキューブ.flac
+924:wowaka/Unhappy Refrain/01 - アンハッピーリフレイン.flac
+925:wowaka/Unhappy Refrain/02 - ローリンガール.flac
+926:wowaka/Unhappy Refrain/03 - 積み木の人形.flac
+927:wowaka/Unhappy Refrain/04 - 僕のサイノウ.flac
+928:wowaka/Unhappy Refrain/05 - 日常と地球の額縁.flac
+929:wowaka/Unhappy Refrain/06 - テノヒラ.flac
+930:wowaka/Unhappy Refrain/07 - とおせんぼ.flac
+931:wowaka/Unhappy Refrain/08 - ラインアート.flac
+932:wowaka/Unhappy Refrain/09 - 裏表ラバーズ.flac
+933:wowaka/Unhappy Refrain/10 - グレーゾーンにて。.flac
+934:wowaka/Unhappy Refrain/11 - ずれていく.flac
+935:wowaka/Unhappy Refrain/12 - リバシブルドール.flac
+936:wowaka/Unhappy Refrain/13 - ワールズエンド・ダンスホール.flac
+937:wowaka/Unhappy Refrain/14 - プリズムキューブ.flac
+song_begin: [彁] 2019.12.31/彁.flac
+Range: 0-269800
+Time: 3645.706000
+Playlist: yes
+Date: 2019.12.31
+AlbumArtist: 凋叶棕
+Album: 彁
+Track: 01
+Title: ALL EVIL MISCHIEF
+Artist: RD-Sounds
+mtime: 1579174620
+song_end
+song_begin: [彁] 2019.12.31/彁.flac
+Range: 269800-587373
+Time: 3645.706000
+Playlist: yes
+Date: 2019.12.31
+AlbumArtist: 凋叶棕
+Album: 彁
+Track: 02
+Title: ホーカス・ポーカス
+Artist: めらみぽっぷ
+mtime: 1579174620
+song_end
+song_begin: [彁] 2019.12.31/彁.flac
+Range: 587373-918760
+Time: 3645.706000
+Playlist: yes
+Date: 2019.12.31
+AlbumArtist: 凋叶棕
+Album: 彁
+Track: 03
+Title: Marks of Sin
+Artist: RD-Sounds
+mtime: 1579174620
+song_end
+song_begin: [彁] 2019.12.31/彁.flac
+Range: 918760-1142613
+Time: 3645.706000
+Playlist: yes
+Date: 2019.12.31
+AlbumArtist: 凋叶棕
+Album: 彁
+Track: 04
+Title: trill_Moonshine
+Artist: RD-Sounds
+mtime: 1579174620
+song_end
+song_begin: [彁] 2019.12.31/彁.flac
+Range: 1142613-1490680
+Time: 3645.706000
+Playlist: yes
+Date: 2019.12.31
+AlbumArtist: 凋叶棕
+Album: 彁
+Track: 05
+Title: 幻想少女物語
+Artist: めらみぽっぷ
+mtime: 1579174620
+song_end
+song_begin: [彁] 2019.12.31/彁.flac
+Range: 1490680-1889360
+Time: 3645.706000
+Playlist: yes
+Date: 2019.12.31
+AlbumArtist: 凋叶棕
+Album: 彁
+Track: 06
+Title: Dolls into Pitiful Pretenders
+Artist: めらみぽっぷ
+mtime: 1579174620
+song_end
+song_begin: [彁] 2019.12.31/彁.flac
+Range: 1889360-2170066
+Time: 3645.706000
+Playlist: yes
+Date: 2019.12.31
+AlbumArtist: 凋叶棕
+Album: 彁
+Track: 07
+Title: little_Metamorphoses
+Artist: RD-Sounds
+mtime: 1579174620
+song_end
+song_begin: [彁] 2019.12.31/彁.flac
+Range: 2170066-2514213
+Time: 3645.706000
+Playlist: yes
+Date: 2019.12.31
+AlbumArtist: 凋叶棕
+Album: 彁
+Track: 08
+Title: 幻想星神信仰
+Artist: Φ串Φ
+mtime: 1579174620
+song_end
+song_begin: [彁] 2019.12.31/彁.flac
+Range: 2514213-2765693
+Time: 3645.706000
+Playlist: yes
+Date: 2019.12.31
+AlbumArtist: 凋叶棕
+Album: 彁
+Track: 09
+Title: 懐かしき道
+Artist: RD-Sounds
+mtime: 1579174620
+song_end
+song_begin: [彁] 2019.12.31/彁.flac
+Range: 2765693-3203360
+Time: 3645.706000
+Playlist: yes
+Date: 2019.12.31
+AlbumArtist: 凋叶棕
+Album: 彁
+Track: 10
+Title: くすぶるなにか
+Artist: nayuta
+mtime: 1579174620
+song_end
+song_begin: [彁] 2019.12.31/彁.flac
+Range: 3203360-
+Time: 3645.706000
+Playlist: yes
+Date: 2019.12.31
+AlbumArtist: 凋叶棕
+Album: 彁
+Track: 11
+Title: ／彁
+Artist: めらみぽっぷ
+mtime: 1579174620
+song_end
 playlist_end
