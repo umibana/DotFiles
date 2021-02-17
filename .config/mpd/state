@@ -1,9 +1,9 @@
 sw_volume: 73
 audio_device_state:1:T480 sound
 audio_device_state:1:My fifo
-state: play
+state: pause
 current: 950
-time: 76.882000
+time: 92.295000
 random: 0
 repeat: 0
 single: 0
