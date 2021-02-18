@@ -262,7 +262,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_space,	togglefloating,	{0} },
 
 	{ 0,				XK_Print,	spawn,		SHCMD("maim ~/Pictures/Screenshots/$(date '+%y-%m-%d_%H:%M:%S').png & notify-send -i ~/.config/icon/screenshot.png '  Screenshot Taken'" ) },
-	{ MODKEY,			XK_Print,	spawn,		SHCMD("maim -s ~/Pictures/Screenshots/$(date '+%y-%m-%d_%H:%M:%S').png & notify-send -i ~/.config/icon/screenshot.png '  Screenshot Taken'"  ) },
+	{ MODKEY,			XK_Print,	spawn,		SHCMD("maim -u -s ~/Pictures/Screenshots/$(date '+%y-%m-%d_%H:%M:%S').png & notify-send -i ~/.config/icon/screenshot.png '  Screenshot Taken'"  ) },
 	{ ShiftMask,			XK_Print,	spawn,		SHCMD("maimpick") },
 	{ MODKEY|ShiftMask,		XK_Print,	spawn,		SHCMD("record kill") },
 	{ MODKEY,			XK_Delete,	spawn,		SHCMD("record kill") },

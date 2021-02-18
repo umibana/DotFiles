@@ -1888,3 +1888,5 @@ Feb 17 01:27 : update: added DDBY - Cafe de Touhou 1-8/2017 - Cafe de Touhou 8/3
 Feb 17 01:27 : update: added DDBY - Cafe de Touhou 1-8/2017 - Cafe de Touhou 8/1-feeble-evil.flac
 Feb 17 01:27 : update: added DDBY - Cafe de Touhou 1-8/2017 - Cafe de Touhou 8/2-INSIGHT.flac
 Feb 17 01:27 : update: added DDBY - Cafe de Touhou 1-8/2017 - Cafe de Touhou 8/7-cafe-des-desirs.flac
+Feb 17 01:38 : player: played "COOL&CREATE - #GensokyoHoloism/01.【第0話】老人会必聴・古の東方アレンジ縛り歌枠.mp3"
+mpd: ../src/tag/Pool.cxx:157: void tag_pool_put_item(TagItem*): Assertion `slot->ref > 0' failed.
