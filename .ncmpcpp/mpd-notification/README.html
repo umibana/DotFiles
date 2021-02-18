@@ -1,0 +1,124 @@
+<h1>mpd-notification</h1>
+
+<p><strong>Notify about tracks played by mpd</strong></p>
+
+<p>This runs in background and produces notifications whenever mpd produces
+an event, that is new track is played or playback is paused or stopped.
+Notifications look like this:</p>
+
+
+<p>This now even supports album artwork:</p>
+
+<p><img src="screenshots/artwork.png" alt="Notification with Artwork" /></p>
+
+<p>Read below for the details.</p>
+
+<h2>Requirements</h2>
+
+<p>To compile and run <code>mpd-notification</code> you need:</p>
+
+<ul>
+<li><a href="https://www.github.com/systemd/systemd">systemd</a></li>
+<li><a href="https://www.darwinsys.com/file/">file</a> for <code>libmagic</code></li>
+<li><a href="https://github.com/ndevilla/iniparser">iniparser</a></li>
+<li><a href="https://libav.org/">libav</a> or <a href="https://www.ffmpeg.org/">ffmpeg</a></li>
+<li><a href="https://developer.gnome.org/notification-spec/">libnotify</a></li>
+<li><a href="https://www.musicpd.org/libs/libmpdclient/">libmpdclient</a></li>
+<li><a href="https://daringfireball.net/projects/markdown/">markdown</a> (HTML documentation)</li>
+<li><code>gnome-icon-theme</code> or <code>adwaita-icon-theme</code> (or anything else that includes
+an icon named <code>audio-x-generic</code>)</li>
+</ul>
+
+
+<p>To use <code>mpd-notification</code> you probably want <code>mpd</code>, the
+<a href="http://www.musicpd.org/">music player daemon</a> itself. ;)</p>
+
+<p>Some systems may require additional development packages for the libraries.
+Look for <code>libnotify-devel</code>, <code>libmpdclient-devel</code> or similar.</p>
+
+<h2>Build and install</h2>
+
+<p>Building and installing is very easy. Just run:</p>
+
+<blockquote><p>make</p></blockquote>
+
+<p>followed by:</p>
+
+<blockquote><p>make install</p></blockquote>
+
+<p>This will place an executable at <code>/usr/bin/mpd-notification</code>,
+documentation can be found in <code>/usr/share/doc/mpd-notification/</code>.
+Additionally a systemd unit file is installed to <code>/usr/lib/systemd/user/</code>.</p>
+
+<h2>Usage</h2>
+
+<p>Just run <code>mpd-notification</code> to run it once. A systemd user service can be
+started and/or enabled with <code>systemctl --user start mpd-notification</code>
+or <code>systemctl --user enable mpd-notification</code>.</p>
+
+<p><code>mpd-notification</code> accepts some arguments:</p>
+
+<ul>
+<li><em>-h</em>: show help</li>
+<li><em>-H HOST</em>: connect to <em>HOST</em></li>
+<li><em>-m MUSIC-DIR</em>: use <em>MUSIC-DIR</em> for artwork lookup</li>
+<li><em>&ndash;notification-file-workaround</em>: write artwork to file for notification
+  daemons that do required it</li>
+<li><em>-o</em>: Notification text is one line (no line breaks)</li>
+<li><em>-p PORT</em>: connect to <em>PORT</em></li>
+<li><em>-s PIXELS</em>: scale image to a maximum size <em>PIXELS</em> x <em>PIXELS</em> pixels, keeping
+  ratio</li>
+<li><em>-t TIMEOUT</em>: notification timeout, <em>TIMEOUT</em> in seconds</li>
+<li><em>-v</em>: verbose output</li>
+<li><em>-V</em>: print version information</li>
+</ul>
+
+
+<h2>Configuration</h2>
+
+<p>Configuration options can be read from a configuration file. <code>mpd</code>
+tries to read <code>${XDG_CONFIG_HOME}/mpd-notification.conf</code>, then
+<code>~/.config/mpd-notification.conf</code>, which is expected to
+look like this:</p>
+
+<pre><code>host = localhost
+port = 6600
+music-dir = /srv/media/music/
+oneline = true
+scale = 200
+timeout = 20
+</code></pre>
+
+<p>Unused options can be commented or removed completely.</p>
+
+<h2>Artwork</h2>
+
+<p><code>mpd</code> does not provide any information where it finds its music files. To make
+<code>mpd-notification</code> display album artwork you need to tell it where to look for
+artwork. You can do that by exporting <code>XDG_MUSIC_DIR</code> to your environment, by
+specifying <code>-m</code> or <code>--music-dir</code> on the command line or by setting <code>music-dir</code>
+in configuration file. <code>mpd-notification</code> reads album artwork from <code>mp3</code>
+files, otherwise an image file containing the artwork needs to be placed
+in the same directory as the media file and named <code>cover.jpg</code>,
+<code>cover.png</code>, <code>folder.jpg</code> or <code>folder.png</code>.</p>
+
+<h2>License and warranty</h2>
+
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+<a href="COPYING.md">GNU General Public License</a> for more details.</p>
+
+<h3>Upstream</h3>
+
+<p>URL:
+<a href="https://github.com/eworm-de/mpd-notification#mpd-notification">GitHub.com</a></p>
+
+<p>Mirror:
+<a href="https://git.eworm.de/cgit.cgi/mpd-notification/">eworm.de</a>
+<a href="https://gitlab.com/eworm-de/mpd-notification#mpd-notification">GitLab.com</a></p>
