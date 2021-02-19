@@ -1,0 +1,4 @@
+#!/bin/sh
+git clone --recurse-submodules https://github.com/hansOnell/DotFiles
+cd ~/DotFiles
+mv * .[^.]* .??* ..
