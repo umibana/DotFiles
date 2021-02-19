@@ -1,0 +1,28 @@
+# (C) 2011-2021 by Christian Hesse <mail@eworm.de>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+[Unit]
+Description=MPD Notification
+Requires=dbus.socket
+PartOf=graphical-session.target
+# Do not require any service here! We do rely on mpd OR network (for
+# a remote mpd instance). So let the user care.
+# We want to order after, though. This makes sure the resource is
+# available on start and mpd-notification can cleanly disconnect on
+# system shutdown.
+After=mpd.service network.target network-online.target
+# Order after notification daemons to make sure it is stopped before.
+After=dunst.service xfce4-notifyd.service
+ConditionUser=!@system
+
+[Service]
+Type=notify
+Restart=on-failure
+ExecStart=/usr/bin/mpd-notification
+
+[Install]
+WantedBy=default.target

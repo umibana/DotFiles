@@ -1,7 +1,7 @@
 # wasd with mayus + wasd
 xmodmap ~/.Xmodmap &
 #status bar
-/usr/local/bin/dwmblocks &
+dwmblocks &
 # Enables notification services
 dunst &
 # Restores wallpaper
