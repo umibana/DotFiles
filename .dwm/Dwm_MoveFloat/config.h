@@ -16,7 +16,8 @@ static int swallowfloating    = 0;        /* 1 means swallow floating windows by
 static int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 static int showbar            = 1;        /* 0 means no bar */
 static int topbar             = 1;        /* 0 means bottom bar */
-static char *fonts[]          = {"SF Pro Rounded:size=10"};
+static char *fonts[]          = {"SF Pro Rounded:size=10",
+				 "JoyPixels:size=10"};
 static char normbgcolor[]           = "#222222";
 static char normbordercolor[]       = "#444444";
 static char normfgcolor[]           = "#e3e5e8";
@@ -81,7 +82,7 @@ static const Layout layouts[] = {
 	{ "|M|",	centeredmaster },	/* Master in middle, slaves on sides */
 	{ "|F|", 	centeredfloatingmaster },	                /* Same but master floats */
 
-	{ "HG",        grid },       /* Master in middle, slaves on sides */
+	{ "==",        bstackhoriz },       /* Vertical monitor layout */
         { "VG",         horizgrid},                       /* Same but master floats */
 
 
