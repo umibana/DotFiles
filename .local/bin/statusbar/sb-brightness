@@ -1,0 +1,16 @@
+case $BLOCK_BUTTON in
+	4) xbacklight -inc 10 ;;
+	5) xbacklight -dec 10 ;;
+	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
+esac
+
+light="$(xbacklight | sed 's/\..*//g')"
+
+if [ "$light" -gt "60" ]; then
+    icon="🔆"
+elif [ "$light" -lt "40" ]; then
+    icon="☾"
+else icon="⛅"
+fi
+
+echo "$icon $light%" 

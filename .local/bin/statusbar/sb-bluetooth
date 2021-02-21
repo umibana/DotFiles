@@ -1,0 +1,23 @@
+#!/bin/sh
+  case $BLOCK_BUTTON in
+          1) setsid -f blueman-manager ;;
+          2) notify-send "$icon Device Connected" "$(if [ "$(bluetoothctl info)" != "Missing device address argument" ]; then
+                                                  echo= bluetoothctl info | grep "Name" | awk '{print $2}'
+        else
+            echo 'No Device Connected'
+                          fi )" ;;
+          3) notify-send "$icon  Bluetooth" "\- Show Bluetooth Status.
+  - Click to open Bluetooth Manager.
+  - Middle click to show Connected Devices." ;;
+
+  esac  
+
+    if [ "$(bluetooth)" != "bluetooth = on" ]; then
+        icon=" Off"
+    elif [ "$(bluetoothctl info)" != "Missing device address argument" ]; then
+      icon=" Connected "
+    else
+      icon=" No signal"
+    fi
+
+  printf "%s\\n" "$icon"
