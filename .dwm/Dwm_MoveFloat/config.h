@@ -27,6 +27,7 @@ static char selbgcolor[]            = "#e3e5e8";
 static char *colors[][3] = {
        /*               fg           bg           border   */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
+       [SchemeInv]  = { normbgcolor, normfgcolor, normbordercolor },
        [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
       [SchemeTitle] = { normfgcolor, normfgcolor, normfgcolor },
 };
@@ -169,7 +170,7 @@ static Key keys[] = {
 	/* { MODKEY|ShiftMask,		XK_Tab,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_q,		killclient,	{0} },
 	{ MODKEY|ShiftMask,		XK_q,		spawn,		SHCMD("powermenu") },
-	{ MODKEY,			XK_w,		spawn,		SHCMD("vivaldi-stable") },
+	{ MODKEY,			XK_w,		spawn,		SHCMD("chromium") },
 	{ MODKEY|ShiftMask,		XK_w,		spawn,		SHCMD("firefox") },
 	{ MODKEY,			XK_e,		spawn,		SHCMD("kitty -e ranger") },
 	{ MODKEY|ShiftMask,		XK_e,		spawn,		SHCMD("pcmanfm") },
