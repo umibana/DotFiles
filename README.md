@@ -17,7 +17,7 @@ These dots are used with Arch Linux with dwm as its window manager.
 
 # Features #
 
-* dwm built off of LukeSmith's build, with added patches such as: fancybar, attachbottom, more layouts and cfacts
+* dwm built off of LukeSmith's build, with added patches such as: fancybar, movereise,  attachbottom, more layouts and cfacts
 * dwmblocks with various modules such as: wifi, bluetooth, dual battery status, memory usage, temperature, etc.
 * riced ncmpcpp with cover art
 * riced dunst with mpd notifications
