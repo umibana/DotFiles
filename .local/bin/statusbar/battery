@@ -25,11 +25,11 @@ do
 	# Sets up the status and capacity
 	status=$(cat "$battery/status")
 	case "$status" in
-		"Full") status="⚡" ;;
-		"Discharging") status="🔋" ;;
-		"Charging") status="🔌" ;;
-		"Not charging") status="🛑" ;;
-		"Unknown") status="♻️" ;;
+		"Full") status="" ;;
+		"Discharging") status="" ;;
+		"Charging") status="" ;;
+		"Not charging") status="" ;;
+		"Unknown") status="" ;;
 	esac
 	capacity=$(cat "$battery/capacity")
 	# Will make a warn variable if discharging and low
