@@ -17,4 +17,6 @@ picom -b --experimental-backends &
 # RedShift
 redshift &
 # Xrandr
-xrandr --output DVI-D-0 --right-of DisplayPort-3
+xrandr --output DVI-D-0 --right-of DisplayPort-3 &
+# Battery Notificaiton
+battery-notif -n &
