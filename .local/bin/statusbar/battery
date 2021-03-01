@@ -33,10 +33,12 @@ do
 	esac
 	capacity=$(cat "$battery/capacity")
     # A Battery Notiication
-    if [ "$capacity" = 10 ]; then
+    if [ "$capacity" = 10 ] && ["$status" = ""]; then
         notify-send 'External battery is running out!'
-    elif [ "$capacity" = 6 ]; then
+        sleep 30
+    elif [ "$capacity" = 6 ] && ["$status" = ""]; then
         notify-send 'External battery discharged'
+        sleep 15
     fi
 	# Will make a warn variable if discharging and low
 	[ "$status" = "" ] && [ "$capacity" -le 15 ] && warn="!" 

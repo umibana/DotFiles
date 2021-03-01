@@ -12,8 +12,8 @@ execute_on_song_change="~/.ncmpcpp/ncmpcpp_cover_art.sh"
 song_list_format = "$6{%a »$4 %t $/r$/u$R$b$1%l$/b  }|{%f$/r}"
 now_playing_prefix = "$b$6 »» "
 now_playing_suffix = "$/b"
-/*now_playing_suffix = " >>>>"*/
-playlist_display_mode = "classic"
+/*now_playing_suffix = " >>>>"
+playlist_display_mode = "columns"
 
 
 #### Progressbar
@@ -22,9 +22,7 @@ progressbar_look = "━━─"
 #progressbar_color = "black"
 connected_message_on_startup = no
 
-song_columns_list_format = "(50)[6]{t} (50)[4]{ar} $b(3f)[9]{lr}$/b"
-#song_columns_list_format = "(25)[6]{a} (25)[4]{tr} (5)[6]{lr:Length}"
-
+song_columns_list_format = "(25)[6]{a} (35)[4]{t} (5)[2]{l} "
 #### Colors
 #header_window_color = "white"
 #main_window_color =  magenta
