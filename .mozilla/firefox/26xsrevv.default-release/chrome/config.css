@@ -83,3 +83,12 @@ window,
     font-family:'berry';
     font-size:12px;
 }
+#nav-bar {
+  height: 25px !important;
+}
+
+#nav-bar .toolbarbutton-1:not([type="menu-button"]), 
+#nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-button, 
+#nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker {
+  padding: 0 !important; 
+}
