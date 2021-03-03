@@ -13,7 +13,7 @@ ibus-daemon -drx &
 # Locks screen when acpi actions are detected
 xss-lock -- i3lock -k --datecolor=eeeeee --timecolor=eeeeee --timepos="1370:575" --timesize=50 --time-font=Roboto -n -i ~/Pictures/Wallpapers/lpq6o2autx761.jpg &
 # Compositor starts
-picom -b --experimental-backends &
+#picom -b --experimental-backends &
 # RedShift
 redshift &
 # Xrandr
