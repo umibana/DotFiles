@@ -84,17 +84,7 @@ window,
     font-size:12px;
 }
 #nav-bar {
-<<<<<<< HEAD
-  height: 25px !important;
-}
-
-#nav-bar .toolbarbutton-1:not([type="menu-button"]), 
-#nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-button, 
-#nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker {
-  padding: 0 !important; 
-}
-=======
-  height: 15px !important;
+  height: 20px !important;
 }
 
 #nav-bar .toolbarbutton-1:not([type="menu-button"]),
