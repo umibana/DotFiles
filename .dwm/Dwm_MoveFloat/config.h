@@ -265,9 +265,9 @@ static Key keys[] = {
 	{ MODKEY,			XK_space,	zoom,		{0} },
 	{ MODKEY|ShiftMask,		XK_space,	togglefloating,	{0} },
 
-	{ 0,				XK_Print,	spawn,		SHCMD("maim ~/Pictures/Screenshots/$(date '+%y-%m-%d_%H:%M:%S').png & notify-send -i ~/.config/icon/screenshot.png '  Screenshot Taken'" ) },
-	{ MODKEY,			XK_Print,	spawn,		SHCMD("maim -u -s ~/Pictures/Screenshots/$(date '+%y-%m-%d_%H:%M:%S').png & notify-send -i ~/.config/icon/screenshot.png '  Screenshot Taken'"  ) },
-	{ ShiftMask,			XK_Print,	spawn,		SHCMD("maimpick") },
+	{ 0,				XK_Print,	spawn,		SHCMD("maim ~/Pictures/Screenshots/$(date '+%y-%m-%d_%H:%M:%S').png; notify-send -i ~/.config/icon/screenshot.png '  Screenshot Taken'" ) },
+	{ MODKEY,			XK_Print,	spawn,		SHCMD("maim -u -s ~/Pictures/Screenshots/$(date '+%y-%m-%d_%H:%M:%S').png; notify-send -i ~/.config/icon/screenshot.png '  Screenshot Taken'"  ) },
+	{ ShiftMask,			XK_Print,	spawn,		SHCMD("maimpick; notify-send -i ~/.config/icon/screenshot.png '  Screenshot Taken'") },
 	{ MODKEY|ShiftMask,		XK_Print,	spawn,		SHCMD("record kill") },
 	{ MODKEY,			XK_Delete,	spawn,		SHCMD("record kill") },
 	{ MODKEY,			XK_Scroll_Lock,	spawn,		SHCMD("killall screenkey || screenkey &") },

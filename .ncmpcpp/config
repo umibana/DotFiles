@@ -58,12 +58,12 @@ volume_change_step = "5"
 browser_display_mode = columns
 
 #### Visualizer stuff
-visualizer_type = wave_filled
-visualizer_look = ■■
-visualizer_fifo_path = "~/.config/mpd/mpd.fifo"
-visualizer_data_source = "My fifo"
-visualizer_output_name = "My fifo"
-visualizer_in_stereo = "no"
+#visualizer_type = wave_filled
+#visualizer_look = ■■
+#visualizer_fifo_path = "~/.config/mpd/mpd.fifo"
+#visualizer_data_source = "My fifo"
+#visualizer_output_name = "My fifo"
+#visualizer_in_stereo = "no"
 startup_screen = visualizer
 startup_slave_screen_focus = yes
 startup_slave_screen = playlist

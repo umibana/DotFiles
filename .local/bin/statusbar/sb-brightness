@@ -7,10 +7,10 @@ esac
 light="$(xbacklight | sed 's/\..*//g')"
 
 if [ "$light" -gt "60" ]; then
-    icon="🔆"
+    icon=""
 elif [ "$light" -lt "40" ]; then
-    icon="☾"
-else icon="⛅"
+    icon=""
+else icon=""
 fi
 
 echo "$icon $light%" 
