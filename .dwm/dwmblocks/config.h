@@ -29,7 +29,7 @@ static const Block blocks[] = {
 	{"",	"sb-bluetooth",	10,	8},
 	{"",	"sb-volume",	0,	10},
 	{"",	"sb-internet",	5,	4},
-	{"",	"sb-clock",	1,	1},
+	{"",	"sb-clock",	60,	1},
 /*	{"",	"sb-help-icon",	0,	15},*/
 };
 

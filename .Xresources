@@ -8,5 +8,7 @@ Xft.antialias: 1
 Xft.rgba: rgb
 Sxiv.background: #222222
 Sxiv.foreground: #222222
-
+xterm*faceName: berry
+xterm*faceSize: 10
+xterm*renderFont: true
 

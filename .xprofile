@@ -2,7 +2,8 @@
 [[ -f ~/.zshenv ]] && source ~/.zshenv
 
 # Changes Touchpad Sensivity and adds tap to click, natural scrolling and move while typing 
-xinput set-prop 'TPPS/2 IBM TrackPoint' 340 0.1 &
+xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Profile Enabled' 0, 1
+xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Speed' -0.1
 xinput set-prop 'TPPS/2 IBM TrackPoint' 'libinput Natural Scrolling Enabled' 1 &
 xinput set-prop 'Synaptics TM3276-022' 'libinput Natural Scrolling Enabled' 1 &
 xinput set-prop 'Synaptics TM3276-022' 'libinput Tapping Enabled' 1 &
@@ -20,3 +21,5 @@ redshift &
 xrandr --output DVI-D-0 --right-of DisplayPort-3 &
 # Battery Notificaiton
 battery-notif -n &
+
+this is a test 
