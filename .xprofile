@@ -17,9 +17,5 @@ xss-lock -- i3lock -k --datecolor=eeeeee --timecolor=eeeeee --timepos="1370:575"
 #picom -b --experimental-backends &
 # RedShift
 redshift &
-# Xrandr
-xrandr --output DVI-D-0 --right-of DisplayPort-3 &
 # Battery Notificaiton
 battery-notif -n &
-
-this is a test 
