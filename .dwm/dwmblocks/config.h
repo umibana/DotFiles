@@ -8,7 +8,6 @@ static const Block blocks[] = {
 /*	{"",	"sb-pacpackages",	0,	8},*/
 /*	{"",	"sb-news",		0,	6},*/
 /*	 {"",	"sb-crypto",	0,	13},*/ 
-    	{"",	"playing-now",	1,	12}, 
 	/* {"",	"sb-price lbc \"LBRY Token\" 📚",			9000,	22}, */
 	/* {"",	"sb-price link \"Chainlink\" 🔗",			300,	25}, */
 	/* {"",	"sb-price xmr \"Monero\" 🔒",			9000,	24}, */
