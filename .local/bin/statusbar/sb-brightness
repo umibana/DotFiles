@@ -1,3 +1,5 @@
+#!/bin/sh
+
 case $BLOCK_BUTTON in
 	4) xbacklight -inc 10 ;;
 	5) xbacklight -dec 10 ;;
@@ -5,10 +7,13 @@ case $BLOCK_BUTTON in
 esac
 
 light="$(xbacklight | sed 's/\..*//g')"
+check='echo "$1" | grep -E ^\-?[0-9]*\.?[0-9]+$'
 
-if [ "$light" -gt "60" ]; then
+if [ "$light" != "$check" ]; then
+  exit
+elif [ "$light" -gt 60 ]; then
     icon=""
-elif [ "$light" -lt "40" ]; then
+elif [ "$light" -lt 40 ]; then
     icon=""
 else icon=""
 fi
