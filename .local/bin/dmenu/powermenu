@@ -10,18 +10,9 @@ lock(){
 
 }
 
-# defining dmenu colors
-[ "$NB" ] || NB="#222222"
-[ "$NF" ] || NF="#e3e5e8"
-[ "$SB" ] || SB="#eeeeee"
-[ "$SF" ] || SF="#282828"
-[ "$FN" ] || FN="SF Pro Rounded:size=11"
 [ "$I3LCK_BG" ] || I3LCK_BG="#9d0006"
 [ "$I3LCK_TIME" ] || I3LCK_TIME="#a89984"
 [ "$I3LCK_DATE" ] || I3LCK_DATE="#a89984"
-
-dmenu_flags=( -i -nb $NB -nf $NF -sb $SB -sf $SF \
-    -fn "$FN" )
 
 # dmenu selection of exit options
 options="shutdown\nsuspend\nreboot\nhibernate\nlogout\nlock"
@@ -51,7 +42,7 @@ case $operation in
         lock && systemctl hibernate
         ;;
     logout )
-        [ "$DESKTOP_SESSION" ='i3' ] && i3-msg exit
+        [ "$DESKTOP_SESSION" ='dwm' ] && i3-msg exit
         id=`loginctl | grep $(whoami) | awk -F' ' '{ print $1 }'`
         loginctl kill-session $id
         ;;
