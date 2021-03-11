@@ -7,10 +7,10 @@ case $BLOCK_BUTTON in
 esac
 
 light="$(xbacklight | sed 's/\..*//g')"
-check='echo "$1" | grep -E ^\-?[0-9]*\.?[0-9]+$'
+check='echo "$light" | grep -E '^\-?[0-9]*\.?[0-9]+$''
 
-if [ "$light" != "$check" ]; then
-  exit
+if [ "$check" = "" ]; then
+  echo 'what'
 elif [ "$light" -gt 60 ]; then
     icon=""
 elif [ "$light" -lt 40 ]; then

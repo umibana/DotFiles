@@ -44,7 +44,7 @@ do
 	# Will make a warn variable if discharging and low
 	[ "$status" = "" ] && [ "$capacity" -le 15 ] && warn="!" 
 	# Prints the info
-  if [ ! -f /sys/class/power_supply/BAT0* ]; then
+  if [ ! -d /sys/class/power_supply/BAT0 ]; then
     exit
   else
 	  printf "%s%s%d%%\n" "$warn " "$status " "$capacity"; unset warn
