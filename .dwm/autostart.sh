@@ -1,14 +1,14 @@
 # wasd with mayus + wasd
 xmodmap ~/.Xmodmap &
 #status bar
-#dwmblocks &
+dwmblocks &
 # Enables notification services
-#dunst &
+dunst &
 # Faster Repeating
 xset r rate 300 50 &
 # Monitors
 ~/.screenlayout/3Mon.sh &
 # Restores wallpaper
-#nitrogen --restore &
+nitrogen --restore &
 
 

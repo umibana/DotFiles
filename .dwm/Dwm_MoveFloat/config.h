@@ -19,10 +19,10 @@ static int topbar             = 1;        /* 0 means bottom bar */
 static char *fonts[]          = {"FontAwesome:size=10",
                                  "Misc Tamsynmod:size=11",
                                  "Kochi Gothic:size=9"};
-static char normbgcolor[]           = "#222222";
+static char normbgcolor[]           = "#1c2023";
 static char normbordercolor[]       = "#444444";
 static char normfgcolor[]           = "#e3e5e8";
-static char selfgcolor[]            = "#222222";
+static char selfgcolor[]            = "#1c2023";
 static char selbordercolor[]        = "#b5b0b0";
 static char selbgcolor[]            = "#e3e5e8";
 static char *colors[][3] = {
