@@ -20,4 +20,4 @@ redshift &
 # Battery Notificaiton
 battery-notif -n &
 # Clipster for roficlip
-clipster -d
+clipster -d &
