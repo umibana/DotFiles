@@ -64,20 +64,21 @@ Then, if your using a laptop, you probably want to undervolt. Here's my config f
 *NOTE: This is done on /etc/lenovo_fix.conf for my Thinkpad
 
 * [UNDERVOLT.BATTERY]
-# CPU core voltage offset (mV)
+ CPU core voltage offset (mV)
 CORE: -105
-# Integrated GPU voltage offset (mV)
+ Integrated GPU voltage offset (mV)
 GPU: -85
-# CPU cache voltage offset (mV)
+ CPU cache voltage offset (mV)
 CACHE: -105
-# System Agent voltage offset (mV)
+ System Agent voltage offset (mV)
 UNCORE: -85
-# Analog I/O voltage offset (mV)
+ Analog I/O voltage offset (mV)
 ANALOGIO: 0 
+
 
 After that i set up cron, so i get my notes on org-mode backed-up
 - crontab -e # Install if not installed
-- *****/30 * * * * /home/hakuya/.local/bin/ObsidianSync >/dev/null 2>&1
-* This script is documented on .local/bin
+- *****/30 * * * * /home/hakuya/.local/bin/ObsidianSync >/dev/null 2>&1 
+- This script is documented on .local/bin
 
 
