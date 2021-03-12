@@ -64,17 +64,20 @@ Then, if your using a laptop, you probably want to undervolt. Here's my config f
 *NOTE: This is done on /etc/lenovo_fix.conf for my Thinkpad
 
 * [UNDERVOLT.BATTERY]
+
  CPU core voltage offset (mV)
 
 CORE: -105
-
  Integrated GPU voltage offset (mV)
+
 GPU: -85
 
  CPU cache voltage offset (mV)
+
 CACHE: -105
 
  System Agent voltage offset (mV)
+  
 UNCORE: -85
 
  Analog I/O voltage offset (mV)
