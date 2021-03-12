@@ -8,7 +8,7 @@ xinput set-prop 'TPPS/2 IBM TrackPoint' 'libinput Natural Scrolling Enabled' 1 &
 xinput set-prop 'Synaptics TM3276-022' 'libinput Natural Scrolling Enabled' 1 &
 xinput set-prop 'Synaptics TM3276-022' 'libinput Tapping Enabled' 1 &
 xinput set-prop 'Synaptics TM3276-022' 'libinput Tapping Drag Enabled' 1 &
-xinput set-prop 'Synaptics TM3276-022' 'libinput Disable While Typing Enabled' 0 &
+xinput set-prop 'Synaptics TM3276-022' 'libinput Disable While Typing Enabled' 1 &
 # Different input methods
 ibus-daemon -drx &
 # Locks screen when acpi actions are detected
@@ -19,3 +19,5 @@ picom -b --experimental-backends &
 redshift &
 # Battery Notificaiton
 battery-notif -n &
+# Clipster for roficlip
+clipster -d
