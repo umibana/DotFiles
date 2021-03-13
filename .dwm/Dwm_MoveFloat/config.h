@@ -175,8 +175,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_w,		spawn,		SHCMD("firefox") },
 	{ MODKEY,			XK_e,		spawn,		SHCMD("kitty -e ranger") },
 	{ MODKEY|ShiftMask,		XK_e,		spawn,		SHCMD("pcmanfm") },
-	{ MODKEY,			XK_r,		spawn,		SHCMD("kitty -e bpytop") },
-	{ MODKEY|ShiftMask,		XK_r,		spawn,		SHCMD("kitty -e htop") },
+	{ MODKEY,			XK_r,		spawn,		SHCMD("emacsclient -c") },
+	{ MODKEY|ShiftMask,		XK_r,		spawn,		SHCMD("kitty -e bpytop") },
 	{ MODKEY,			XK_t,		setlayout,	{.v = &layouts[0]} }, /* tile */
 	{ MODKEY|ShiftMask,		XK_t,		setlayout,	{.v = &layouts[1]} }, /* bstack */
 	{ MODKEY,			XK_y,		setlayout,	{.v = &layouts[2]} }, /* spiral */
@@ -203,6 +203,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_s,		togglesticky,	{0} },
 	/* { MODKEY|ShiftMask,		XK_s,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_d,		spawn,          SHCMD("dmenu_run") },
+	{ MODKEY|ShiftMask,			XK_d,		spawn,          SHCMD("dselect") },
 	/* { MODKEY,			XK_d,		spawn,		SHCMD("") } }, */
 	{ MODKEY,			XK_f,		togglefullscr,	{0} },
 	{ MODKEY|ShiftMask,		XK_f,		setlayout,	{.v = &layouts[8]} },

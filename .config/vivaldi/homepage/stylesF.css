@@ -1,9 +1,9 @@
 
 :root {
-  --bg: #33383b;
-  --fg: #e3e5e8;
+  --bg: #1c2023;
+  --fg: #c795ae;
   --secondaryFg: #b3b3b3;
-  --containerBg: #272727;
+  --containerBg: #252a2e;
   --searchBg: var(--containerBg);
   --scrollbarColor: #3f3f3f;
   --fontFamily: 'Misc Tamsynmod';
@@ -27,10 +27,8 @@ body {
 }
 
 #clock {
-  font-family: sans-serif;
-  font-size: 3.5rem;
-  font-weight: 600;
-  font-family: var(--fontFamily);
+  font-size: 50px;
+  font-family: 'SF Pro Rounded';
   color: var(--fg);
   margin-bottom: 0.25em;
 }
@@ -68,7 +66,7 @@ body {
   padding: 1em;
   border-radius: 3px;
   font-family: var(--fontFamily);
-  color: var(--fg);
+  color: var(--secondaryFg);
   text-align: center;
 }
 .inline {

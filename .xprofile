@@ -21,3 +21,5 @@ redshift &
 battery-notif -n &
 # Clipster for roficlip
 clipster -d &
+#Start Emacs
+emacs --daemon &

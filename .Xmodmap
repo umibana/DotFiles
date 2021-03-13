@@ -1,0 +1,25 @@
+!! Remap caps lock to special modifier, but still allow shift+caps to toggle caps lock
+clear      lock 
+clear   control
+clear      mod1
+clear      mod2
+clear      mod3
+clear      mod4
+clear      mod5
+keycode      37 = Mode_switch Caps_Lock
+keycode      66 = Control_L 
+add     control = Control_L Control_R
+add        mod1 = Alt_L Alt_R Meta_L
+add        mod2 = Num_Lock
+add        mod3 = Hyper_L
+add        mod4 = Super_L Super_R
+add        mod5 = Mode_switch ISO_Level3_Shift Caps_Lock
+!Hyper + wasd or hjkl work as arrows
+keycode 43 = h H Left Left
+keycode 44 = j J Down Down
+keycode 45 = k K Up Up
+keycode 46 = l L Right Right
+keycode 38 = a A Left Left
+keycode 39 = s S Down Down
+keycode 25 = w W Up Up
+keycode 40 = d D Right Right
