@@ -1,0 +1,25 @@
+#!/bin/bash
+
+declare -a options=(
+"Search a video on youtube - ytfzf"
+"Open a selected link - linkhandler"
+"Mount an Usb Drive - dmount"
+"Unmount an Usb drive - dunmount"
+"Open clipboard maanger - dclip"
+"Take a screenshot - maimpick"
+"Start recording - record"
+"Select Monitor layout - dlayout"
+"Exit"
+)
+
+choice=$(printf '%s\n' "${options[@]}" | dmenu -i -l 20 -p 'Choose what to do:')
+
+if [[ "$choice" == "Exit" ]]; then
+    echo "Program terminated." && exit 0
+
+elif [ "$choice" ]; then
+	cfg=$(printf '%s\n' "${choice}" | awk '{print $NF}')
+	sh "$cfg"
+else
+    echo "Program Terminated." && exit 0
+fi
