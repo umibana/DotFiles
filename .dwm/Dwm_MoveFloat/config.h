@@ -48,6 +48,7 @@ static Sp scratchpads[] = {
 };
 
 /* tagging */
+static const int statmonval = 0;
 static const char *tags[] = { "一", "二", "三", "四", "五", "六", "七", "八", "九" };
 
 static const Rule rules[] = {
@@ -62,6 +63,7 @@ static const Rule rules[] = {
 	{ NULL,       "spterm",       NULL,       	    SPTAG(0),     1,           1,         0,        -1 },
 	{ NULL,       "spranger",     NULL,       	    SPTAG(1),     1,           1,         0,        -1 },
 	{ NULL,       "spmusic",     NULL,       	    SPTAG(2),     1,           1,         0,        -1 }
+
 };
 
 /* layout(s) */
