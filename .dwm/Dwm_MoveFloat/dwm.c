@@ -2298,7 +2298,7 @@ updategeom(void)
 				}
 				if (m == selmon)
 					selmon = mons;
-         				if (m == statmon)
+        if (m == statmon)
 					statmon = mons;
 				cleanupmon(m);
 			}
