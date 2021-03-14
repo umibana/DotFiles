@@ -18,6 +18,7 @@
 (delete-selection-mode 1)                             ; Replace selection when inserting text
 (display-time-mode 1)                                   ; Enable time in the mode-line
 (global-subword-mode 1)                           ; Iterate through CamelCase words
+(global-undo-tree-mode)                           ; Vim like undo instead of emacs one
 (setq line-spacing 0.3)                                   ; seems like a nice line spacing balance.
 
 (if (eq initial-window-system 'x)                 ; if started by emacs command or desktop file
