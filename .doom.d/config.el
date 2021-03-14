@@ -72,7 +72,7 @@
 ;(setq doom-theme 'zaiste)
 ;(setq doom-theme 'doom-flatwhite)
 ;;dark themes
-(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-two)
 
 (setq display-line-numbers-type t)
 
