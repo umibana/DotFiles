@@ -52,7 +52,7 @@ static Sp scratchpads[] = {
 };
 
 /* swallow emacs */
-static const char emacsclient[] = "emacsclient";
+static const char emacsclient[] = "emacs";
 static const char emacsname[] = "emacs@";
 
 /* tagging */
@@ -70,6 +70,7 @@ static const Rule rules[] = {
     {TERMCLASS, NULL, NULL, 0, 0, 1, 0, -1},
     {"Steam", NULL, "Friends List", 0, 1, 0, 0, -1},
     {"feh", NULL, "feh", 0, 1, 0, 0, -1},
+    {"kitty", NULL, NULL, 0, 0, 1, 0, -1},
     {NULL, "spterm", NULL, SPTAG(0), 1, 1, 0, -1},
     {NULL, "spranger", NULL, SPTAG(1), 1, 1, 0, -1},
     {NULL, "spmusic", NULL, SPTAG(2), 1, 1, 0, -1}
@@ -164,7 +165,9 @@ static Key keys[] = {
     STACKKEYS(MODKEY, focus) STACKKEYS(MODKEY | ShiftMask, push)
     /* { MODKEY|ShiftMask,		XK_Escape,	spawn,	SHCMD("") }, */
     {MODKEY, XK_grave, spawn, SHCMD("dmenuunicode")},
-    /* { MODKEY|ShiftMask,		XK_grave,	togglescratch,	SHCMD("") },
+    /* { MODKEY|ShiftMask,		XK_grave,	togglescratch,
+     * SHCMD("")
+     * },
      */
     TAGKEYS(XK_1, 0) TAGKEYS(XK_2, 1) TAGKEYS(XK_3, 2) TAGKEYS(XK_4, 3)
         TAGKEYS(XK_5, 4) TAGKEYS(XK_6, 5) TAGKEYS(XK_7, 6) TAGKEYS(XK_8, 7)
@@ -182,7 +185,8 @@ static Key keys[] = {
     {MODKEY | ShiftMask, XK_BackSpace, spawn, SHCMD("sysact")},
 
     {MODKEY, XK_Tab, spawn, SHCMD("dswitcher")},
-    /* { MODKEY|ShiftMask,		XK_Tab,		spawn,		SHCMD("") },
+    /* { MODKEY|ShiftMask,		XK_Tab,		spawn, SHCMD("")
+     * },
      */
     {MODKEY, XK_q, killclient, {0}},
     {MODKEY | ShiftMask, XK_q, spawn, SHCMD("powermenu")},
@@ -210,11 +214,13 @@ static Key keys[] = {
      {.v = &layouts[9]}}, /* centeredfloatingmaster */
     {MODKEY, XK_p, incnmaster, {.i = +1}},
     {MODKEY | ShiftMask, XK_p, incnmaster, {.i = -1}},
-    /*	{ MODKEY,			XK_p,			spawn,		SHCMD("mpc toggle")
+    /*	{ MODKEY,			XK_p,			spawn,
+       SHCMD("mpc toggle")
        }, { MODKEY|ShiftMask,		XK_p,			spawn,
        SHCMD("mpc pause ; pauseallmpv") }, { MODKEY,
        XK_bracketleft,		spawn,		SHCMD("mpc seek -10") }, {
-       MODKEY|ShiftMask,		XK_bracketleft,		spawn,		SHCMD("mpc seek -60")
+       MODKEY|ShiftMask,		XK_bracketleft,		spawn,
+       SHCMD("mpc seek -60")
        }, { MODKEY,			XK_bracketright,	spawn,
        SHCMD("mpc seek +10") }, { MODKEY|ShiftMask,
        XK_bracketright,	spawn,		SHCMD("mpc seek +60") }, { MODKEY,
@@ -224,11 +230,14 @@ static Key keys[] = {
     {MODKEY, XK_a, togglegaps, {0}},
     {MODKEY | ShiftMask, XK_a, defaultgaps, {0}},
     {MODKEY, XK_s, togglesticky, {0}},
-    /* { MODKEY|ShiftMask,		XK_s,		spawn,		SHCMD("") },
+    /* { MODKEY|ShiftMask,		XK_s,		spawn, SHCMD("")
+     * },
      */
     {MODKEY, XK_d, spawn, SHCMD("dmenu_run")},
     {MODKEY | ShiftMask, XK_d, spawn, SHCMD("dselect")},
-    /* { MODKEY,			XK_d,		spawn,		SHCMD("") } },
+    /* { MODKEY,			XK_d,		spawn, SHCMD("")
+     * }
+     * },
      */
     {MODKEY, XK_f, togglefullscr, {0}},
     {MODKEY | ShiftMask, XK_f, setlayout, {.v = &layouts[8]}},
@@ -242,23 +251,28 @@ static Key keys[] = {
     {MODKEY, XK_semicolon, shiftview, {.i = 1}},
     {MODKEY | ShiftMask, XK_semicolon, shifttag, {.i = 1}},
     {MODKEY, XK_apostrophe, togglescratch, {.ui = 1}},
-    /* { MODKEY|ShiftMask,		XK_apostrophe,	spawn,		SHCMD("") },
+    /* { MODKEY|ShiftMask,		XK_apostrophe,	spawn, SHCMD("")
+     * },
      */
     {MODKEY, XK_Return, spawn, {.v = termcmd}},
     {MODKEY | ShiftMask, XK_Return, togglescratch, {.ui = 0}},
 
     {MODKEY, XK_z, incrgaps, {.i = +3}},
-    /* { MODKEY|ShiftMask,		XK_z,		spawn,		SHCMD("") },
+    /* { MODKEY|ShiftMask,		XK_z,		spawn, SHCMD("")
+     * },
      */
     {MODKEY, XK_x, incrgaps, {.i = -3}},
-    /* { MODKEY|ShiftMask,		XK_x,		spawn,		SHCMD("") },
+    /* { MODKEY|ShiftMask,		XK_x,		spawn, SHCMD("")
+     * },
      */
     {MODKEY, XK_c, spawn, SHCMD("dclip")},
-    /* { MODKEY|ShiftMask,		XK_c,		spawn,		SHCMD("") },
+    /* { MODKEY|ShiftMask,		XK_c,		spawn, SHCMD("")
+     * },
      */
     /* V is automatically bound above in STACKKEYS */
     {MODKEY, XK_b, togglebar, {0}},
-    /* { MODKEY|ShiftMask,		XK_b,		spawn,		SHCMD("") },
+    /* { MODKEY|ShiftMask,		XK_b,		spawn, SHCMD("")
+     * },
      */
     {MODKEY, XK_n, spawn, SHCMD("mpc seek 0%")},
     {MODKEY | ShiftMask, XK_n, spawn, SHCMD("mpc stop")},
@@ -289,7 +303,10 @@ static Key keys[] = {
     {MODKEY, XK_F3, spawn, SHCMD("displayselect")},
     {MODKEY, XK_F4, spawn,
      SHCMD(TERMINAL " -e pulsemixer; kill -44 $(pidof dwmblocks)")},
-    /* { MODKEY,			XK_F5,		xrdb,		{.v = NULL } },
+    /* { MODKEY,			XK_F5,		xrdb,		{.v =
+     * NULL
+     * }
+     * },
      */
     {MODKEY, XK_F6, spawn, SHCMD("torwrap")},
     {MODKEY, XK_F7, spawn, SHCMD("td-toggle")},
@@ -300,7 +317,10 @@ static Key keys[] = {
      SHCMD("mpv --no-cache --no-osc --no-input-default-bindings "
            "--input-conf=/dev/null --title=webcam $(ls /dev/video[0,2,4,6,8] | "
            "tail -n 1)")},
-    /* { MODKEY,			XK_F12,		xrdb,		{.v = NULL } },
+    /* { MODKEY,			XK_F12,		xrdb,		{.v =
+     * NULL
+     * }
+     * },
      */
     {MODKEY, XK_space, zoom, {0}},
     {MODKEY | ShiftMask, XK_space, togglefloating, {0}},
