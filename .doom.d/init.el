@@ -34,7 +34,7 @@
        ;;hydra
       ;; indent-guides     ; highlighted indent columns
        modeline          ; snazzy, Atom-inspired modeline, plus API
-       ;;nav-flash         ; blink cursor line after big motions
+       nav-flash         ; blink cursor line after big motions
        ;;neotree           ; a project drawer, like NERDTree for vim
        ophints           ; highlight the region an operation acts on
        (popup +defaults)   ; tame sudden yet inevitable temporary windows
@@ -138,7 +138,7 @@
        ;;nim               ; python + lisp at the speed of c
        ;;nix               ; I hereby declare "nix geht mehr!"
        ;;ocaml             ; an objective camel
-       (org +roam +pretty +journal +dragndrop +pandoc )    ; organize your plain life in plain text
+       (org +roam +pretty +journal +dragndrop +pandoc +pomodoro )    ; organize your plain life in plain text
 
        ;;perl              ; write code no one else can comprehend
        ;;php               ; perl's insecure younger brother
