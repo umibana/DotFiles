@@ -16,7 +16,7 @@
   :group 'doom-two-theme
   :type 'boolean)
 
-(defcustom doom-two-comment-bg doom-one-brighter-comments
+(defcustom doom-two-comment-bg doom-two-brighter-comments
   "If non-nil, comments will have a subtle, darker background. Enhancing their
 legibility."
   :group 'doom-two-theme
@@ -30,12 +30,12 @@ determine the exact padding."
 
 ;;
 (def-doom-theme doom-two
-  "A dark theme inspired by Atom Two Dark"
+  "A dark theme inspired by Atom One Dark"
 
   ;; name        default   256       16
   ((bg         '("#1c2023" nil       nil            ))
    (bg-alt     '("#1c2023" nil       nil            ))
-   (base0      '("#1B2229" "black"   "black"        ))
+   (base0      '("#1c2023" "black"   "black"        ))
    (base1      '("#1c1f24" "#1e1e1e" "brightblack"  ))
    (base2      '("#202328" "#2e2e2e" "brightblack"  ))
    (base3      '("#23272e" "#262626" "brightblack"  ))
@@ -56,7 +56,7 @@ determine the exact padding."
    (blue       '("#51afef" "#51afef" "brightblue"   ))
    (dark-blue  '("#2257A0" "#2257A0" "blue"         ))
    (magenta    '("#c795ae" "#c678dd" "brightmagenta"))
-   (violet     '("#897399" "#a9a1e1" "magenta"      ))
+   (violet     '("#a9a1e1" "#a9a1e1" "magenta"      ))
    (cyan       '("#46D9FF" "#46D9FF" "brightcyan"   ))
    (dark-cyan  '("#5699AF" "#5699AF" "cyan"         ))
 
@@ -109,7 +109,7 @@ determine the exact padding."
   ;; --- extra faces ------------------------
   ((elscreen-tab-other-screen-face :background "#353a42" :foreground "#1e2022")
 
-   (evil-goggles-default-face :inherit 'region :background (doom-blend region bg 0.5))
+   (evil-goggles-default-face :inherit 'region:background (doom-blend region bg 0.5))
 
    ((line-number &override) :foreground base4)
    ((line-number-current-line &override) :foreground fg)
@@ -178,3 +178,4 @@ determine the exact padding."
   )
 
 ;;; doom-two-theme.el ends here
+ 

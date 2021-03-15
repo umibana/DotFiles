@@ -61,7 +61,7 @@
          (unless (string= "-" project-name)
            (format (if (buffer-modified-p)  " ◉ %s" "  ●  %s") project-name))))))
 
-(setq doom-font (font-spec :family "Terminus" :size 12)
+(setq doom-font (font-spec :family "Terminus" :size 16)
             doom-big-font (font-spec :family "Terminus" :size 36)
             ;doom-variable-pitch-font (font-spec :family "ETBembo" :size 24)
             ;doom-serif-font (font-spec :family "ETBembo" :size 24)
@@ -83,7 +83,7 @@
    (buffer-face-mode))
  (add-hook 'org-mode-hook 'my-buffer-face-mode-variable)
 
-(setq org-directory "~/Documents/org-notes/")
+(setq org-directory "~/Documents/Estudios/org-notes/")
 
 (use-package! org-ref
     :after org
@@ -92,17 +92,17 @@
     :config
     ; code to run after loading org-ref
     )
-(setq org-ref-notes-directory "~/Documents/org-notes/references/notes"
-     ; org-ref-bibliography-notes "~/Documents/org-notes/references/articles.org" ;; not needed anymore. Notes now taken in org-roaM
-      org-ref-default-bibliography '("~/Documents/org-notes/references/library.bib")
-      org-ref-pdf-directory "~/Documents/Zotero/")
+(setq org-ref-notes-directory "~/Documents/Estudios/org-notes/references/notes"
+     ; org-ref-bibliography-notes "~/Documents/Estudios/org-notes/references/articles.org" ;; not needed anymore. Notes now taken in org-roaM
+      org-ref-default-bibliography '("~/Documents/Estudios/org-notes/references/library.bib")
+      org-ref-pdf-directory "~/Documents/Estudios/Zotero/")
 
 (after! org
   (add-to-list 'org-capture-templates
                '(("a"               ; key
                   "Article"         ; name
                   entry             ; type
-                  (file+headline "~/Documents/org-notes/phd.org" "Article")  ; target
+                  (file+headline "~/Documents/Estudios/org-notes/phd.org" "Article")  ; target
                   "\* %^{Title} %(org-set-tags)  :article: \n:PROPERTIES:\n:Created: %U\n:Linked: %a\n:END:\n%i\nBrief description:\n%?"  ; template
                   
                   :prepend t        ; properties
@@ -126,9 +126,9 @@
 (setq
       bibtex-completion-pdf-field "file"
       bibtex-completion-bibliography
-      '("~/Documents/org-notes/references/library.bib")
-      bibtex-completion-library-path '("~/Documents/Zotero/")
-     ; bibtex-completion-notes-path "~/Documents/org-notes/references/articles.org"  ;; not needed anymore as I take notes in org-roam
+      '("~/Documents/Estudios/org-notes/references/library.bib")
+      bibtex-completion-library-path '("~/Documents/Estudios/Zotero/")
+     ; bibtex-completion-notes-path "~/Documents/Estudios/org-notes/references/articles.org"  ;; not needed anymore as I take notes in org-roam
       )
 
 (use-package! zotxt
@@ -148,7 +148,7 @@
 (setq org-pandoc-format-extensions '(markdown_github+pipe_tables+raw_html))
 
 (use-package! org-roam-bibtex
-  :load-path "~/Documents/org-notes/references/library.bib" ;Modify with your own path
+  :load-path "~/Documents/Estudios/org-notes/references/library.bib" ;Modify with your own path
   :hook (org-roam-mode . org-roam-bibtex-mode)
   :bind (:map org-mode-map
          (("C-c n a" . orb-note-actions))))
@@ -177,7 +177,7 @@
 :END:")))
 
 ; org-roam settings
-(setq org-roam-directory "~/Documents/org-notes/references/notes")
+(setq org-roam-directory "~/Documents/Estudios/org-notes/references/notes")
 (after! org-roam
         (map! :leader
             :prefix "n"
@@ -201,7 +201,7 @@
 ;; org-journal the DOOM way
 (use-package org-journal
   :init
-  (setq org-journal-dir "~/Documents/org-notes/Daily/"
+  (setq org-journal-dir "~/Documents/Estudios/org-notes/Daily/"
         org-journal-date-prefix "#+TITLE: "
         org-journal-file-format "%Y-%m-%d.org"
         org-journal-date-format "%A, %d %B %Y")
@@ -221,7 +221,7 @@
       (deft-recursive t)
       (deft-use-filter-string-for-filename t)
       (deft-default-extension "org")
-      (deft-directory "~/Documents/org-notes/references/notes/"))
+      (deft-directory "~/Documents/Estudios/org-notes/references/notes/"))
 
 (use-package! org-roam-server
   :after org-roam
@@ -277,7 +277,7 @@
       org-agenda-block-separator nil
       org-agenda-tags-column 100 ;; from testing this seems to be a good value
       org-agenda-compact-blocks t)
-(setq org-agenda-files "~/Documents/org-notes/Daily/")
+(setq org-agenda-files "~/Documents/Estudios/org-notes/Daily/")
 (setq org-agenda-custom-commands
       '(("o" "Overview"
          ((agenda "" ((org-agenda-span 'day)
@@ -348,7 +348,7 @@
  ;; If there is more than one, they won't work right.
  '(org-journal-date-format "%A, %d %B %Y" t)
  '(org-journal-date-prefix "#+TITLE: " t)
- '(org-journal-dir "~/Documents/org-notes/Daily/" t)
+ '(org-journal-dir "~/Documents/Estudios/org-notes/Daily/" t)
  '(org-journal-file-format "%Y-%m-%d.org" t)
  '(package-selected-packages (quote (org-fancy-priorities))))
 (custom-set-faces

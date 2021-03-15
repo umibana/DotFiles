@@ -4,10 +4,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(org-agenda-files
-   '("/home/cantos/Dropbox/Org/todo.org" "/home/cantos/Dropbox/Org/Daily/2020-12-31.org" "/home/cantos/Dropbox/Org/Daily/2020-12-14.org" "/home/cantos/Dropbox/Org/Daily/2020-12-12.org"))
+   '("~/Documents/Estudios/org-notes/Random-Notes/testing.org"))
+ '(org-babel-load-languages '((js . t) (python . t) (emacs-lisp . t)))
  '(org-journal-date-format "%A, %d %B %Y")
  '(org-journal-date-prefix "#+TITLE: ")
- '(org-journal-dir "~/Dropbox/Org/Daily/")
+ '(org-journal-dir "/home/hakuya/Documents/org-notes/Diario/")
  '(org-journal-file-format "%Y-%m-%d.org")
  '(package-selected-packages '(org-fancy-priorities)))
 (custom-set-faces

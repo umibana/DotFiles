@@ -63,7 +63,7 @@ horizontal_padding = 12
 frame_width = 2
 
 # Defines color of the frame around the notification window.
-frame_color = "#444444"
+frame_color = "#1c2023"
 
 # Define a color for the separator.
 # possible values are:
@@ -177,7 +177,7 @@ startup_notification = false
 mouse_left_click = do_action
 
 # Round corners
-corner_radius = 0
+corner_radius = 10
 
 [experimental]
 per_monitor_dpi = false

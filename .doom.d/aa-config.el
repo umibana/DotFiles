@@ -73,11 +73,11 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-gruvbox-light)
+(setq doom-theme 'doom-two-theme)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/Documents/org-notes")
+(setq org-directory "~/Documents/Estudios/org-notes")
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -130,7 +130,7 @@
                '(("a"               ; key
                   "Article"         ; name
                   entry             ; type
-                  (file+headline "~/Documents/org-notes/phd.org" "Article")  ; target
+                  (file+headline "~/Documents/Estudios/org-notes/phd.org" "Article")  ; target
                   "* %^{Title} %(org-set-tags)  :article: \n:PROPERTIES:\n:Created: %U\n:Linked: %a\n:END:\n%i\nBrief description:\n%?"  ; template
                   :prepend t        ; properties
                   :empty-lines 1    ; properties
@@ -165,18 +165,18 @@
                                          (mapconcat 'identity x ",")
                                          "}")) ""))))
 
-(setq org-ref-notes-directory "~/Documents/org-notes/references/notes"
-      org-ref-bibliography-notes "~/Documents/org-notes/references/articles.org"
-      org-ref-default-bibliography '("~/Documents/org-notes/references/library.bib")
-      org-ref-pdf-directory "~/Documents/Zotero/")
-(setq helm-bibtex-bibliography "~/Documents/org-notes/references/library.bib"
-      helm-bibtex-library-path "~/Documents/Zotero"
-      helm-bibtex-notes-path "~/Documents/org-notes/references/articles.org"
+(setq org-ref-notes-directory "~/Documents/Estudios/org-notes/references/notes"
+      org-ref-bibliography-notes "~/Documents/Estudios/org-notes/references/articles.org"
+      org-ref-default-bibliography '("~/Documents/Estudios/org-notes/references/library.bib")
+      org-ref-pdf-directory "~/Documents/Estudios/Zotero/")
+(setq helm-bibtex-bibliography "~/Documents/Estudios/org-notes/references/library.bib"
+      helm-bibtex-library-path "~/Documents/Estudios/Zotero"
+      helm-bibtex-notes-path "~/Documents/Estudios/org-notes/references/articles.org"
       bibtex-completion-pdf-field "file"
       bibtex-completion-bibliography
-      '("~/Documents/org-notes/references/library.bib")
-      bibtex-completion-library-path '("~/Documents/Zotero/")
-      bibtex-completion-notes-path "~/Documents/org-notes/references/articles.org"
+      '("~/Documents/Estudios/org-notes/references/library.bib")
+      bibtex-completion-library-path '("~/Documents/Estudios/Zotero/")
+      bibtex-completion-notes-path "~/Documents/Estudios/org-notes/references/articles.org"
       )
 ;(use-package! org-roam-bibtex
  ; :hook (org-roam-mode . org-roam-bibtex-mode)
@@ -184,12 +184,12 @@
    ;      (("C-c n a" . orb-note-actions))))
 
 (use-package! org-roam-bibtex
-  :load-path "~/Documents/org-notes/references/library.bib" ;Modify with your own path
+  :load-path "~/Documents/Estudios/org-notes/references/library.bib" ;Modify with your own path
   :hook (org-roam-mode . org-roam-bibtex-mode)
   :bind (:map org-mode-map
          (("C-c n a" . orb-note-actions))))
 
-(setq org-roam-directory "~/Documents/org-notes/references/notes")
+(setq org-roam-directory "~/Documents/Estudios/org-notes/references/notes")
 
 ; org-roam settings
 (after! org-roam
@@ -233,7 +233,7 @@
 (use-package org-journal
   :defer t
   :init
-  (setq org-journal-dir "~/Documents/org-notes/Diario/"
+  (setq org-journal-dir "~/Documents/Estudios/org-notes/Diario/"
         org-journal-date-prefix "#+TITLE: "
         org-journal-file-format "%Y-%m-%d.org"
         org-journal-date-format "%A, %d %B %Y")
@@ -252,7 +252,7 @@
       (deft-recursive t)
       (deft-use-filter-string-for-filename t)
       (deft-default-extension "org")
-      (deft-directory "~/Documents/org-notes/references/notes"))
+      (deft-directory "~/Documents/Estudios/org-notes/references/notes"))
 (after! org-roam
       (setq org-roam-ref-capture-templates
             '(("r" "ref" plain (function org-roam-capture--get-point)
@@ -387,7 +387,7 @@
  ;; If there is more than one, they won't work right.
  '(org-journal-date-format "%A, %d %B %Y" t)
  '(org-journal-date-prefix "#+TITLE: " t)
- '(org-journal-dir "~/Documents/org-notes/Daily/" t)
+ '(org-journal-dir "~/Documents/Estudios/org-notes/Daily/" t)
  '(org-journal-file-format "%Y-%m-%d.org" t)
  '(package-selected-packages (quote (org-fancy-priorities))))
 (custom-set-faces
