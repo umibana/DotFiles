@@ -301,6 +301,92 @@
        ; centaur-tabs-gray-out-icons 'buffer
   ;(centaur-tabs-change-fonts "P22 Underground Book" 160))
 ;; (setq x-underline-at-descent-line t)
+ '(org-preview-latex-process-alist
+       (quote
+       ((dvipng :programs
+         ("lualatex" "dvipng")
+         :description "dvi > png" :message "you need to install the programs: latex and dvipng." :image-input-type "dvi" :image-output-type "png" :image-size-adjust
+         (1.0 . 1.0)
+         :latex-compiler
+         ("lualatex -output-format dvi -interaction nonstopmode -output-directory %o %f")
+         :image-converter
+         ("dvipng -fg %F -bg %B -D %D -T tight -o %O %f"))
+ (dvisvgm :programs
+          ("latex" "dvisvgm")
+          :description "dvi > svg" :message "you need to install the programs: latex and dvisvgm." :use-xcolor t :image-input-type "xdv" :image-output-type "svg" :image-size-adjust
+          (1.7 . 1.5)
+          :latex-compiler
+          ("xelatex -no-pdf -interaction nonstopmode -output-directory %o %f")
+          :image-converter
+          ("dvisvgm %f -n -b min -c %S -o %O"))
+ (imagemagick :programs
+              ("latex" "convert")
+              :description "pdf > png" :message "you need to install the programs: latex and imagemagick." :use-xcolor t :image-input-type "pdf" :image-output-type "png" :image-size-adjust
+              (1.0 . 1.0)
+              :latex-compiler
+              ("xelatex -no-pdf -interaction nonstopmode -output-directory %o %f")
+              :image-converter
+              ("convert -density %D -trim -antialias %f -quality 100 %O")))))
+
+(use-package! cdlatex
+    :after (:any org-mode LaTeX-mode)
+    :hook
+    ((LaTeX-mode . turn-on-cdlatex)
+     (org-mode . turn-on-org-cdlatex)))
+
+(use-package! company-math
+    :after (:any org-mode TeX-mode)
+    :config
+    (set-company-backend! 'org-mode 'company-math-symbols-latex)
+    (set-company-backend! 'TeX-mode 'company-math-symbols-latex)
+    (set-company-backend! 'org-mode 'company-latex-commands)
+    (set-company-backend! 'TeX-mode 'company-latex-commands)
+    (setq company-tooltip-align-annotations t)
+    (setq company-math-allow-latex-symbols-in-faces t))
+
+(use-package! math-symbol-lists
+  :config
+  (quail-define-package "math" "UTF-8" "Ω" t)
+  (quail-define-rules ; add whatever extra rules you want to define here...
+   ("\\from"    #X2190)
+   ("\\to"      #X2192)
+   ("\\lhd"     #X22B2)
+   ("\\rhd"     #X22B3)
+   ("\\unlhd"   #X22B4)
+   ("\\unrhd"   #X22B5))
+  (mapc (lambda (x)
+          (if (cddr x)
+              (quail-defrule (cadr x) (car (cddr x)))))
+        (append math-symbol-list-basic math-symbol-list-extended math-symbol-list-subscripts math-symbol-list-superscripts)))
+(use-package! math-symbol-lists
+  :config
+  (quail-define-package "math" "UTF-8" "Ω" t)
+  (quail-define-rules ; add whatever extra rules you want to define here...
+   ("\\from"    #X2190)
+   ("\\to"      #X2192)
+   ("\\lhd"     #X22B2)
+   ("\\rhd"     #X22B3)
+   ("\\unlhd"   #X22B4)
+   ("\\unrhd"   #X22B5))
+  (mapc (lambda (x)
+          (if (cddr x)
+              (quail-defrule (cadr x) (car (cddr x)))))
+        (append math-symbol-list-basic math-symbol-list-extended math-symbol-list-subscripts math-symbol-list-superscripts)))
+
+(defface endless/unimportant-latex-face
+  '((t :height 0.7
+       :inherit font-lock-comment-face))
+  "Face used on less relevant math commands.")
+
+(font-lock-add-keywords
+ 'latex-mode
+ `((,(rx (or (and "\\" (or (any ",.!;")
+                           (and (or "left" "right"
+                                    "big" "Big")
+                                symbol-end)))
+             (any "_^")))
+    0 'endless/unimportant-latex-face prepend))
+ 'end)
 
 (use-package! org-fancy-priorities
  :ensure t
@@ -308,6 +394,9 @@
   (org-mode . org-fancy-priorities-mode)
   :config
    (setq org-fancy-priorities-list '("⚡" "⬆" "⬇" "☕")))
+
+(setq org-src-preserve-indentation t
+      org-edit-src-content-indentation 0)
 
 (use-package! org-super-agenda
   :commands (org-super-agenda-mode))

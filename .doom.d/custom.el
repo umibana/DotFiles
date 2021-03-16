@@ -4,7 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(org-agenda-files
-   '("~/Documents/Estudios/org-notes/Random-Notes/testing.org"))
+   '("~/.doom.d/DoomEmacsCheatsheet.org" "~/Documents/Estudios/org-notes/Random-Notes/testing.org"))
  '(org-babel-load-languages '((js . t) (python . t) (emacs-lisp . t)))
  '(org-journal-date-format "%A, %d %B %Y")
  '(org-journal-date-prefix "#+TITLE: ")
