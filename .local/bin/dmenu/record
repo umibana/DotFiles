@@ -51,6 +51,17 @@ video() { ffmpeg \
 	updateicon ""
 	}
 
+webm() { ffmpeg \
+	-f x11grab \
+	-r 24 \
+	-s "$(xdpyinfo | grep dimensions | awk '{print $2;}')" \
+	-i "$DISPLAY" \
+ 	-c:v libvpx -crf 20 -minrate 1M -maxrate 5M -b:v 3M -threads 3 \
+	"$HOME/video-$(date '+%y%m%d-%H%M-%S').webm" &
+	echo $! > /tmp/recordingpid
+	updateicon ""
+	}
+
 webcamhidef() { ffmpeg \
 	-f v4l2 \
 	-i /dev/video0 \
@@ -80,11 +91,12 @@ audio() { \
 	}
 
 askrecording() { \
-	choice=$(printf "screencast\\nvideo\\nvideo selected\\naudio\\nwebcam\\nwebcam (hi-def)" | dmenu -i -p "Select recording style:")
+	choice=$(printf "screencast\\nvideo\\nwebm\\nvideo selected\\naudio\\nwebcam\\nwebcam (hi-def)" | dmenu -i -p "Select recording style:")
 	case "$choice" in
 		screencast) screencast;;
 		audio) audio;;
 		video) video;;
+		webm) webm;;
 		*selected) videoselected;;
 		webcam) webcam;;
 		"webcam (hi-def)") webcamhidef;;
@@ -117,6 +129,7 @@ case "$1" in
 	screencast) screencast;;
 	audio) audio;;
 	video) video;;
+	webm) webm;;
 	*selected) videoselected;;
 	kill) killrecording;;
 	*) ([ -f /tmp/recordingpid ] && asktoend && exit) || askrecording;;
