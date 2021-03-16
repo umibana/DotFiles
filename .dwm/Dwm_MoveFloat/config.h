@@ -24,15 +24,15 @@ static char *fonts[] = {"FontAwesome:size=10", "Misc Tamsynmod:size=11",
                         "Kochi Gothic:size=9"};
 static char normbgcolor[] = "#1c2023";
 static char normbordercolor[] = "#444444";
-static char normfgcolor[] = "#e3e5e8";
+static char normfgcolor[] = "#c795ae";
 static char selfgcolor[] = "#1c2023";
 static char selbordercolor[] = "#b5b0b0";
-static char selbgcolor[] = "#e3e5e8";
-static char *colors[][3] = {
+static char selbgcolor[] = "#c795ae";
+static char *colors[][4] = {
     /*               fg           bg           border   */
     [SchemeNorm] = {normfgcolor, normbgcolor, normbordercolor},
-    [SchemeInv] = {selbgcolor, selfgcolor, normbordercolor},
-    [SchemeSel] = {selfgcolor, selbgcolor, selbordercolor},
+    [SchemeInv] = {normfgcolor, normbgcolor, normbordercolor},
+    [SchemeSel] = {normbgcolor, selbgcolor, selbordercolor},
     [SchemeTitle] = {normfgcolor, normfgcolor, normfgcolor},
 };
 
