@@ -110,7 +110,8 @@ markup = full
 #   %p  progress value if set ([  0%] to [100%]) or nothing
 #   %n  progress value if set without any extra characters
 # Markup is allowed
-format = "<b>%s</b>\n%b"
+#format = "<b><span foreground='#fcaf3e'>%s</b>\n%b"
+format = "<b><span foreground='#c795ae'>%s</span></b>\n%b"
 
 # Alignment of message text.
 # Possible values are "left", "center" and "right".
@@ -193,7 +194,7 @@ context = ctrl+shift+j
 
 [urgency_low]
 background = "#222222"
-foreground = "#abb2bf"
+foreground = "#c795ae"
 timeout = 7
 
 
