@@ -35,12 +35,12 @@ indicate_hidden = yes
 
 # Shrink window if it's smaller than the width.  Will be ignored if
 # width is 0.
-shrink = no
+shrink = yes
 
 # The transparency of the window.  Range: [0; 100].
 # This option will only work if a compositing window manager is
 # present (e.g. xcompmgr, compiz, etc.).
-transparency = 0
+transparency = 5
 
 # The height of the entire notification.  If the height is smaller
 # than the font height and padding combined, it will be raised
@@ -155,7 +155,7 @@ sticky_history = yes
 history_length = 20
 
 # dmenu path
-dmenu = dmenu_run
+dmenu = dmenu
 
 # Browser for opening urls in context menu.
 browser = firefox

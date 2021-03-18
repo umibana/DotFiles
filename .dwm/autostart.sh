@@ -9,6 +9,5 @@ xset r rate 300 50 &
 # Monitors
 ~/.screenlayout/3Mon.sh &
 # Restores wallpaper
-nitrogen --restore &
-
+walchange &
 

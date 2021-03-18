@@ -1,4 +1,6 @@
 #+TITLE: The Ultimate Doom Emacs Cheatsheet
+#+roam_tags: "Doom Emacs"
+
 * Command Abbreviations
 - =C= - "Control" key
 - =M= - "M" or "option/alt" key
@@ -133,6 +135,9 @@
   3. wooo
   4. 3
 ** Links, Hyperlinks and more
+:PROPERTIES:
+:ID:       6bfeea48-299e-4d51-a2f9-be7889f93e1b
+:END:
 - =SPC m l= to add a link to an org page
 - You can add =::= to specify a heading or a line number
 - You can paste http links as well

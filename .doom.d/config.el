@@ -98,6 +98,7 @@
       org-ref-pdf-directory "~/Documents/Estudios/Zotero/")
 
 (after! org
+  (setq org-log-done 'time)
   (add-to-list 'org-capture-templates
                '(("a"               ; key
                   "Article"         ; name
@@ -177,7 +178,7 @@
 :END:")))
 
 ; org-roam settings
-(setq org-roam-directory "~/Documents/Estudios/org-notes/references/notes")
+(setq org-roam-directory "~/Documents/Estudios/org-notes")
 (after! org-roam
         (map! :leader
             :prefix "n"
@@ -221,7 +222,8 @@
       (deft-recursive t)
       (deft-use-filter-string-for-filename t)
       (deft-default-extension "org")
-      (deft-directory "~/Documents/Estudios/org-notes/references/notes/"))
+      (deft-directory "~/Documents/Estudios/org-notes"))
+
 
 (use-package! org-roam-server
   :after org-roam
@@ -230,9 +232,9 @@
         org-roam-server-port 8080
         org-roam-server-export-inline-images t
         org-roam-server-authenticate nil
-        org-roam-server-label-truncate t
-        org-roam-server-label-truncate-length 60
-        org-roam-server-label-wrap-length 20)
+        org-roam-server-network-label-truncate t
+        org-roam-server-network-label-truncate-length 60
+        org-roam-server-network-label-wrap-length 20)
   (defun org-roam-server-open ()
     "Ensure the server is active, then open the roam graph."
     (interactive)
@@ -277,7 +279,7 @@
       org-agenda-block-separator nil
       org-agenda-tags-column 100 ;; from testing this seems to be a good value
       org-agenda-compact-blocks t)
-(setq org-agenda-files "~/Documents/Estudios/org-notes/Daily/")
+(setq org-agenda-files "~/Documents/Estudios/org-notes")
 (setq org-agenda-custom-commands
       '(("o" "Overview"
          ((agenda "" ((org-agenda-span 'day)
@@ -349,7 +351,7 @@
  '(org-journal-date-format "%A, %d %B %Y" t)
  '(org-journal-date-prefix "#+TITLE: " t)
  '(org-journal-dir "~/Documents/Estudios/org-notes/Daily/" t)
- '(org-journal-file-format "%Y-%m-%d.org" t)
+ '(org-journal-file-format "%d-%m-%Y.org" t)
  '(package-selected-packages (quote (org-fancy-priorities))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
