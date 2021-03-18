@@ -53,7 +53,7 @@ video() { ffmpeg \
 
 webm() { ffmpeg \
 	-f x11grab \
-	-r 24 \
+	-r 10 \
 	-s "$(xdpyinfo | grep dimensions | awk '{print $2;}')" \
 	-i "$DISPLAY" \
  	-c:v libvpx -crf 20 -minrate 1M -maxrate 5M -b:v 3M -threads 3 \

@@ -8,7 +8,7 @@ host="$(cat /proc/sys/kernel/hostname)"
 
 if [ "$host" == 'root' ]; then
     nitrogen --restore
-elif [ "$time" -le 18  ] && ["$time" -ge 8 ]; then
+elif [ "$time" -le 18  ] && [ "$time" -ge 8 ]; then
     nitrogen --set-zoom-fill "/home/hakuya/Pictures/Wallpapers/MorningPape.png"
 else
     nitrogen --set-zoom-fill "/home/hakuya/Pictures/Wallpapers/AfternoonPape.jpg"

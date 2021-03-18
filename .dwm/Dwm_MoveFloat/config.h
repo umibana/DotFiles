@@ -190,12 +190,12 @@ static Key keys[] = {
      */
     {MODKEY, XK_q, killclient, {0}},
     {MODKEY | ShiftMask, XK_q, spawn, SHCMD("powermenu")},
-    {MODKEY, XK_w, spawn, SHCMD("chromium")},
-    {MODKEY | ShiftMask, XK_w, spawn, SHCMD("firefox")},
+    {MODKEY, XK_w, spawn, SHCMD("firefox")},
+    {MODKEY | ShiftMask, XK_w, spawn, SHCMD("chromium")},
     {MODKEY, XK_e, spawn, SHCMD("kitty -e ranger")},
     {MODKEY | ShiftMask, XK_e, spawn, SHCMD("pcmanfm")},
     {MODKEY, XK_r, spawn, SHCMD("emacsclient -c")},
-    {MODKEY | ShiftMask, XK_r, spawn, SHCMD("kitty -e bpytop")},
+    {MODKEY | ShiftMask, XK_r, spawn, SHCMD("wmctrl -x -a emacs")},
     {MODKEY, XK_t, setlayout, {.v = &layouts[0]}},             /* tile */
     {MODKEY | ShiftMask, XK_t, setlayout, {.v = &layouts[1]}}, /* bstack */
     {MODKEY, XK_y, setlayout, {.v = &layouts[2]}},             /* spiral */

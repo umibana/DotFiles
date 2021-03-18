@@ -98,18 +98,18 @@
       org-ref-pdf-directory "~/Documents/Estudios/Zotero/")
 
 (after! org
-  (setq org-log-done 'time)
-  (add-to-list 'org-capture-templates
-               '(("a"               ; key
-                  "Article"         ; name
-                  entry             ; type
-                  (file+headline "~/Documents/Estudios/org-notes/phd.org" "Article")  ; target
-                  "\* %^{Title} %(org-set-tags)  :article: \n:PROPERTIES:\n:Created: %U\n:Linked: %a\n:END:\n%i\nBrief description:\n%?"  ; template
-                  
-                  :prepend t        ; properties
-                  :empty-lines 1    ; properties
-                  :created t        ; properties
-))) )
+  (setq org-log-done 'time))
+;  (add-to-list 'org-capture-templates
+;;               '(("a"               ; key
+;;                  "Article"         ; name
+;;                  entry             ; type
+;;                  (file+headline "~/Documents/Estudios/org-notes/phd.org" "Article")  ; target
+;;                  "\* %^{Title} %(org-set-tags)  :article: \n:PROPERTIES:\n:Created: %U\n:Linked: %a\n:END:\n%i\nBrief description:\n%?"  ; template
+;;                  
+;;                  :prepend t        ; properties
+;;                  :empty-lines 1    ; properties
+;                  :created t        ; properties
+
 
 (use-package! helm-bibtex
   :after org
@@ -160,22 +160,22 @@
          :unnarrowed t)))
 (setq orb-preformat-keywords   '(("citekey" . "=key=") "title" "url" "file" "author-or-editor" "keywords"))
 
-(setq orb-templates
-      '(("n" "ref+noter" plain (function org-roam-capture--get-point)
-         ""
-         :file-name "${slug}"
-         :head "#+TITLE: ${citekey}: ${title}\n#+ROAM_KEY: ${ref}\n#+ROAM_TAGS:
-
-- tags ::
-- keywords :: ${keywords}
-\* ${title}
-:PROPERTIES:
-:Custom_ID: ${citekey}
-:URL: ${url}
-:AUTHOR: ${author-or-editor}
-:NOTER_DOCUMENT: %(orb-process-file-field \"${citekey}\")
-:NOTER_PAGE:
-:END:")))
+;;(setq orb-templates
+;;      '(("n" "ref+noter" plain (function org-roam-capture--get-point)
+;;         ""
+;;         :file-name "${slug}"
+;;         :head "#+TITLE: ${citekey}: ${title}\n#+ROAM_KEY: ${ref}\n#+ROAM_TAGS:
+;;
+;;- tags ::
+;;- keywords :: ${keywords}
+;;\* ${title}
+;;:PROPERTIES:
+;;:Custom_ID: ${citekey}
+;;:URL: ${url}
+;;:AUTHOR: ${author-or-editor}
+;;:NOTER_DOCUMENT: %(orb-process-file-field \"${citekey}\")
+;;:NOTER_PAGE:
+;;:END:")))
 
 ; org-roam settings
 (setq org-roam-directory "~/Documents/Estudios/org-notes")
@@ -279,7 +279,7 @@
       org-agenda-block-separator nil
       org-agenda-tags-column 100 ;; from testing this seems to be a good value
       org-agenda-compact-blocks t)
-(setq org-agenda-files "~/Documents/Estudios/org-notes")
+(setq org-agenda-files (directory-files-recursively "~/Documents/Estudios/" "\\.org$"))
 (setq org-agenda-custom-commands
       '(("o" "Overview"
          ((agenda "" ((org-agenda-span 'day)
