@@ -268,6 +268,13 @@
   :config
    (setq org-fancy-priorities-list '("⚡" "⬆" "⬇" "☕")))
 
+(use-package! cdlatex
+    :after (:any org-mode LaTeX-mode)
+    :hook
+    ((LaTeX-mode . turn-on-cdlatex)
+     (org-mode . turn-on-org-cdlatex)))
+
+
 (use-package! org-super-agenda
   :commands (org-super-agenda-mode))
 (after! org-agenda
