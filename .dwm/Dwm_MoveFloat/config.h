@@ -260,7 +260,7 @@ static Key keys[] = {
      * },
      */
     {MODKEY, XK_Return, spawn, {.v = termcmd}},
-	{ MODKEY|ControlMask,           XK_Return, riospawn,       {.v = termcmd } },
+	{ MODKEY|ControlMask,           XK_Return, riospawn, SHCMD("dmenu_run")},
 	{ MODKEY,                       XK_s,      rioresize,      {0} },
     {MODKEY | ShiftMask, XK_Return, togglescratch, {.ui = 0}},
 
