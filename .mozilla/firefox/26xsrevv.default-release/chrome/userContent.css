@@ -1,3 +1,4 @@
 *{
-    scrollbar-width: 3px !important;
+    scrollbar-width: thin !important;
+    scrollbar-color: #c795ae #1c2023;
 }

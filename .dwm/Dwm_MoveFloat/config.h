@@ -20,11 +20,17 @@ static int smartgaps =
     0;                  /* 1 means no outer gap when there is only one window */
 static int showbar = 1; /* 0 means no bar */
 static int topbar = 1;  /* 0 means bottom bar */
-static const char slopspawnstyle[]  = "-t 0 -c 0.92,0.85,0.69,0.3 -o"; /* do NOT define -f (format) here */
-static const char slopresizestyle[] = "-t 0 -c 0.92,0.85,0.69,0.3"; /* do NOT define -f (format) here */
-static const int riodraw_borders    = 0;        /* 0 or 1, indicates whether the area drawn using slop includes the window borders */
-static const int riodraw_spawnasync = 0;        /* 0 means that the application is only spawned after a successful selection while
-                                                 * 1 means that the application is being initialised in the background while the selection is made */
+static const char slopspawnstyle[] =
+    "-t 0 -c 0.92,0.85,0.69,0.3 -o"; /* do NOT define -f (format) here */
+static const char slopresizestyle[] =
+    "-t 0 -c 0.92,0.85,0.69,0.3"; /* do NOT define -f (format) here */
+static const int riodraw_borders =
+    0; /* 0 or 1, indicates whether the area drawn using slop includes the
+          window borders */
+static const int riodraw_spawnasync =
+    0; /* 0 means that the application is only spawned after a successful
+        * selection while 1 means that the application is being initialised in
+        * the background while the selection is made */
 static char *fonts[] = {"FontAwesome:size=10", "berry:size=11",
                         "Kochi Gothic:size=9"};
 static char normbgcolor[] = "#1c2023";
@@ -234,7 +240,7 @@ static Key keys[] = {
 
     {MODKEY, XK_a, togglegaps, {0}},
     {MODKEY | ShiftMask, XK_a, defaultgaps, {0}},
-    {MODKEY, XK_s, togglesticky, {0}},
+    {MODKEY | ShiftMask, XK_s, togglesticky, {0}},
     /* { MODKEY|ShiftMask,		XK_s,		spawn, SHCMD("")
      * },
      */
@@ -260,8 +266,8 @@ static Key keys[] = {
      * },
      */
     {MODKEY, XK_Return, spawn, {.v = termcmd}},
-	{ MODKEY|ControlMask,           XK_Return, riospawn, SHCMD("dmenu_run")},
-	{ MODKEY,                       XK_s,      rioresize,      {0} },
+    {MODKEY | ControlMask, XK_Return, riospawn, SHCMD("dmenu_run")},
+    {MODKEY, XK_s, rioresize, {0}},
     {MODKEY | ShiftMask, XK_Return, togglescratch, {.ui = 0}},
 
     {MODKEY, XK_z, incrgaps, {.i = +3}},
