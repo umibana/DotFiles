@@ -1,6 +1,6 @@
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
-(setq user-full-name "Sunny Hasija"
-      user-mail-address "hasija.4@osu.edu")
+(setq user-full-name "Hans Villarroel"
+      user-mail-address "hans.villarroel@hotmail.cl")
 
 (setq-default
  delete-by-moving-to-trash t                      ; Delete files to trash
@@ -92,7 +92,7 @@
     :config
     ; code to run after loading org-ref
     )
-(setq org-ref-notes-directory "~/Documents/Estudios/org-notes/references/notes"
+(setq org-ref-notes-directory "~/Documents/Estudios/org-notes"
      ; org-ref-bibliography-notes "~/Documents/Estudios/org-notes/references/articles.org" ;; not needed anymore. Notes now taken in org-roaM
       org-ref-default-bibliography '("~/Documents/Estudios/org-notes/references/library.bib")
       org-ref-pdf-directory "~/Documents/Estudios/Zotero/")
@@ -232,6 +232,10 @@
         org-roam-server-port 8080
         org-roam-server-export-inline-images t
         org-roam-server-authenticate nil
+        org-roam-server-serve-files nil
+        org-roam-server-served-file-extensions '("pdf" "mp4" "ogv")
+        org-roam-server-network-poll t
+        org-roam-server-network-arrows nil
         org-roam-server-network-label-truncate t
         org-roam-server-network-label-truncate-length 60
         org-roam-server-network-label-wrap-length 20)
@@ -404,3 +408,4 @@
 
 (add-hook 'Info-mode-hook #'mixed-pitch-mode)
 
+(require 'org-roam-protocol)
