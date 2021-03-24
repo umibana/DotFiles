@@ -404,6 +404,16 @@
 (use-package! info-colors
   :commands (info-colors-fontify-node))
 
+(use-package! org-pomodoro
+  :ensure t
+  :commands (org-pomodoro)
+  :config
+  (setq
+   alert-user-configuration (quote ((((:category . "org-pomodoro")) libnotify nil)))
+   org-pomodoro-length 50
+   org-pomodoro-short-break-length 10
+   ))
+
 (add-hook 'Info-selection-hook 'info-colors-fontify-node)
 
 (add-hook 'Info-mode-hook #'mixed-pitch-mode)
