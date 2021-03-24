@@ -30,7 +30,7 @@
     advised not to change since tst css relies on this value*/
     --sidebar-collapsed-width: 30px;
 
-    --dividers: 2px;
+    --dividers: 0px;
 
     --tl-animation-duration: 200ms;
     /*--tl-tab-background-gradient: */
@@ -91,11 +91,4 @@ window,
 #nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-button,
 #nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker {
   padding: 0 !important;     
-
-.scroller {
-  width: 300px;
-  height: 100px;
-  overflow-y: scroll;
-  scrollbar-color: rebeccapurple green;
-  scrollbar-width: thin;
 }

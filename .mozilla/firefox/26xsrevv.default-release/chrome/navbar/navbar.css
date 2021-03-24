@@ -7,11 +7,11 @@ toolbox#navigator-toolbox {
 }
 
 #nav-bar {
-    min-height: 36px !important;
+    min-height: 30px !important;
     box-shadow: none !important;
     padding-inline: 5px 6px !important;
     background-color: var(--toolbar-bgcolor) !important;
-    padding: 8px !important;
+    padding: 0px !important;
 }
 
 .private-browsing-indicator {

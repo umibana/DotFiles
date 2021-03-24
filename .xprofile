@@ -23,3 +23,11 @@ battery-notif -n &
 clipster -d &
 #Start Emacs
 emacs --daemon &
+# Faster Repeating
+xset r rate 300 50 &
+# Restores wallpaper
+walchange &
+# wasd with mayus + wasd
+xmodmap ~/.Xmodmap &
+# Enables notification services
+dunst &
