@@ -927,17 +927,17 @@ user_pref("dom.event.contextmenu.enabled",		true);
 
 // PREF: Disable Downloading on Desktop
 // CIS 2.3.2
-user_pref("browser.download.folderList",			2);
+user_pref("browser.download.folderList",			1);
 
 // PREF: Always ask the user where to download
 // https://developer.mozilla.org/en/Download_Manager_preferences (obsolete)
-user_pref("browser.download.useDownloadDir",			false);
+user_pref("browser.download.useDownloadDir",			true);
 
 // PREF: Disable the "new tab page" feature and show a blank tab instead
 // https://wiki.mozilla.org/Privacy/Reviews/New_Tab
 // https://support.mozilla.org/en-US/kb/new-tab-page-show-hide-and-customize-top-sites#w_how-do-i-turn-the-new-tab-page-off
-user_pref("browser.newtabpage.enabled",				false);
-user_pref("browser.newtab.url",					"about:blank");
+user_pref("browser.newtabpage.enabled",				true);
+user_pref("browser.newtab.url",					"https://prettycoffee.github.io/fluidity/");
 
 // PREF: Disable Snippets
 // https://wiki.mozilla.org/Firefox/Projects/Firefox_Start/Snippet_Service
@@ -1209,7 +1209,7 @@ user_pref("security.ssl3.dhe_dss_camellia_256_sha",		false);
 
 // PREF: replace dafault action of firefox new tab
 user_pref("browser.newtabpage.enabled", true);
-user_pref("browser.newtab.url", "/home/hakuya/.config/vivaldi/homepage/indexF.html");
+user_pref("browser.newtab.url", "/home/hakuya/.config/vivaldi/homepage/indexf.html");
 
 // PREF: Enable stylesheet
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); // default is false
