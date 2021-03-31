@@ -85,52 +85,59 @@
 
 (setq org-directory "~/Documents/Estudios/org-notes/")
 
-(use-package! org-ref
-    :after org
-    :init
-    ; code to run before loading org-ref
-    :config
-    ; code to run after loading org-ref
-    )
-(setq org-ref-notes-directory "~/Documents/Estudios/org-notes"
-     ; org-ref-bibliography-notes "~/Documents/Estudios/org-notes/references/articles.org" ;; not needed anymore. Notes now taken in org-roaM
-      org-ref-default-bibliography '("~/Documents/Estudios/org-notes/references/library.bib")
-      org-ref-pdf-directory "~/Documents/Estudios/Zotero/")
+;;(use-package! org-ref
+;;    :after org
+;;    :init
+;;    ; code to run before loading org-ref
+;;    :config
+;;    ; code to run after loading org-ref
+;;    )
+;;(setq org-ref-notes-directory "~/Documents/Estudios/org-notes"
+;;     ; org-ref-bibliography-notes "~/Documents/Estudios/org-notes/references/articles.org" ;; not needed anymore. Notes now taken in org-roaM
+;;      org-ref-default-bibliography '("~/Documents/Estudios/org-notes/references/library.bib")
+;;      org-ref-pdf-directory "~/Documents/Estudios/Zotero/")
 
 (after! org
   (setq org-log-done 'time))
-;  (add-to-list 'org-capture-templates
-;;               '(("a"               ; key
-;;                  "Article"         ; name
-;;                  entry             ; type
-;;                  (file+headline "~/Documents/Estudios/org-notes/phd.org" "Article")  ; target
-;;                  "\* %^{Title} %(org-set-tags)  :article: \n:PROPERTIES:\n:Created: %U\n:Linked: %a\n:END:\n%i\nBrief description:\n%?"  ; template
-;;                  
-;;                  :prepend t        ; properties
-;;                  :empty-lines 1    ; properties
-;                  :created t        ; properties
+        (setq org-capture-templates
+        '(("t" "TODO" entry (file+headline as/gtd "Collect")
+        "* TODO %? %^G \n  %U" :empty-lines 1)
+        ("s" "Scheduled TODO" entry (file+headline as/gtd "Collect")
+        "* TODO %? %^G \nSCHEDULED: %^t\n  %U" :empty-lines 1)
+        ("d" "Deadline" entry (file+headline as/gtd "Collect")
+            "* TODO %? %^G \n  DEADLINE: %^t" :empty-lines 1)
+        ("p" "Priority" entry (file+headline as/gtd "Collect")
+        "* TODO [#A] %? %^G \n  SCHEDULED: %^t")
+        ("a" "Appointment" entry (file+headline as/gtd "Collect")
+        "* %? %^G \n  %^t")
+        ("l" "Link" entry (file+headline as/gtd "Collect")
+        "* TODO %a %? %^G\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+        ("n" "Note" entry (file+headline as/gtd "Notes")
+            "* %? %^G\n%U" :empty-lines 1)
+        ("j" "Journal" entry (file+datetree "/home/hakuya/Documents/Estudios/org-notes/journal.org")
+        "* %? %^G\nEntered on %U\n")))
 
 
-(use-package! helm-bibtex
-  :after org
-  :init
-  ; blah blah
-  :config
-  ;blah blah
-  )
-
-(setq bibtex-format-citation-functions
-      '((org-mode . (lambda (x) (insert (concat
-                                         "\\cite{"
-                                         (mapconcat 'identity x ",")
-                                         "}")) ""))))
-(setq
-      bibtex-completion-pdf-field "file"
-      bibtex-completion-bibliography
-      '("~/Documents/Estudios/org-notes/references/library.bib")
-      bibtex-completion-library-path '("~/Documents/Estudios/Zotero/")
-     ; bibtex-completion-notes-path "~/Documents/Estudios/org-notes/references/articles.org"  ;; not needed anymore as I take notes in org-roam
-      )
+;;(use-package! helm-bibtex
+;;  :after org
+;;  :init
+;;  ; blah blah
+;;  :config
+;;  ;blah blah
+;;  )
+;;
+;;(setq bibtex-format-citation-functions
+;;      '((org-mode . (lambda (x) (insert (concat
+;;                                         "\\cite{"
+;;                                         (mapconcat 'identity x ",")
+;;                                         "}")) ""))))
+;;(setq
+;;      bibtex-completion-pdf-field "file"
+;;      bibtex-completion-bibliography
+;;      '("~/Documents/Estudios/org-notes/references/library.bib")
+;;      bibtex-completion-library-path '("~/Documents/Estudios/Zotero/")
+;;     ; bibtex-completion-notes-path "~/Documents/Estudios/org-notes/references/articles.org"  ;; not needed anymore as I take notes in org-roam
+;;      )
 
 (use-package! zotxt
   :after org)
@@ -148,11 +155,11 @@
 ;; special extensions for markdown_github output
 (setq org-pandoc-format-extensions '(markdown_github+pipe_tables+raw_html))
 
-(use-package! org-roam-bibtex
-  :load-path "~/Documents/Estudios/org-notes/references/library.bib" ;Modify with your own path
-  :hook (org-roam-mode . org-roam-bibtex-mode)
-  :bind (:map org-mode-map
-         (("C-c n a" . orb-note-actions))))
+;;(use-package! org-roam-bibtex
+;;  :load-path "~/Documents/Estudios/org-notes/references/library.bib" ;Modify with your own path
+;;  :hook (org-roam-mode . org-roam-bibtex-mode)
+;;  :bind (:map org-mode-map
+;;         (("C-c n a" . orb-note-actions))))
 (setq orb-templates
       '(("r" "ref" plain (function org-roam-capture--get-point) ""
          :file-name "${citekey}"
@@ -372,7 +379,7 @@
  )
 
 ;; adding custom key-bindings for most used functions
-(map! :leader "f a"#'helm-bibtex)  ; "find article" : opens up helm bibtex for search.
+;;(map! :leader "f a"#'helm-bibtex)  ; "find article" : opens up helm bibtex for search.
 (map! :leader "o n"#'org-noter)    ; "org noter"  : opens up org noter in a headline
 (map! :leader "r c i"#'org-clock-in); "routine clock in" : clock in to a habit.
 (map! :leader "c b"#'beacon-blink) ; "cursor blink" : makes the beacon-blink

@@ -31,3 +31,5 @@ walchange &
 xmodmap ~/.Xmodmap &
 # Enables notification services
 dunst &
+# PulseEffects
+pulseeffects --gapplication-service &

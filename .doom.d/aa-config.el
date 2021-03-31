@@ -126,16 +126,16 @@
   ;blah blah
   )
 (after! org
-  (add-to-list 'org-capture-templates
-               '(("a"               ; key
-                  "Article"         ; name
-                  entry             ; type
-                  (file+headline "~/Documents/Estudios/org-notes/phd.org" "Article")  ; target
-                  "* %^{Title} %(org-set-tags)  :article: \n:PROPERTIES:\n:Created: %U\n:Linked: %a\n:END:\n%i\nBrief description:\n%?"  ; template
-                  :prepend t        ; properties
-                  :empty-lines 1    ; properties
-                  :created t        ; properties
-))) )
+ (add-to-list 'org-capture-templates
+             '(("i" "Inbox" entry
+               (file "~/Documents/Estudios/org-notes/inbox.org")
+               "* TODO %?"
+               )
+               ("j" "Journal" entry
+               (file "~/Documents/Estudios/org-notes/inbox.org")
+               "* TODO %?"
+               )
+)) )
 
  (defun my-buffer-face-mode-variable ()
    "Set font to a variable width (proportional) fonts in current buffer"

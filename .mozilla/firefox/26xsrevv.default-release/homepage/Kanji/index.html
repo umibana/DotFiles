@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ようこそ</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet"> 
+		<link rel="icon" href="./favicon.ico">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<script src="./config.js"></script>
+
+	</head>
+	<body>
+		<div id="date">
+			
+		</div>
+		<div id="toggle">
+			<span></span>
+			<span></span>
+		</div>
+		<div class="column-container">
+			<div class="left">
+				<img id="cover" alt="">
+			</div>
+
+			<div class="clock">
+				<div id="hour" class=""></div>
+				<div id="separator" class=""></div>
+				<div id="minutes" class=""></div>
+			</div>
+
+			<div class="right">
+				<div id="greetings" class=""></div>
+				<div class="search_box">
+					<form id="search" method="get">
+					<input id="input_box" class="input_box" type="text" name="q" autocomplete="off" autofocus/>
+				</div>
+				<div class="container">
+					<div class="column">
+						<p>Daily</p>
+						<a id="git" class="link" href="https://github.com/hansOnell/repositories"><img src="https://github.com/favicon.ico">My Repo</a>
+						<a id="git" class="link" href="https://github.com"><img src="https://github.com/favicon.ico">GitHub</a>
+						<a id="git" class="link" href="https://holodex.net"><img src="https://github.com/favicon.ico">Holodex</a>
+						<a id="git" class="link" href=""https://loa.usach.cl/intranetfing/><img src="https://github.com/favicon.ico">LOA Usach</a>
+						<a class="link" href="https://uvirtual.usach.cl/moodle/"><img src="https://gitlab.com/favicon.ico">U Virtual</a>
+						<a class="link null">null</a>
+					</div>
+					<div class="column">
+						<p>Forums</p>
+						<a class="link" href="https://boards.4channel.org/g/"><img src="https://reddit.com/favicon.ico">Technology</a>
+						<a class="link" href="https://boards.4channel.org/fit/"><img src="https://styles.redditmedia.com/t5_2qrzu/styles/communityIcon_9uqx3fcjr4g51.jpeg?width=256&format=pjpg&s=21584c432b5961f5cbf8efa01e9179d3855aab12">Fitness</a>
+						<a class="link" href="https://reddit.com/r/chile"><img src="https://reddit.com/favicon.ico">/r/Chile</a>
+						<a class="link" href="https://reddit.com/r/unixporn"><img src="https://styles.redditmedia.com/t5_2sx2i/styles/communityIcon_7fixeonxbxd41.png?width=256&s=1ecde8d0f7197fe3aa1b9d6eef5936f7401db607">/r/unixporn</a>
+						<a class="link null">null</a>
+						<a class="link null">null</a>
+					</div>
+					<div class="column">
+						<p>Social</p>
+						<a class="link" href="https://youtube.com/"><img src="https://youtube.com/favicon.ico">YouTube</a>
+						<a class="link" href="https://twitter.com/"><img src="https://twitter.com/favicon.ico">Twitter</a>
+						<a class="link" href="https://mail.protonmail.com/inbox"><img src="https://mail.protonmail.com/assets/favicons/apple-touch-icon-57x57.png">Protonmail</a>
+						<a class="link" href="https://web.telegram.org/#/im"><img src="https://web.telegram.org/favicon.ico">Telegram</a>
+						<a class="link" href="https://web.telegram.org/#/im?p=@LinuxUprising"><img src="https://web.telegram.org/favicon.ico">L Uprising</a>
+						<a class="link null">null</a>
+					</div>
+					<div class="column">
+						<p>WM</p>
+						<a class="link" href="https://i3wm.org/"><img src="https://i3wm.org/favicon.ico">i3</a>
+						<a class="link" href="https://herbstluftwm.org/"><img src="https://herbstluftwm.org/favicon.ico">Hl</a>
+						<a class="link" href="http://www.qtile.org/"><img src="https://www.python.org/favicon.ico">qTile</a>
+						<a id="git" class="link" href="https://github.com/baskerville/bspwm/wiki"><img src="https://github.com/favicon.ico">Bspwm</a>
+						<a class="link" href="https://xmonad.org/"><img src="https://www.haskell.org/img/favicon.ico">Xmonad</a>
+						<a id="git" class="link" href="https://github.com/conformal/spectrwm/wiki/Tutorial"><img src="https://github.com/favicon.ico">Spectrwm</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="error" class="error">
+			<h1>Error in config.js</h1>
+			<p>You should choose a search engine from the list</p>
+			<div class="list">
+				<p>List:</p>
+				<ul>
+					<li>google</li>
+					<li>duckduckgo</li>
+					<li>qwant</li>
+					<li>startpage</li>
+					<li>ecosia</li>
+					<li>youtube</li>
+				</ul>
+			</div>
+		</div>
+
+		<script src="./scripts/config.js"></script>
+		<script src="./scripts/darkmode.js"></script>
+	</body>
+</html>

@@ -15,7 +15,7 @@
 // NOTICE: Disabling ServiceWorkers breaks functionality on some sites (Google Street View...)
 // Unknown security implications
 // CVE-2016-5259, CVE-2016-2812, CVE-2016-1949, CVE-2016-5287 (fixed)
-user_pref("dom.serviceWorkers.enabled",				false);
+user_pref("dom.serviceWorkers.enabled",				true);
 
 // PREF: Disable web notifications
 // https://support.mozilla.org/en-US/questions/1140439
@@ -933,12 +933,6 @@ user_pref("browser.download.folderList",			1);
 // https://developer.mozilla.org/en/Download_Manager_preferences (obsolete)
 user_pref("browser.download.useDownloadDir",			true);
 
-// PREF: Disable the "new tab page" feature and show a blank tab instead
-// https://wiki.mozilla.org/Privacy/Reviews/New_Tab
-// https://support.mozilla.org/en-US/kb/new-tab-page-show-hide-and-customize-top-sites#w_how-do-i-turn-the-new-tab-page-off
-user_pref("browser.newtabpage.enabled",				true);
-user_pref("browser.newtab.url",					"https://prettycoffee.github.io/fluidity/");
-
 // PREF: Disable Snippets
 // https://wiki.mozilla.org/Firefox/Projects/Firefox_Start/Snippet_Service
 // https://support.mozilla.org/en-US/kb/snippets-firefox-faq
@@ -1207,9 +1201,6 @@ user_pref("security.ssl3.dhe_dss_camellia_256_sha",		false);
 //user_pref("security.ssl3.ecdhe_rsa_aes_256_sha",		false); // 0xc014
 //user_pref("security.ssl3.ecdhe_ecdsa_aes_256_sha",		false); // 0xc00a
 
-// PREF: replace dafault action of firefox new tab
-user_pref("browser.newtabpage.enabled", true);
-user_pref("browser.newtab.url", "/home/hakuya/.config/vivaldi/homepage/indexf.html");
 
 // PREF: Enable stylesheet
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); // default is false

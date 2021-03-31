@@ -201,7 +201,7 @@ static Key keys[] = {
      */
     {MODKEY, XK_q, killclient, {0}},
     {MODKEY | ShiftMask, XK_q, spawn, SHCMD("powermenu")},
-    {MODKEY, XK_w, spawn, SHCMD("firefox")},
+    {MODKEY, XK_w, spawn, SHCMD("MOZ_X11_EGL=1 firefox")},
     {MODKEY | ShiftMask, XK_w, spawn, SHCMD("chromium")},
     {MODKEY, XK_e, spawn, SHCMD("kitty -e ranger")},
     {MODKEY | ShiftMask, XK_e, spawn, SHCMD("pcmanfm")},
