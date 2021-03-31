@@ -40,7 +40,7 @@ var data = {
     image_width: "350px",
     // Image source: you can use local files, or a link
     // Ex.: image_source: "/img/kanji.jpg"
-    image_source: "https://raw.githubusercontent.com/Alededorigo/Kanji/main/img/kanji.jpg",
+    image_source: "/home/hakuya/.mozilla/firefox/26xsrevv.default-release/homepage/Kanji/img/kanji.jpg",
 
     // -------------------------------------------------
     // Enable/disable site icons
