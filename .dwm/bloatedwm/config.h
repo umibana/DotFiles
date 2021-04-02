@@ -6,7 +6,7 @@
 #define AltMask Mod1Mask
 
 /* appearance */
-static unsigned int borderpx = 0; /* border pixel of windows */
+static unsigned int borderpx = 1; /* border pixel of windows */
 static unsigned int snap = 10;    /* snap pixel */
 static unsigned int gappih = 15;  /* horiz inner gap between windows */
 static unsigned int gappiv = 15;  /* vert inner gap between windows */
@@ -45,6 +45,7 @@ static char *colors[][4] = {
     [SchemeInv] = {normfgcolor, normbgcolor, normbordercolor},
     [SchemeSel] = {normbgcolor, selbgcolor, selbordercolor},
     [SchemeTitle] = {normfgcolor, normfgcolor, normfgcolor},
+    [SchemeHid] = {normfgcolor, normbgcolor, normbordercolor},
 };
 
 typedef struct {
@@ -464,6 +465,7 @@ static Button buttons[] = {
     {ClkClientWin, MODKEY, Button3, resizemouse, {0}},
     {ClkClientWin, MODKEY, Button4, incrgaps, {.i = +1}},
     {ClkClientWin, MODKEY, Button5, incrgaps, {.i = -1}},
+    {ClkWinTitle, 0, Button1, togglewin, {0}},
     {ClkTagBar, 0, Button1, view, {0}},
     {ClkTagBar, 0, Button3, toggleview, {0}},
     {ClkTagBar, MODKEY, Button1, tag, {0}},
