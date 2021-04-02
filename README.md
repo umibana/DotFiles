@@ -2,7 +2,7 @@ Dotfiles that i use for both my laptop and desktop.
 
 These dots are used with Arch Linux with dwm as its window manager.
 
-![Screenshot](Pictures/Screenshots/21-02-10_22:07:18.png)
+![Screenshot](Pictures/Screenshots/UpdatedDots.png)
 
 
 # Programs used #
@@ -17,13 +17,14 @@ These dots are used with Arch Linux with dwm as its window manager.
 
 # Features #
 
-* dwm built off of LukeSmith's build, with added patches such as: fancybar, movereise,  attachbottom, more layouts and cfacts
+* dwm built off of LukeSmith's build, with added patches such as: awesomebar, movereise,  attachbottom, more layouts and cfacts
 * dwmblocks with various modules such as: wifi, bluetooth, dual battery status, memory usage, temperature, etc.
 * riced ncmpcpp with cover art
 * riced dunst with mpd notifications
 * mpv with shaders and upscalers
 * scripts for powermenu and select layout
 * firefox with custom css
+* Doom Emacs with my config 
 
 # Before Installing #
 
