@@ -4,7 +4,7 @@ export PATH=$HOME/bin:$HOME/.emacs.d/bin:/home/hakuya/.local/bin:$HOME/.local/bi
 ## Path to your oh-my-zsh installation.
 export ZSH="/home/hakuya/.oh-my-zsh"
 #Uncomment for pywal
-(cat ~/.cache/wal/sequences &)
+#(cat ~/.cache/wal/sequences &)
 #
 ## To add support for TTYs this line can be optionally added.
 source ~/.cache/wal/colors-tty.sh

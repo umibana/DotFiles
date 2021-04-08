@@ -61,8 +61,8 @@
          (unless (string= "-" project-name)
            (format (if (buffer-modified-p)  " ◉ %s" "  ●  %s") project-name))))))
 
-(setq doom-font (font-spec :family "Terminus" :size 16)
-            doom-big-font (font-spec :family "Terminus" :size 36)
+(setq doom-font (font-spec :family "Iosevka" :size 16)
+            doom-big-font (font-spec :family "Iosevka" :size 36)
             ;doom-variable-pitch-font (font-spec :family "ETBembo" :size 24)
             ;doom-serif-font (font-spec :family "ETBembo" :size 24)
             )
@@ -72,6 +72,7 @@
 ;(setq doom-theme 'zaiste)
 ;(setq doom-theme 'doom-flatwhite)
 ;;dark themes
+(setq-default indent-tabs-mode t)
 (setq doom-theme 'doom-two)
 
 (setq display-line-numbers-type t)
@@ -79,7 +80,7 @@
  (defun my-buffer-face-mode-variable ()
    "Set font to a variable width (proportional) fonts in current buffer"
    (interactive)
-   (setq buffer-face-mode-face '(:family "Terminus" :height 100 ))
+   (setq buffer-face-mode-face '(:family "Iosevka" :height 100 ))
    (buffer-face-mode))
  (add-hook 'org-mode-hook 'my-buffer-face-mode-variable)
 
@@ -114,7 +115,7 @@
         "* TODO %a %? %^G\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
         ("n" "Note" entry (file+headline as/gtd "Notes")
             "* %? %^G\n%U" :empty-lines 1)
-        ("j" "Journal" entry (file+datetree "/home/hakuya/Documents/Estudios/org-notes/journal.org")
+        ("j" "Journal" entry (file+datetree "/home/hakuya/Documents/Estudios/org-notesagenda/journal.org")
         "* %? %^G\nEntered on %U\n")))
 
 
@@ -138,6 +139,13 @@
 ;;      bibtex-completion-library-path '("~/Documents/Estudios/Zotero/")
 ;;     ; bibtex-completion-notes-path "~/Documents/Estudios/org-notes/references/articles.org"  ;; not needed anymore as I take notes in org-roam
 ;;      )
+
+(setf mouse-wheel-scroll-amount '(3 ((shift) . 3))
+      mouse-wheel-progressive-speed nil
+      mouse-wheel-follow-mouse t
+      scroll-step 1
+      scroll-conservatively 100
+      disabled-command-function nil)
 
 (use-package! zotxt
   :after org)

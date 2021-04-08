@@ -1,4 +1,4 @@
-#include "/home/hakuya/.cache/wal/colors.Xresources"
+!!#include "/home/hakuya/colors.Xresources"
 Xft.dpi: 96
 Xft.autohint: 0
 Xft.lcdfilter:  lcddefault

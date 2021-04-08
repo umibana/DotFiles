@@ -6,7 +6,7 @@
 #define AltMask Mod1Mask
 
 /* appearance */
-static unsigned int borderpx = 1; /* border pixel of windows */
+static unsigned int borderpx = 3; /* border pixel of windows */
 static unsigned int snap = 10;    /* snap pixel */
 static unsigned int gappih = 15;  /* horiz inner gap between windows */
 static unsigned int gappiv = 15;  /* vert inner gap between windows */
@@ -34,7 +34,7 @@ static const int riodraw_spawnasync =
 static char *fonts[] = {"FontAwesome:size=10", "berry:size=11",
                         "Kochi Gothic:size=9"};
 static char normbgcolor[] = "#1c2023";
-static char normbordercolor[] = "#444444";
+static char normbordercolor[] = "#1c2023";
 static char normfgcolor[] = "#c795ae";
 static char selfgcolor[] = "#1c2023";
 static char selbordercolor[] = "#c795ae";
@@ -373,6 +373,8 @@ static Key keys[] = {
     {0, XF86XK_AudioMicMute, spawn,
      SHCMD("pactl set-source-mute @DEFAULT_SOURCE@ toggle")},
     {0, XF86XK_PowerOff, spawn, SHCMD("sysact")},
+    {0, XF86XK_Display, spawn, SHCMD("select-monitor-layout")},
+    {0, XF86XK_Tools, spawn, SHCMD("lxrandr")},
     {0, XF86XK_Calculator, spawn, SHCMD(TERMINAL " -e bc -l")},
     {0, XF86XK_Sleep, spawn, SHCMD("sudo -A zzz")},
     {0, XF86XK_WWW, spawn, SHCMD("$BROWSER")},

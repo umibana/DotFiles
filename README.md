@@ -34,11 +34,11 @@ Various of these dots contain my username so they won't work for you outside of 
 
 > paru -S firefox neovim ranger dragon-drag-and-drop zsh 
   terminus-font adobe-source-han-sans-jp-fonts ttf-joypixels 
-  otf-san-francisco-pro kitty blueman ncmpcpp dunst i3lock-color-git 
+  kitty blueman ncmpcpp dunst i3lock-color-git clipster 
   xss-lock ibus ibus-mozc libxft-bgra lxappearance lxrandr maim mpc 
   mpd mpv neofetch throttled nitrogen pcmanfm qbittorrent picom 
   thunderbird tlp tlpui ueberzug zathura youtube-dl lightdm 
-  terminus-font-ttf xdg-utils-mimeo feh sxiv code bpytop htop 
+  terminus-font-ttf xdg-utils-mimeo feh sxiv bpytop htop 
   pavucontrol xbacklight redshift wmctrl nerd-fonts-fira-code
   emacs
 
