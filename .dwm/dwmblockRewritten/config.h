@@ -3,7 +3,7 @@
 
 static const Block blocks[] = {
     {"cat /tmp/recordingicon 2>/dev/null", 0, 9},
-    {"sb-music", 1, 11},
+    {"sb-music", 5, 11},
     {"sb-cpubars", 10, 18},
     {"sb-cpu", 10, 18},
     {"sb-memory", 10, 9},

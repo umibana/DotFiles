@@ -9,14 +9,8 @@
  ******************************************************************************/
 
 // PREF: Disable Service Workers
-// https://developer.mozilla.org/en-US/docs/Web/API/Worker
-// https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker_API
-// https://wiki.mozilla.org/Firefox/Push_Notifications#Service_Workers
 // NOTICE: Disabling ServiceWorkers breaks functionality on some sites (Google Street View...)
-// Unknown security implications
-// CVE-2016-5259, CVE-2016-2812, CVE-2016-1949, CVE-2016-5287 (fixed)
 user_pref("dom.serviceWorkers.enabled",				true);
-
 // PREF: Disable web notifications
 // https://support.mozilla.org/en-US/questions/1140439
 user_pref("dom.webnotifications.enabled",			true);
@@ -24,7 +18,7 @@ user_pref("dom.webnotifications.enabled",			true);
 // PREF: Disable DOM timing API
 // https://wiki.mozilla.org/Security/Reviews/Firefox/NavigationTimingAPI
 // https://www.w3.org/TR/navigation-timing/#privacy
-//user_pref("dom.enable_performance",				false);
+user_pref("dom.enable_performance",				false);
 
 // PREF: Make sure the User Timing API does not provide a new high resolution timestamp
 // https://trac.torproject.org/projects/tor/ticket/16336
@@ -67,25 +61,17 @@ user_pref("dom.mozTCPSocket.enabled",				false);
 user_pref("dom.netinfo.enabled",				false);
 
 // PREF: Disable network API (Firefox < 32)
-// https://developer.mozilla.org/en-US/docs/Web/API/Connection/onchange
-// https://www.torproject.org/projects/torbrowser/design/#fingerprinting-defenses
-user_pref("dom.network.enabled",				false);
+user_pref("dom.network.enabled",				true);
 
-// PREF: Disable WebRTC entirely to prevent leaking internal IP addresses (Firefox < 42)
 // NOTICE: Disabling WebRTC breaks peer-to-peer file sharing tools (reep.io ...)
-user_pref("media.peerconnection.enabled",			false);
+user_pref("media.peerconnection.enabled",			true);
 
 // PREF: Don't reveal your internal IP when WebRTC is enabled (Firefox >= 42)
-// https://wiki.mozilla.org/Media/WebRTC/Privacy
-// https://github.com/beefproject/beef/wiki/Module%3A-Get-Internal-IP-WebRTC
 user_pref("media.peerconnection.ice.default_address_only",	true); // Firefox 42-51
 user_pref("media.peerconnection.ice.no_host",			true); // Firefox >= 52
 
 // PREF: Disable WebRTC getUserMedia, screen sharing, audio capture, video capture
-// https://wiki.mozilla.org/Media/getUserMedia
-// https://blog.mozilla.org/futurereleases/2013/01/12/capture-local-camera-and-microphone-streams-with-getusermedia-now-enabled-in-firefox/
-// https://developer.mozilla.org/en-US/docs/Web/API/Navigator
-user_pref("media.navigator.enabled",				false);
+user_pref("media.navigator.enabled",				true);
 user_pref("media.navigator.video.enabled",			false);
 user_pref("media.getusermedia.screensharing.enabled",		false);
 user_pref("media.getusermedia.audiocapture.enabled",		false);
@@ -106,10 +92,8 @@ user_pref("beacon.enabled",					false);
 // PREF: Disable clipboard event detection (onCut/onCopy/onPaste) via Javascript
 // NOTICE: Disabling clipboard events breaks Ctrl+C/X/V copy/cut/paste functionaility in JS-based web applications (Google Docs...)
 // https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/dom.event.clipboardevents.enabled
-/user_pref("dom.event.clipboardevents.enabled",			true);
+user_pref("dom.event.clipboardevents.enabled",			true);
 
-// PREF: Disable "copy to clipboard" functionality via Javascript (Firefox >= 41)
-// NOTICE: Disabling clipboard operations will break legitimate JS-based "copy to clipboard" functionality
 // https://hg.mozilla.org/mozilla-central/rev/2f9f8ea4b9c3
 user_pref("dom.allow_cut_copy", true);
 
@@ -129,7 +113,7 @@ user_pref("device.sensors.enabled",				false);
 
 // PREF: Disable pinging URIs specified in HTML <a> ping= attributes
 // http://kb.mozillazine.org/Browser.send_pings
-user_pref("browser.send_pings",					false);
+user_pref("browser.send_pings",					true);
 
 // PREF: When browser pings are enabled, only allow pinging the same host as the origin page
 // http://kb.mozillazine.org/Browser.send_pings.require_same_host
@@ -161,7 +145,7 @@ user_pref("dom.vibrator.enabled",           false);
 
 // PREF: Disable resource timing API
 // https://www.w3.org/TR/resource-timing/#privacy-security
-user_pref("dom.enable_resource_timing",				false);
+user_pref("dom.enable_resource_timing",				true);
 
 // PREF: Disable Archive API (Firefox < 54)
 // https://wiki.mozilla.org/WebAPI/ArchiveAPI
@@ -171,9 +155,9 @@ user_pref("dom.archivereader.enabled",				false);
 // PREF: Disable webGL
 // https://en.wikipedia.org/wiki/WebGL
 // https://www.contextis.com/resources/blog/webgl-new-dimension-browser-exploitation/
-user_pref("webgl.disabled",					true);
+user_pref("webgl.disabled",					false);
 // PREF: When webGL is enabled, use the minimum capability mode
-user_pref("webgl.min_capability_mode",				true);
+user_pref("webgl.min_capability_mode",				false);
 // PREF: When webGL is enabled, disable webGL extensions
 // https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API#WebGL_debugging_and_testing
 user_pref("webgl.disable-extensions",				true);
@@ -197,7 +181,7 @@ user_pref("dom.maxHardwareConcurrency",				2);
 // https://en.wikipedia.org/wiki/WebAssembly
 // https://trac.torproject.org/projects/tor/ticket/21549
 // NOTICE: WebAssembly is required for Unity web player/games
-user_pref("javascript.options.wasm",				false);
+user_pref("javascript.options.wasm",				true);
 
 /******************************************************************************
  * SECTION: Misc                                                              *

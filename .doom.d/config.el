@@ -85,7 +85,6 @@
  (add-hook 'org-mode-hook 'my-buffer-face-mode-variable)
 
 (setq org-directory "~/Documents/Estudios/org-notes/")
-
 ;;(use-package! org-ref
 ;;    :after org
 ;;    :init
@@ -98,25 +97,27 @@
 ;;      org-ref-default-bibliography '("~/Documents/Estudios/org-notes/references/library.bib")
 ;;      org-ref-pdf-directory "~/Documents/Estudios/Zotero/")
 
+;(after! org
+;  (setq org-log-done 'time))
+
 (after! org
-  (setq org-log-done 'time))
-        (setq org-capture-templates
-        '(("t" "TODO" entry (file+headline as/gtd "Collect")
+  (setq org-capture-templates
+        '(("t" "TODO" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
         "* TODO %? %^G \n  %U" :empty-lines 1)
-        ("s" "Scheduled TODO" entry (file+headline as/gtd "Collect")
+        ("s" "Scheduled TODO" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
         "* TODO %? %^G \nSCHEDULED: %^t\n  %U" :empty-lines 1)
-        ("d" "Deadline" entry (file+headline as/gtd "Collect")
+        ("d" "Deadline" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
             "* TODO %? %^G \n  DEADLINE: %^t" :empty-lines 1)
-        ("p" "Priority" entry (file+headline as/gtd "Collect")
+        ("p" "Priority" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
         "* TODO [#A] %? %^G \n  SCHEDULED: %^t")
-        ("a" "Appointment" entry (file+headline as/gtd "Collect")
+        ("a" "Appointment" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
         "* %? %^G \n  %^t")
-        ("l" "Link" entry (file+headline as/gtd "Collect")
+        ("l" "Link" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
         "* TODO %a %? %^G\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
-        ("n" "Note" entry (file+headline as/gtd "Notes")
+        ("n" "Note" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Notes")
             "* %? %^G\n%U" :empty-lines 1)
-        ("j" "Journal" entry (file+datetree "/home/hakuya/Documents/Estudios/org-notesagenda/journal.org")
-        "* %? %^G\nEntered on %U\n")))
+        ("j" "Journal" entry (file+datetree "~/Documents/Estudios/org-notes/journal/journal.org")
+        "* %? %^G\nEntered on %U\n"))))
 
 
 ;;(use-package! helm-bibtex
@@ -413,8 +414,18 @@
   (setq company-show-numbers t)
 (add-hook 'evil-normal-state-entry-hook #'company-abort)) ;; make aborting less annoying.
 
+(use-package! org-xournalpp
+  :config
+  (add-hook 'org-mode-hook 'org-xournalpp-mode))
 (setq-default history-length 1000) ; remembering history from precedent
 (setq-default prescient-history-length 1000)
+
+(defun meain/evil-delete-advice (orig-fn beg end &optional type _ &rest args)
+    "Make d, c, x to not write to clipboard."
+    (apply orig-fn beg end type ?_ args))
+(advice-add 'evil-delete :around 'meain/evil-delete-advice)
+(advice-add 'evil-change :around 'meain/evil-delete-advice)
+
 
 (use-package! info-colors
   :commands (info-colors-fontify-node))

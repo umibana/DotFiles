@@ -11,6 +11,7 @@
  '(org-journal-date-prefix "#+TITLE: ")
  '(org-journal-dir "/home/hakuya/Documents/org-notes/Diario/")
  '(org-journal-file-format "%Y-%m-%d.org")
+ '(org-modules '(ol-bibtex org-ctags org-habit))
  '(org-structure-template-alist
    '(("a" . "export ascii")
      ("c" . "center")
@@ -23,7 +24,7 @@
      ("s" . "src")
      ("v" . "verse")
      ("T" . "#+TITLE:\\n#+roam_tags:\\nSummary:")))
- '(package-selected-packages '(org-fancy-priorities)))
+ '(package-selected-packages '(org-wild-notifier org-fancy-priorities)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

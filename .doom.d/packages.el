@@ -75,3 +75,8 @@
 (package! info-colors ) ; pretty colors
 (package! beacon) ; global minor mode for a blinking highliter to find where the cursor is.
 (package! cdlatex)
+(package! org-xournalpp
+  :recipe (:host gitlab
+           :repo "vherrmann/org-xournalpp"
+           :files ("resources" "*.el")))
+(package! org-wild-notifier)

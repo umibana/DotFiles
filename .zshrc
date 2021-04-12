@@ -73,7 +73,7 @@ ZSH_THEME="avit"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode zsh-syntax-highlighting zsh-autosuggestions bgnotify)
+plugins=(git vi-mode zsh-syntax-highlighting zsh-autosuggestions bgnotify fzf emacs sudo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -132,3 +132,4 @@ alias rmp='xmodmap ~/.Xmodmap'
 alias sudo='doas'
 alias music='ncmpcpp-ueberzug'
 alias iphone='idevicepair pair;sudo ifuse -o allow_other /mnt'
+alias normify='nitrogen --set-zoom-fill /home/hakuya/Pictures/Wallpapers/y2GRLVk.jpeg'
