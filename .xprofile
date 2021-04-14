@@ -27,7 +27,8 @@ emacs --daemon &
 xset r rate 300 50 &
 # Restores wallpaper
 walchange &
-# wasd with mayus + wasd
+# wasd with mayus + wd
+xcape -e 'Control_L=Escape' &
 xmodmap ~/.Xmodmap &
 # Enables notification services
 dunst &

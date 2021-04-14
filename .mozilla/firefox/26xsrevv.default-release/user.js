@@ -817,7 +817,7 @@ user_pref("browser.download.manager.retention",			1);
 
 // PREF: Disable password manager (use an external password manager!)
 // CIS Version 1.2.0 October 21st, 2011 2.5.2
-user_pref("signon.rememberSignons",				false);
+user_pref("signon.rememberSignons",				true);
 
 // PREF: Disable form autofill, don't save information entered in web page forms and the Search Bar
 user_pref("browser.formfill.enable",				true);
@@ -829,11 +829,11 @@ user_pref("network.cookie.lifetimePolicy",			0);
 // PREF: Require manual intervention to autofill known username/passwords sign-in forms
 // http://kb.mozillazine.org/Signon.autofillForms
 // https://www.torproject.org/projects/torbrowser/design/#identifier-linkability
-user_pref("signon.autofillForms",				false);
+user_pref("signon.autofillForms",				true);
 
 // PREF: Disable formless login capture
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1166947
-user_pref("signon.formlessCapture.enabled",			false);
+user_pref("signon.formlessCapture.enabled",			true);
 
 // PREF: When username/password autofill is enabled, still disable it on non-HTTPS sites
 // https://hg.mozilla.org/integration/mozilla-inbound/rev/f0d146fe7317
@@ -955,8 +955,8 @@ user_pref("network.IDN_show_punycode",				true);
 
 // PREF: Disable inline autocomplete in URL bar
 // http://kb.mozillazine.org/Inline_autocomplete
-user_pref("browser.urlbar.autoFill",				false);
-user_pref("browser.urlbar.autoFill.typed",			false);
+user_pref("browser.urlbar.autoFill",				true);
+user_pref("browser.urlbar.autoFill.typed",			true);
 
 // PREF: Disable CSS :visited selectors
 // https://blog.mozilla.org/security/2010/03/31/plugging-the-css-history-leak/
