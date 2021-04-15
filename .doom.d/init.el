@@ -24,6 +24,9 @@
        ;;ido               ; the other *other* search engine...
        (ivy +icons +prescient)               ; a search engine for love and life
 
+       :os
+       tty
+
        :ui
        deft              ; notational velocity for Emacs
        doom              ; what makes DOOM look the way it does
@@ -176,5 +179,4 @@
        ;;literate
        (default +bindings +smartparens))
 ;(add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode))
-(setq comp-async-env-modifier-form "") ; running GCCemacs.
-
+;(setq comp-async-env-modifier-form "") ; running GCCemacs.

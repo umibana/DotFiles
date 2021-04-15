@@ -73,7 +73,7 @@ ZSH_THEME="avit"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode zsh-syntax-highlighting zsh-autosuggestions bgnotify fzf emacs sudo)
+plugins=(git vi-mode zsh-syntax-highlighting zsh-autosuggestions bgnotify fzf sudo)
 
 source $ZSH/oh-my-zsh.sh
 

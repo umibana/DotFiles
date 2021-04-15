@@ -85,6 +85,7 @@
  (add-hook 'org-mode-hook 'my-buffer-face-mode-variable)
 
 (setq org-directory "~/Documents/Estudios/org-notes/")
+
 ;;(use-package! org-ref
 ;;    :after org
 ;;    :init
@@ -97,8 +98,8 @@
 ;;      org-ref-default-bibliography '("~/Documents/Estudios/org-notes/references/library.bib")
 ;;      org-ref-pdf-directory "~/Documents/Estudios/Zotero/")
 
-;(after! org
-;  (setq org-log-done 'time))
+(after! org
+  (setq org-log-done 'time))
 
 (after! org
   (setq org-capture-templates
@@ -139,7 +140,7 @@
 ;;      '("~/Documents/Estudios/org-notes/references/library.bib")
 ;;      bibtex-completion-library-path '("~/Documents/Estudios/Zotero/")
 ;;     ; bibtex-completion-notes-path "~/Documents/Estudios/org-notes/references/articles.org"  ;; not needed anymore as I take notes in org-roam
-;;      )
+
 
 (setf mouse-wheel-scroll-amount '(3 ((shift) . 3))
       mouse-wheel-progressive-speed nil
@@ -148,34 +149,34 @@
       scroll-conservatively 100
       disabled-command-function nil)
 
-(use-package! zotxt
-  :after org)
-;(add-to-list 'load-path (expand-file-name "ox-pandoc" starter-kit-dir))
+;;(use-package! zotxt
+;; :after org)
+;;(add-to-list 'load-path (expand-file-name "ox-pandoc" starter-kit-dir))
 
-(use-package! ox-pandoc
-  :after org)
-;; default options for all output formats
-(setq org-pandoc-options '((standalone . _)))
-;; cancel above settings only for 'docx' format
-(setq org-pandoc-options-for-docx '((standalone . nil)))
-;; special settings for beamer-pdf and latex-pdf exporters
-(setq org-pandoc-options-for-beamer-pdf '((pdf-engine . "xelatex")))
-(setq org-pandoc-options-for-latex-pdf '((pdf-engine . "pdflatex")))
-;; special extensions for markdown_github output
-(setq org-pandoc-format-extensions '(markdown_github+pipe_tables+raw_html))
-
+;;(use-package! ox-pandoc
+;;  :after org)
+;;;; default options for all output formats
+;;(setq org-pandoc-options '((standalone . _)))
+;;;; cancel above settings only for 'docx' format
+;;(setq org-pandoc-options-for-docx '((standalone . nil)))
+;;;; special settings for beamer-pdf and latex-pdf exporters
+;;(setq org-pandoc-options-for-beamer-pdf '((pdf-engine . "xelatex")))
+;;(setq org-pandoc-options-for-latex-pdf '((pdf-engine . "pdflatex")))
+;;;; special extensions for markdown_github output
+;;(setq org-pandoc-format-extensions '(markdown_github+pipe_tables+raw_html))
+;;
 ;;(use-package! org-roam-bibtex
 ;;  :load-path "~/Documents/Estudios/org-notes/references/library.bib" ;Modify with your own path
 ;;  :hook (org-roam-mode . org-roam-bibtex-mode)
 ;;  :bind (:map org-mode-map
 ;;         (("C-c n a" . orb-note-actions))))
-(setq orb-templates
-      '(("r" "ref" plain (function org-roam-capture--get-point) ""
-         :file-name "${citekey}"
-         :head "#+TITLE: ${citekey}: ${title}\n#+ROAM_KEY: ${ref}\n" ; <--
-         :unnarrowed t)))
-(setq orb-preformat-keywords   '(("citekey" . "=key=") "title" "url" "file" "author-or-editor" "keywords"))
-
+;;(setq orb-templates
+;;      '(("r" "ref" plain (function org-roam-capture--get-point) ""
+;;         :file-name "${citekey}"
+;;         :head "#+TITLE: ${citekey}: ${title}\n#+ROAM_KEY: ${ref}\n" ; <--
+;;         :unnarrowed t)))
+;;(setq orb-preformat-keywords   '(("citekey" . "=key=") "title" "url" "file" "author-or-editor" "keywords"))
+;;
 ;;(setq orb-templates
 ;;      '(("n" "ref+noter" plain (function org-roam-capture--get-point)
 ;;         ""
@@ -385,7 +386,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((((type tty))))))
 
 ;; adding custom key-bindings for most used functions
 ;;(map! :leader "f a"#'helm-bibtex)  ; "find article" : opens up helm bibtex for search.

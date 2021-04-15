@@ -50,7 +50,7 @@
 ;(package! org-ref)
 ;(package! interleave)                                        not using anymore as org-noter is far superior.
 ;(package! helm-bibtex)
-(package! zotxt)
+;(package! zotxt)
 (package! ox-pandoc)
 ;(package! org-roam-bibtex)
 (package! org-noter)
