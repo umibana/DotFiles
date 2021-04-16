@@ -420,6 +420,20 @@
   (add-hook 'org-mode-hook 'org-xournalpp-mode))
 (setq-default history-length 1000) ; remembering history from precedent
 (setq-default prescient-history-length 1000)
+;; Function to remove links but keep description
+(defun afs/org-replace-link-by-link-description ()
+    "Replace an org link by its description or if empty its address"
+  (interactive)
+  (if (org-in-regexp org-link-bracket-re 1)
+      (save-excursion
+        (let ((remove (list (match-beginning 0) (match-end 0)))
+              (description
+               (if (match-end 2)
+                   (org-match-string-no-properties 2)
+                 (org-match-string-no-properties 1))))
+          (apply 'delete-region remove)
+          (insert description)))))
+
 
 (defun meain/evil-delete-advice (orig-fn beg end &optional type _ &rest args)
     "Make d, c, x to not write to clipboard."

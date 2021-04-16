@@ -18,7 +18,7 @@ user_pref("dom.webnotifications.enabled",			true);
 // PREF: Disable DOM timing API
 // https://wiki.mozilla.org/Security/Reviews/Firefox/NavigationTimingAPI
 // https://www.w3.org/TR/navigation-timing/#privacy
-user_pref("dom.enable_performance",				false);
+user_pref("dom.enable_performance",				true);
 
 // PREF: Make sure the User Timing API does not provide a new high resolution timestamp
 // https://trac.torproject.org/projects/tor/ticket/16336
@@ -28,7 +28,7 @@ user_pref("dom.enable_user_timing",				false);
 // PREF: Disable Web Audio API
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1288359
 // NOTICE: Web Audio API is required for Unity web player/games
-user_pref("dom.webaudio.enabled",				false);
+user_pref("dom.webaudio.enabled",				true);
 
 // PREF: Disable Location-Aware Browsing (geolocation)
 //// https://www.mozilla.org/en-US/firefox/geolocation/
