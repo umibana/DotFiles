@@ -33,13 +33,13 @@ case $operation in
         systemctl poweroff
         ;;
     suspend )
-        lock && systemctl suspend
+        systemctl suspend
         ;;
     reboot )
         systemctl reboot
         ;;
     hibernate )
-        lock && systemctl hibernate
+        systemctl hibernate
         ;;
     logout )
         [ "$DESKTOP_SESSION" ='dwm' ] && i3-msg exit

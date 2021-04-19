@@ -633,16 +633,15 @@ void unswallow(Client *c) {
 void buttonpress(XEvent *e) {
   unsigned int i, x, click, occ = 0;
   Arg arg = {0};
-  Client *c, *sel;
+  Client *c;
   Monitor *m;
   XButtonPressedEvent *ev = &e->xbutton;
 
   click = ClkRootWin;
   /* focus monitor if necessary */
   if ((m = wintomon(ev->window)) && m != selmon) {
-    sel = selmon->sel;
+    unfocus(selmon->sel, 1);
     selmon = m;
-    unfocus(sel, 1);
     focus(NULL);
   }
   if (ev->window == selmon->barwin) {
@@ -661,8 +660,7 @@ void buttonpress(XEvent *e) {
     } else if (ev->x < x + blw)
       click = ClkLtSymbol;
     /* 2px right padding */
-    else if (ev->x > (selmon->ww - TEXTW(stext) + lrpad) - 2) {
-      x = selmon->ww - TEXTW(stext) + lrpad - 2;
+    else if (m == statmon && ev->x > selmon->ww - (int)TEXTW(stext)) {
       click = ClkStatusText;
       char *text = rawstext;
       int i = -1;
@@ -1046,7 +1044,7 @@ void drawbars(void) {
 }
 
 void enternotify(XEvent *e) {
-  Client *c, *sel;
+  Client *c;
   Monitor *m;
   XCrossingEvent *ev = &e->xcrossing;
 
@@ -1056,9 +1054,8 @@ void enternotify(XEvent *e) {
   c = wintoclient(ev->window);
   m = c ? c->mon : wintomon(ev->window);
   if (m != selmon) {
-    sel = selmon->sel;
+    unfocus(selmon->sel, 1);
     selmon = m;
-    unfocus(sel, 1);
   } else if (!c || c == selmon->sel)
     return;
   focus(c);
@@ -1107,15 +1104,13 @@ void focusin(XEvent *e) {
 
 void focusmon(const Arg *arg) {
   Monitor *m;
-  Client *sel;
 
   if (!mons->next)
     return;
   if ((m = dirtomon(arg->i)) == selmon)
     return;
-  sel = selmon->sel;
+  unfocus(selmon->sel, 0);
   selmon = m;
-  unfocus(sel, 0);
   focus(NULL);
   if (selmon->sel)
     XWarpPointer(dpy, None, selmon->sel->win, 0, 0, 0, 0, selmon->sel->w / 2,
@@ -1412,15 +1407,13 @@ void monocle(Monitor *m) {
 void motionnotify(XEvent *e) {
   static Monitor *mon = NULL;
   Monitor *m;
-  Client *sel;
   XMotionEvent *ev = &e->xmotion;
 
   if (ev->window != root)
     return;
   if ((m = recttomon(ev->x_root, ev->y_root, 1, 1)) != mon && mon) {
-    sel = selmon->sel;
+    unfocus(selmon->sel, 1);
     selmon = m;
-    unfocus(sel, 1);
     focus(NULL);
   }
   mon = m;
@@ -2275,8 +2268,6 @@ void togglewin(const Arg *arg) {
 void unfocus(Client *c, int setfocus) {
   if (!c)
     return;
-  if (c->isfullscreen && ISVISIBLE(c) && c->mon == selmon)
-    setfullscreen(c, 0);
   grabbuttons(c, 0);
   XSetWindowBorder(dpy, c->win, scheme[SchemeNorm][ColBorder].pixel);
   if (setfocus) {

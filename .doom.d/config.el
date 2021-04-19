@@ -420,6 +420,8 @@
   (add-hook 'org-mode-hook 'org-xournalpp-mode))
 (setq-default history-length 1000) ; remembering history from precedent
 (setq-default prescient-history-length 1000)
+;; Org-mode strike trough done
+(set-face-attribute 'org-headline-done nil :strike-through t)
 ;; Function to remove links but keep description
 (defun afs/org-replace-link-by-link-description ()
     "Replace an org link by its description or if empty its address"
