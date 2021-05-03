@@ -50,6 +50,10 @@
        "C-<up>"         #'+evil/window-move-up
        "C-<right>"      #'+evil/window-move-right)
 
+(map! :after evil-easymotion
+      :map evilem-map
+      :desc "Jump to char" "f" #'evil-avy-goto-char)
+
 (setq frame-title-format
     '(""
       (:eval
@@ -63,8 +67,8 @@
 
 (setq doom-font (font-spec :family "Iosevka" :size 16)
             doom-big-font (font-spec :family "Iosevka" :size 36)
-            ;doom-variable-pitch-font (font-spec :family "ETBembo" :size 24)
-            ;doom-serif-font (font-spec :family "ETBembo" :size 24)
+            doom-variable-pitch-font (font-spec :family "Iosevka" :size 24)
+            doom-serif-font (font-spec :family "Iosevka" :size 24)
             )
 
 ;;light themes
@@ -77,12 +81,12 @@
 
 (setq display-line-numbers-type t)
 
- (defun my-buffer-face-mode-variable ()
-   "Set font to a variable width (proportional) fonts in current buffer"
-   (interactive)
-   (setq buffer-face-mode-face '(:family "Iosevka" :height 100 ))
-   (buffer-face-mode))
- (add-hook 'org-mode-hook 'my-buffer-face-mode-variable)
+; (defun my-buffer-face-mode-variable ()
+;   "Set font to a variable width (proportional) fonts in current buffer"
+;   (interactive)
+;   (setq buffer-face-mode-face '(:family "Iosevka" :height 36 ))
+;   (buffer-face-mode))
+; (add-hook 'org-mode-hook 'my-buffer-face-mode-variable)
 
 (setq org-directory "~/Documents/Estudios/org-notes/")
 
@@ -115,7 +119,7 @@
         "* %? %^G \n  %^t")
         ("l" "Link" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
         "* TODO %a %? %^G\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
-        ("n" "Note" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Notes")
+        ("n" "Note" entry (file+headline "~/Documents/Estudios/org-notes/notes.org" "Notes")
             "* %? %^G\n%U" :empty-lines 1)
         ("j" "Journal" entry (file+datetree "~/Documents/Estudios/org-notes/journal/journal.org")
         "* %? %^G\nEntered on %U\n"))))
@@ -415,9 +419,9 @@
   (setq company-show-numbers t)
 (add-hook 'evil-normal-state-entry-hook #'company-abort)) ;; make aborting less annoying.
 
-(use-package! org-xournalpp
-  :config
-  (add-hook 'org-mode-hook 'org-xournalpp-mode))
+;(use-package! org-xournalpp
+;  :config
+;  (add-hook 'org-mode-hook 'org-xournalpp-mode))
 (setq-default history-length 1000) ; remembering history from precedent
 (setq-default prescient-history-length 1000)
 ;; Org-mode strike trough done
@@ -436,7 +440,23 @@
           (apply 'delete-region remove)
           (insert description)))))
 
+(setq org-columns-default-format
+      "%25ITEM %TODO %3PRIORITY %TIMESTAMP %DEADLINE %SCHEDULED")
+(setq org-agenda-prefix-format
+      '((agenda . " %i %-12:c%?-12t% s")
+	(todo . " %i %-12:c")
+	(tags . " %i %-12:c")
+	(Date . " %s %-12:c")
+	(search . " %i %-12:c")))
 
+
+(defun my-open-calendar ()
+  (interactive)
+  (cfw:open-calendar-buffer :contents-sources
+    (list
+     (cfw:org-create-source "Green")  ; orgmode source
+     (cfw:cal-create-source "Orange") ; diary source)
+    )))
 (defun meain/evil-delete-advice (orig-fn beg end &optional type _ &rest args)
     "Make d, c, x to not write to clipboard."
     (apply orig-fn beg end type ?_ args))
@@ -448,7 +468,6 @@
   :commands (info-colors-fontify-node))
 
 (use-package! org-pomodoro
-  :ensure t
   :commands (org-pomodoro)
   :config
   (setq

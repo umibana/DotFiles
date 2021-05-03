@@ -1,4 +1,4 @@
-#define CMDLENGTH 50
+#define CMDLENGTH 100
 #define delimiter " | "
 
 static const Block blocks[] = {

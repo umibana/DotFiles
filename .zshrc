@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/.emacs.d/bin:/home/hakuya/.local/bin:$HOME/.local/bin/statusbar:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.emacs.d/bin:$HOME/.local/bin:$HOME/.local/bin/statusbar:$HOME/.local/bin/custom:/usr/local/bin:$PATH
 
 ## Path to your oh-my-zsh installation.
 export ZSH="/home/hakuya/.oh-my-zsh"
@@ -133,3 +133,4 @@ alias sudo='doas'
 alias music='ncmpcpp-ueberzug'
 alias iphone='idevicepair pair;sudo ifuse -o allow_other /mnt'
 alias normify='nitrogen --set-zoom-fill /home/hakuya/Pictures/Wallpapers/y2GRLVk.jpeg'
+alias tabletlap='xsetwacom --set "Wacom Intuos PT S Pen stylus" MapToOutput eDP1'

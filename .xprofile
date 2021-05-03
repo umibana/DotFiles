@@ -16,7 +16,8 @@ xss-lock -- i3lock -k --datecolor=eeeeee --timecolor=eeeeee --timepos="960:200" 
 # Compositor starts
 picom -b &
 # RedShift
-redshift &
+dockd --daemon &
+#redshift &
 # Battery Notificaiton
 battery-notif -n &
 # Clipster for roficlip
@@ -33,4 +34,7 @@ xmodmap ~/.Xmodmap &
 # Enables notification services
 dunst &
 # PulseEffects
-pulseeffects --gapplication-service &
+#pulseeffects --gapplication-service &
+# Enable docking on xsession start
+monitorCheck &
+

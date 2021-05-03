@@ -8,8 +8,8 @@
 /* appearance */
 static unsigned int borderpx = 3; /* border pixel of windows */
 static unsigned int snap = 10;    /* snap pixel */
-static unsigned int gappih = 15;  /* horiz inner gap between windows */
-static unsigned int gappiv = 15;  /* vert inner gap between windows */
+static unsigned int gappih = 5;   /* horiz inner gap between windows */
+static unsigned int gappiv = 5;   /* vert inner gap between windows */
 static unsigned int gappoh =
     15; /* horiz outer gap between windows and screen edge */
 static unsigned int gappov =
@@ -31,7 +31,7 @@ static const int riodraw_spawnasync =
     0; /* 0 means that the application is only spawned after a successful
         * selection while 1 means that the application is being initialised in
         * the background while the selection is made */
-static char *fonts[] = {"FontAwesome:size=10", "berry:size=11",
+static char *fonts[] = {"FontAwesome:size=10", "Iosevka:size=10",
                         "Kochi Gothic:size=9"};
 static char normbgcolor[] = "#1c2023";
 static char normbordercolor[] = "#1c2023";
@@ -39,13 +39,14 @@ static char normfgcolor[] = "#c795ae";
 static char selfgcolor[] = "#1c2023";
 static char selbordercolor[] = "#c795ae";
 static char selbgcolor[] = "#c795ae";
+static char hidfgcolor[] = "#8268a3";
 static char *colors[][4] = {
     /*               fg           bg           border   */
     [SchemeNorm] = {normfgcolor, normbgcolor, normbordercolor},
     [SchemeInv] = {normfgcolor, normbgcolor, normbordercolor},
     [SchemeSel] = {normbgcolor, selbgcolor, selbordercolor},
     [SchemeTitle] = {normfgcolor, normfgcolor, normfgcolor},
-    [SchemeHid] = {normfgcolor, normbgcolor, normbordercolor},
+    [SchemeHid] = {hidfgcolor, normbgcolor, normbordercolor},
 };
 
 typedef struct {
@@ -196,7 +197,7 @@ static Key keys[] = {
     {MODKEY, XK_BackSpace, spawn, SHCMD("sysact")},
     {MODKEY | ShiftMask, XK_BackSpace, spawn, SHCMD("sysact")},
 
-    {MODKEY, XK_Tab, spawn, SHCMD("dswitcher")},
+    {MODKEY, XK_Tab, spawn, SHCMD("rofi -show window")},
     /* { MODKEY|ShiftMask,		XK_Tab,		spawn, SHCMD("")
      * },
      */
@@ -298,9 +299,9 @@ static Key keys[] = {
     {MODKEY, XK_period, spawn, SHCMD("mpc play")},
     {MODKEY | ShiftMask, XK_period, spawn, SHCMD("mpc pause")},
 
-    {MODKEY, XK_Left, focusmon, {.i = -1}},
+    {MODKEY, XK_Left, focusmon, {.i = +1}},
     {MODKEY | ShiftMask, XK_Left, tagmon, {.i = +1}},
-    {MODKEY, XK_Right, focusmon, {.i = +1}},
+    {MODKEY, XK_Right, focusmon, {.i = -1}},
     {MODKEY | ShiftMask, XK_Right, tagmon, {.i = -1}},
 
     {MODKEY, XK_Page_Up, shiftview, {.i = -1}},

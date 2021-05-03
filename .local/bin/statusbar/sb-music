@@ -14,4 +14,5 @@ case $BLOCK_BUTTON in
 	4) mpc prev   | filter ;;  # scroll up, previous
 	5) mpc next   | filter ;;  # scroll down, next
 	6) mpc status | filter ; "$TERMINAL" -e "$EDITOR" "$0" ;;
+	*) mpc status | filter ;;
 esac
