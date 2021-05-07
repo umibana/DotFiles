@@ -476,8 +476,12 @@
    org-pomodoro-short-break-length 10
    ))
 
+(remove-hook 'window-setup-hook #'doom-init-tty-h)
+(advice-remove #'tty-run-terminal-initialization #'ignore)
+
 (add-hook 'Info-selection-hook 'info-colors-fontify-node)
 
 (add-hook 'Info-mode-hook #'mixed-pitch-mode)
 
 (require 'org-roam-protocol)
+

@@ -99,11 +99,11 @@ static int resizehints = 0; /* 1 means respect size hints in tiled resizals */
 #include "vanitygaps.c"
 static const Layout layouts[] = {
     /* symbol     arrange function */
-    {"[]=", tile},   /* Default: Master on left, slaves on right */
-    {"TTT", bstack}, /* Master on top, slaves on bottom */
+    {"[]=", tile},       /* Default: Master on left, slaves on right */
+    {"==", bstackhoriz}, /* Master on top, slaves on bottom */
 
-    {"[@]", spiral},   /* Fibonacci spiral */
-    {"[\\]", dwindle}, /* Decreasing in size right and leftward */
+    {"[@]", spiral}, /* Fibonacci spiral */
+    {"[><]", NULL},  /* Decreasing in size right and leftward */
 
     {"H[]", deck},    /* Master on left, slaves in monocle-like mode on right */
     {"[M]", monocle}, /* All windows on top of eachother */
@@ -111,10 +111,10 @@ static const Layout layouts[] = {
     {"|M|", centeredmaster},         /* Master in middle, slaves on sides */
     {"|F|", centeredfloatingmaster}, /* Same but master floats */
 
-    {"==", bstackhoriz}, /* Vertical monitor layout */
-    {"VG", horizgrid},   /* Same but master floats */
+    {"|||", col},      /* Vertical monitor layout */
+    {"++", horizgrid}, /* Same but master floats */
 
-    {"><>", NULL}, /* no layout function means floating behavior */
+    {"[\\]", dwindle}, /* no layout function means floating behavior */
     {NULL, NULL},
 };
 

@@ -415,5 +415,5 @@ function toggle_crop()
     start_crop()
 end
 
-mp.add_key_binding(, "start-crop", start_crop)
+mp.add_key_binding(nil, "start-crop", start_crop)
 mp.add_key_binding(nil, "toggle-crop", toggle_crop)
