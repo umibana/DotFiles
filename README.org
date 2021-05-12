@@ -28,7 +28,7 @@ These dots are used with Arch Linux with dwm as its window manager.
 
 * Before Installing
 
-+ Various of these dots contain my username so they won't work for you outside of the box
++ Various of these dots contain my username so they won't work for you outside of the box. mainly Doom emacs in which the org-roam directory is set on my Documents folder
 
 ** For a quick Install please install the following packages:
 
@@ -42,12 +42,10 @@ These dots are used with Arch Linux with dwm as its window manager.
   terminus-font-ttf xdg-utils-mimeo feh sxiv bpytop htop
   pavucontrol xbacklight redshift wmctrl nerd-fonts-fira-code
   emacs
-
 #+end_src
 ** Enable the following services:
 #+begin_src
  systemctl --user enable mpd
- systemctl --user enable mpd-notification
  systemctl enable tlp
  systemctl enable throttled
  systemctl enable bluetooth
@@ -61,7 +59,8 @@ First of all you should configure TLP to your liking, which you can do with tlpu
 Then, if your using a laptop, you probably want to undervolt. Here's my config for my T480 with a I7-8665u:
 *NOTE: This is done on /etc/lenovo_fix.conf for my Thinkpad
 
-** [UNDERVOLT.BATTERY]
+** Undervolting
+ [UNDERVOLT.BATTERY]
 #+begin_src
  CPU core voltage offset (mV)
 
@@ -84,12 +83,19 @@ ANALOGIO: 0
 
 #+end_src
 
-
+** Cron jobs
 After that i set up cron, so i get my notes on org-mode backed-up
+with crontab -e
 #+begin_src
- crontab -e # Install if not installed
 */30 * * * * /home/hakuya/.local/bin/custom/OrgSync >/dev/null 2>&1
 */30 * * * * DISPLAY=:0 /home/hakuya/.local/bin/custom/walchange
- This script is documented on .local/
-
 #+end_src
+** Doom Emacs
+Get Doom Emacs with
+#+begin_src
+git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
+~/.emacs.d/bin/doom install
+#+end_src
+And then run doom sync to synchronize my config.
+** Firefox CSS
+Move the firefox config to your own and install TST and and apply the css on the addon advanced configuration
