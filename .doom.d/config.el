@@ -113,7 +113,7 @@
         "* TODO %? %^G \nSCHEDULED: %^t\n  %U" :empty-lines 1)
         ("d" "Deadline" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
             "* TODO %? %^G \n  DEADLINE: %^t" :empty-lines 1)
-        ("p" "Priority" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
+        ("u" "Urgent" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
         "* TODO [#A] %? %^G \n  SCHEDULED: %^t")
         ("a" "Appointment" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
         "* %? %^G \n  %^t")
@@ -121,8 +121,13 @@
         "* TODO %a %? %^G\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
         ("n" "Note" entry (file+headline "~/Documents/Estudios/org-notes/notes.org" "Notes")
             "* %? %^G\n%U" :empty-lines 1)
+	("p" "Protocol" entry (file+headline "~/Documents/Estudios/org-notes/notes.org" "Captures")
+        "* %^{Title} %^G\nSource: %u, [[%:link][%:description]]\n #+BEGIN_QUOTE\n%i\n#+END_QUOTE\n\n\n%?")
+	("L" "Protocol Link" entry (file+headline "~/Documents/Estudios/org-notes/notes.org" "Links")
+        "* %? %^G \n[[%:link][%:description]] \nCaptured On: %U")
         ("j" "Journal" entry (file+datetree "~/Documents/Estudios/org-notes/journal/journal.org")
         "* %? %^G\nEntered on %U\n"))))
+
 
 
 ;;(use-package! helm-bibtex
@@ -475,9 +480,6 @@
    org-pomodoro-length 50
    org-pomodoro-short-break-length 10
    ))
-
-(remove-hook 'window-setup-hook #'doom-init-tty-h)
-(advice-remove #'tty-run-terminal-initialization #'ignore)
 
 (add-hook 'Info-selection-hook 'info-colors-fontify-node)
 
