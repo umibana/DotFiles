@@ -2,7 +2,9 @@
 monitors="$(xrandr | grep " connected " | awk '{ print$1 }' | wc -l)"
 
 if [ "$monitors" -gt 1 ]; then
-	dockd --set docked; /etc/dockd/dock.hook
+	dockd --set docked
+	/etc/dockd/dock.hook
 else
 	notify-send 'Welcome Hans, please check your schedule on emacs'
+	dockd --set undocked
 fi

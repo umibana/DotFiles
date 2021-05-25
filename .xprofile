@@ -1,9 +1,9 @@
 #!/bin/sh
 [[ -f ~/.zshenv ]] && source ~/.zshenv
 
-# Changes Touchpad Sensivity and adds tap to click, natural scrolling and move while typing 
-xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Profile Enabled' 0, 1
-xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Speed' -0.1
+# Changes Touchpad Sensivity and adds tap to click, natural scrolling and move while typing
+xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Profile Enabled' 0, 1 &
+xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Speed' 0.1 &
 xinput set-prop 'TPPS/2 IBM TrackPoint' 'libinput Natural Scrolling Enabled' 1 &
 xinput set-prop 'Synaptics TM3276-022' 'libinput Natural Scrolling Enabled' 1 &
 xinput set-prop 'Synaptics TM3276-022' 'libinput Tapping Enabled' 0 &
@@ -12,7 +12,7 @@ xinput set-prop 'Synaptics TM3276-022' 'libinput Disable While Typing Enabled' 1
 # Different input methods
 ibus-daemon -drx &
 # Locks screen when acpi actions are detected
-xss-lock -- lock & 
+xss-lock -- lock &
 # Compositor starts
 picom -b &
 # Detect Thinkpad Dock
@@ -35,7 +35,6 @@ xmodmap ~/.Xmodmap &
 # Enables notification services
 dunst &
 # PulseEffects
-#pulseeffects --gapplication-service &
+pulseeffects --gapplication-service &
 # Enable docking on xsession start
 monitorCheck &
-
