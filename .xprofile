@@ -38,3 +38,5 @@ dunst &
 pulseeffects --gapplication-service &
 # Enable docking on xsession start
 monitorCheck &
+# Power manager
+xfce4-power-manager &

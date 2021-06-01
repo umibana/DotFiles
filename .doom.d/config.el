@@ -453,7 +453,9 @@
 	(tags . " %i %-12:c")
 	(Date . " %s %-12:c")
 	(search . " %i %-12:c")))
-
+(setq lsp-ui-doc-enable t)
+(setq lsp-eldoc-hook nil)
+(setq lsp-ui-doc-delay 2)
 
 (defun my-open-calendar ()
   (interactive)

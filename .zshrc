@@ -104,7 +104,7 @@ alias zshconfig="nvim ~/.zshrc"
 #alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias yt='ytfzf'
 alias ytd='youtube-dl --add-metadata -i'
-alias yta='youtube-dl -x -f bestaudio/best' 
+alias yta='youtube-dl --embed-thumbnail -x -f bestaudio/best'
 alias c='clear'
 alias ..='cd ..'
 alias ls='ls -CF --color=auto'
