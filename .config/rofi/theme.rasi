@@ -1,0 +1,85 @@
+/** ===============
+*      ROFI THEME
+*   MADE BY CHECHU!
+*   ===============
+**/
+
+/** COLORS & FONT **/
+* {
+    background:             #1c2023;
+    background-alt:         #1c2023;
+    accent:                 #c795ae;
+    foreground:             #eeeeee;
+	selected-foreground:    #1c2023;
+
+    border-color:           @accent;
+    background-color:		@background;
+
+    font:					"Iosevka 11";
+}
+
+/** ELEMENTS PROPERTIES **/
+#window {
+    background-color: 		@background;
+    border:           		3;
+    padding:          		4;
+}
+
+#textbox {
+    text-color: 			@foreground;
+}
+
+#listview {
+    padding: 				4px 0px 0px;
+}
+
+#element {
+    padding: 				8px ;
+}
+
+#element.normal.normal {
+    background-color: 		@background;
+    text-color:       		@foreground;
+}
+
+#element.selected.normal {
+    background-color: 		@accent;
+    text-color:       		@selected-foreground;
+}
+
+#element.alternate.normal {
+    background-color: 		@background-alt;
+    text-color:       		@foreground;
+}
+
+#element.selected.active {
+    background-color: 		@accent;
+    text-color:       		@foreground;
+}
+
+#element.normal.active {
+    background-color: 		@background;
+    text-color:       		#9c6882;
+}
+
+#element.alternate.active {
+    background-color: 		@background-alt;
+    text-color:       		@foreground;
+}
+
+/** TEXT IMPUT **/
+#entry {
+    spacing:    			0;
+    text-color: 			@foreground;
+}
+
+#prompt {
+    spacing:    			0;
+    text-color: 			@foreground;
+}
+
+#inputbar {
+    spacing:    			0;
+    text-color: 			@foreground;
+    padding:    			8px;
+}
