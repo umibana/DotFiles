@@ -14,7 +14,7 @@ ibus-daemon -drx &
 # Locks screen when acpi actions are detected
 xss-lock -- lock &
 # Compositor starts
-picom -b &
+picom --experimental-backends -b &
 # Detect Thinkpad Dock
 dockd --daemon &
 # RedShift
