@@ -77,3 +77,6 @@
   :recipe (:host gitlab
            :repo "vherrmann/org-xournalpp"
            :files ("resources" "*.el")))
+(package! centered-window
+  :recipe (:host github
+           :repo "anler/centered-window-mode"))

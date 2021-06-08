@@ -22,7 +22,7 @@
        (company +tng)           ; the ultimate code completion backend
        ;;helm              ; the *other* search engine for love and life
        ;;ido               ; the other *other* search engine...
-       (ivy +icons +prescient)               ; a search engine for love and life
+       (ivy +fuzzy +icons +prescient)               ; a search engine for love and life
 
        :os
        tty
@@ -49,6 +49,7 @@
        vi-tilde-fringe   ; fringe tildes to mark beyond EOB
        (window-select +numbers)     ; visually switch windows
        workspaces        ; tab emulation, persistence & separate workspaces
+       minimap
        ;;zen               ; distraction-free coding or writing
 
        :editor
@@ -85,7 +86,7 @@
 
        :tools
        ;;ansible
-       ;;debugger          ; FIXME stepping through code, to help you add bugs
+       (debugger +lsp)          ; FIXME stepping through code, to help you add bugs
        ;;direnv
        ;;docker
        ;;editorconfig      ; let someone else argue about tabs vs spaces

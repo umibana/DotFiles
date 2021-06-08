@@ -18,11 +18,11 @@ playlist_display_mode = "columns"
 
 #### Progressbar
 progressbar_look = "━━─"
-#progressbar_elapsed_color = "white"
+progressbar_elapsed_color = "magenta"
 #progressbar_color = "black"
 connected_message_on_startup = no
 
-song_columns_list_format = "(25)[6]{a} (35)[4]{t} (5)[2]{l} "
+song_columns_list_format = "(35)[6]{t} (15)[4]{bE} (15)[7]{lrE} (15)[2]{aE} (10)[blue]{nrE} "
 #### Colors
 #header_window_color = "white"
 #main_window_color =  magenta

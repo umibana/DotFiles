@@ -77,7 +77,7 @@
 ;(setq doom-theme 'doom-flatwhite)
 ;;dark themes
 (setq-default indent-tabs-mode t)
-(setq doom-theme 'doom-two)
+(setq doom-theme 'doom-tomorrow-night)
 
 (setq display-line-numbers-type t)
 
@@ -503,13 +503,22 @@
   :config
   (setq
    alert-user-configuration (quote ((((:category . "org-pomodoro")) libnotify nil)))
-   org-pomodoro-length 50
-   org-pomodoro-short-break-length 10
+   org-pomodoro-length 25
+   org-pomodoro-short-break-length 5
    ))
 
 (add-hook 'Info-selection-hook 'info-colors-fontify-node)
+(defun org-pomodoro-prompt ()
+(interactive)
+(org-clock-goto)
+(if (y-or-n-p "Start a new pomodoro?")
+    (progn
+      (org-pomodoro))))
+
+(add-hook 'org-pomodoro-break-finished-hook 'org-pomodoro-prompt)
 
 (add-hook 'Info-mode-hook #'mixed-pitch-mode)
-
+(global-visual-line-mode t)
 (require 'org-roam-protocol)
+;(require 'centered-window)
 

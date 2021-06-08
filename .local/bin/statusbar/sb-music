@@ -1,18 +1,34 @@
 #!/bin/sh
 
-if [ -z "$(mpc current)" ] && [ "$(playerctl -p spotify status)" == "Playing" ]; then
-  echo "  $(playerctl -p spotify metadata title) - $(playerctl -p spotify metadata artist)"
+if [ -z "$(mpc current)" ] && [ "$(playerctl -p spotify status)" = "Playing" ]; then
+	echo "  $(playerctl -p spotify metadata title) - $(playerctl -p spotify metadata artist)"
+elif [ -n "$(mpc current)" ]; then
+	echo "  $(mpc current)"
 else
-filter() { mpc | sed "/^volume:/d;s/\\&/&amp;/g;s/\\[paused\\].*/⏸/g;/\\[playing\\].*/d" | paste -sd ' ' -;}
-pidof -x sb-mpdup >/dev/null 2>&1 || sb-mpdup >/dev/null 2>&1 &
+	:
 fi
 
 case $BLOCK_BUTTON in
-	1) playerctl next; sleep 0.2; kill -45 $(pidof dwmblocks) | filter ; ;;  # right click, pause/unpause
-	2) playerctl play-pause; sleep 0.2; kill -45 $(pidof dwmblocks) | filter ;;
-	3) playerctl previous; sleep 0.2; kill -45 $(pidof dwmblocks) | filter ;;  # right click, pause/unpause
-	4) mpc prev   | filter ;;  # scroll up, previous
-	5) mpc next   | filter ;;  # scroll down, next
-	6) mpc status | filter ; "$TERMINAL" -e "$EDITOR" "$0" ;;
-	*) mpc status | filter ;;
+1)
+	playerctl next
+	sleep 0.2
+	kill -45 $(pidof dwmblocks) | filter
+	;; # right click, pause/unpause
+2)
+	playerctl play-pause
+	sleep 0.2
+	kill -45 $(pidof dwmblocks) | filter
+	;;
+3)
+	playerctl previous
+	sleep 0.2
+	kill -45 $(pidof dwmblocks) | filter
+	;;                     # right click, pause/unpause
+4) mpc prev | filter ;; # scroll up, previous
+5) mpc next | filter ;; # scroll down, next
+6)
+	mpc status | filter
+	"$TERMINAL" -e "$EDITOR" "$0"
+	;;
+*) mpc status | filter ;;
 esac

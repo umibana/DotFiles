@@ -40,3 +40,5 @@ pulseeffects --gapplication-service &
 monitorCheck &
 # Power manager
 xfce4-power-manager &
+# Tablet Drivers
+/home/hakuya/Apps/OpenTabletDriver/OpenTabletDriver.Daemon &
