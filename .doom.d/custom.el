@@ -12,7 +12,8 @@
  '(org-journal-dir "~/Documents/Estudios/org-notes/Daily/")
  '(org-journal-file-format "%d-%m-%Y.org")
  '(org-startup-folded 'show4evels)
- '(package-selected-packages '(org-pomodoro org-roam-bibtex org-wild-notifier auctex)))
+ '(package-selected-packages
+   '(emmet-mode impatient-mode org-pomodoro org-roam-bibtex org-wild-notifier auctex)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
