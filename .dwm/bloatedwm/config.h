@@ -31,7 +31,7 @@ static const int riodraw_spawnasync =
     0; /* 0 means that the application is only spawned after a successful
         * selection while 1 means that the application is being initialised in
         * the background while the selection is made */
-static char *fonts[] = {"FontAwesome:size=10", "Iosevka:size=10",
+ static char *fonts[] = {"FontAwesome:size=10", "Iosevka:size=10",
                         "Kochi Gothic:size=9"};
 static char normbgcolor[] = "#1c2023";
 static char normbordercolor[] = "#1c2023";
@@ -394,9 +394,9 @@ static Key keys[] = {
     {0, XF86XK_TouchpadOff, spawn, SHCMD("synclient TouchpadOff=1")},
     {0, XF86XK_TouchpadOn, spawn, SHCMD("synclient TouchpadOff=0")},
     {0, XF86XK_MonBrightnessUp, spawn,
-     SHCMD("xbacklight -inc 10; kill -39 $(pidof dwmblocks)")},
+     SHCMD("xbacklight -inc 5; kill -39 $(pidof dwmblocks)")},
     {0, XF86XK_MonBrightnessDown, spawn,
-     SHCMD("xbacklight -dec 10; kill -39 $(pidof dwmblocks)")},
+     SHCMD("xbacklight -dec 5; kill -39 $(pidof dwmblocks)")},
 
     {MODKEY | AltMask, XK_Down, moveresize, {.v = "0x 25y 0w 0h"}},
     {MODKEY | AltMask, XK_Up, moveresize, {.v = "0x -25y 0w 0h"}},

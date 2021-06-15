@@ -3,6 +3,7 @@ export PATH=$HOME/bin:$HOME/.emacs.d/bin:$HOME/.local/bin:$HOME/.local/bin/statu
 
 ## Path to your oh-my-zsh installation.
 export ZSH="/home/hakuya/.oh-my-zsh"
+export NODE_PATH=$NODE_PATH:`npm root -g`
 #Uncomment for pywal
 #(cat ~/.cache/wal/sequences &)
 #

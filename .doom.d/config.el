@@ -41,52 +41,53 @@
 (map! :map evil-window-map
       "SPC" #'rotate-layout
       "<left>"     #'evil-window-left
-       "<down>"     #'evil-window-down
-       "<up>"       #'evil-window-up
-       "<right>"    #'evil-window-right
-       ;; Swapping windows
-       "C-<left>"       #'+evil/window-move-left
-       "C-<down>"       #'+evil/window-move-down
-       "C-<up>"         #'+evil/window-move-up
-       "C-<right>"      #'+evil/window-move-right)
+      "<down>"     #'evil-window-down
+      "<up>"       #'evil-window-up
+      "<right>"    #'evil-window-right
+      ;; Swapping windows
+      "C-<left>"       #'+evil/window-move-left
+      "C-<down>"       #'+evil/window-move-down
+      "C-<up>"         #'+evil/window-move-up
+      "C-<right>"      #'+evil/window-move-right)
 
 (map! :after evil-easymotion
       :map evilem-map
       :desc "Jump to char" "f" #'evil-avy-goto-char)
 
 (setq frame-title-format
-    '(""
-      (:eval
-       (if (s-contains-p org-roam-directory (or buffer-file-name ""))
-           (replace-regexp-in-string ".*/[0-9]*-?" "🢔 " buffer-file-name)
-         "%b"))
-      (:eval
-       (let ((project-name (projectile-project-name)))
-         (unless (string= "-" project-name)
-           (format (if (buffer-modified-p)  " ◉ %s" "  ●  %s") project-name))))))
+      '(""
+	(:eval
+	 (if (s-contains-p org-roam-directory (or buffer-file-name ""))
+             (replace-regexp-in-string ".*/[0-9]*-?" "🢔 " buffer-file-name)
+           "%b"))
+	(:eval
+	 (let ((project-name (projectile-project-name)))
+           (unless (string= "-" project-name)
+             (format (if (buffer-modified-p)  " ◉ %s" "  ●  %s") project-name))))))
 
 (setq doom-font (font-spec :family "Iosevka" :size 16)
-            doom-big-font (font-spec :family "Iosevka" :size 36)
-            doom-variable-pitch-font (font-spec :family "Iosevka" :size 24)
-            doom-serif-font (font-spec :family "Iosevka" :size 24)
-            )
+      doom-big-font (font-spec :family "Iosevka" :size 36)
+      doom-variable-pitch-font (font-spec :family "Iosevka" :size 24)
+      doom-serif-font (font-spec :family "Iosevka" :size 24)
+      )
 
 ;;light themes
-;(setq doom-theme 'doom-gruvbox-light)
-;(setq doom-theme 'zaiste)
-;(setq doom-theme 'doom-flatwhite)
+					;(setq doom-theme 'doom-gruvbox-light)
+					;(setq doom-theme 'zaiste)
+					;(setq doom-theme 'doom-flatwhite)
 ;;dark themes
 (setq-default indent-tabs-mode t)
 (setq doom-theme 'doom-tomorrow-night)
 
-(setq display-line-numbers-type t)
+(setq display-line-numbers-type nil)
 
-; (defun my-buffer-face-mode-variable ()
-;   "Set font to a variable width (proportional) fonts in current buffer"
-;   (interactive)
-;   (setq buffer-face-mode-face '(:family "Iosevka" :height 36 ))
-;   (buffer-face-mode))
-; (add-hook 'org-mode-hook 'my-buffer-face-mode-variable)
+
+					; (defun my-buffer-face-mode-variable ()
+					;   "Set font to a variable width (proportional) fonts in current buffer"
+					;   (interactive)
+					;   (setq buffer-face-mode-face '(:family "Iosevka" :height 36 ))
+					;   (buffer-face-mode))
+					; (add-hook 'org-mode-hook 'my-buffer-face-mode-variable)
 
 (setq org-directory "~/Documents/Estudios/org-notes/")
 
@@ -108,25 +109,25 @@
 (after! org
   (setq org-capture-templates
         '(("t" "TODO" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
-        "* TODO %? %^G \n  %U" :empty-lines 1)
-        ("s" "Scheduled TODO" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
-        "* TODO %? %^G \nSCHEDULED: %^t\n  %U" :empty-lines 1)
-        ("d" "Deadline" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
-            "* TODO %? %^G \n  DEADLINE: %^t" :empty-lines 1)
-        ("u" "Urgent" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
-        "* TODO [#A] %? %^G \n  SCHEDULED: %^t")
-        ("a" "Appointment" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
-        "* %? %^G \n  %^t")
-        ("l" "Link" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
-        "* TODO %a %? %^G\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
-        ("n" "Note" entry (file+headline "~/Documents/Estudios/org-notes/notes.org" "Notes")
-            "* %? %^G\n%U" :empty-lines 1)
-	("p" "Protocol" entry (file+headline "~/Documents/Estudios/org-notes/notes.org" "Captures")
-        "* %^{Title} %^G\nSource: %u, [[%:link][%:description]]\n #+BEGIN_QUOTE\n%i\n#+END_QUOTE\n\n\n%?")
-	("L" "Protocol Link" entry (file+headline "~/Documents/Estudios/org-notes/notes.org" "Links")
-        "* %? %^G \n[[%:link][%:description]] \nCaptured On: %U")
-        ("j" "Journal" entry (file+datetree "~/Documents/Estudios/org-notes/journal/journal.org")
-        "* %? %^G\nEntered on %U\n"))))
+           "* TODO %? %^G \n  %U" :empty-lines 1)
+          ("s" "Scheduled TODO" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
+           "* TODO %? %^G \nSCHEDULED: %^t\n  %U" :empty-lines 1)
+          ("d" "Deadline" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
+           "* TODO %? %^G \n  DEADLINE: %^t" :empty-lines 1)
+          ("u" "Urgent" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
+           "* TODO [#A] %? %^G \n  SCHEDULED: %^t")
+          ("a" "Appointment" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
+           "* %? %^G \n  %^t")
+          ("l" "Link" entry (file+headline "~/Documents/Estudios/org-notes/gtd.org" "Collect")
+           "* TODO %a %? %^G\nSCHEDULED: %(org-insert-time-stamp (org-read-date nil t \"+0d\"))\n")
+          ("n" "Note" entry (file+headline "~/Documents/Estudios/org-notes/notes.org" "Notes")
+           "* %? %^G\n%U" :empty-lines 1)
+	  ("p" "Protocol" entry (file+headline "~/Documents/Estudios/org-notes/notes.org" "Captures")
+           "* %^{Title} %^G\nSource: %u, [[%:link][%:description]]\n #+BEGIN_QUOTE\n%i\n#+END_QUOTE\n\n\n%?")
+	  ("L" "Protocol Link" entry (file+headline "~/Documents/Estudios/org-notes/notes.org" "Links")
+           "* %? %^G \n[[%:link][%:description]] \nCaptured On: %U")
+          ("j" "Journal" entry (file+datetree "~/Documents/Estudios/org-notes/journal/journal.org")
+           "* %? %^G\nEntered on %U\n"))))
 
 
 
@@ -203,27 +204,27 @@
 ;;:NOTER_PAGE:
 ;;:END:")))
 
-; org-roam settings
+					; org-roam settings
 (setq org-roam-directory "~/Documents/Estudios/org-notes")
 (after! org-roam
-        (map! :leader
-            :prefix "n"
-            :desc "org-roam" "l" #'org-roam
-            :desc "org-roam-insert" "i" #'org-roam-insert
-            :desc "org-roam-switch-to-buffer" "b" #'org-roam-switch-to-buffer
-            :desc "org-roam-find-file" "f" #'org-roam-find-file
-            :desc "org-roam-show-graph" "g" #'org-roam-show-graph
-            :desc "org-roam-insert" "i" #'org-roam-insert
-            :desc "org-roam-capture" "c" #'org-roam-capture))
+  (map! :leader
+        :prefix "n"
+        :desc "org-roam" "l" #'org-roam
+        :desc "org-roam-insert" "i" #'org-roam-insert
+        :desc "org-roam-switch-to-buffer" "b" #'org-roam-switch-to-buffer
+        :desc "org-roam-find-file" "f" #'org-roam-find-file
+        :desc "org-roam-show-graph" "g" #'org-roam-show-graph
+        :desc "org-roam-insert" "i" #'org-roam-insert
+        :desc "org-roam-capture" "c" #'org-roam-capture))
 (after! org-roam
-      (setq org-roam-ref-capture-templates
-            '(("r" "ref" plain (function org-roam-capture--get-point)
-               "%?"
-               :file-name "websites/${slug}"
-               :head "#+TITLE: ${title}
+  (setq org-roam-ref-capture-templates
+        '(("r" "ref" plain (function org-roam-capture--get-point)
+           "%?"
+           :file-name "websites/${slug}"
+           :head "#+TITLE: ${title}
     #+ROAM_KEY: ${ref}
     - source :: ${ref}"
-               :unnarrowed t))))  ; capture template to grab websites. Requires org-roam protocol.
+           :unnarrowed t))))  ; capture template to grab websites. Requires org-roam protocol.
 
 ;; org-journal the DOOM way
 (use-package org-journal
@@ -241,14 +242,14 @@
 (setq org-journal-enable-agenda-integration t)
 
 (use-package deft
-      :after org
-      :bind
-      ("C-c n d" . deft)
-      :custom
-      (deft-recursive t)
-      (deft-use-filter-string-for-filename t)
-      (deft-default-extension "org")
-      (deft-directory "~/Documents/Estudios/org-notes"))
+  :after org
+  :bind
+  ("C-c n d" . deft)
+  :custom
+  (deft-recursive t)
+  (deft-use-filter-string-for-filename t)
+  (deft-default-extension "org")
+  (deft-directory "~/Documents/Estudios/org-notes"))
 
 
 (use-package! org-roam-server
@@ -277,32 +278,32 @@
   :after org
   :bind
   (:map org-mode-map
-        (("s-Y" . org-download-screenshot)
-         ("s-y" . org-download-yank))))
+   (("s-Y" . org-download-screenshot)
+    ("s-y" . org-download-yank))))
 
-;(after! centaur-tabs
- ; (centaur-tabs-mode -1)
-  ;(setq centaur-tabs-height 36
-   ;     centaur-tabs-set-icons t
-    ;    centaur-tabs-modified-marker "o"
-     ;   centaur-tabs-close-button "×"
-      ;  centaur-tabs-set-bar 'above)
-       ; centaur-tabs-gray-out-icons 'buffer
-  ;(centaur-tabs-change-fonts "P22 Underground Book" 160))
+					;(after! centaur-tabs
+					; (centaur-tabs-mode -1)
+					;(setq centaur-tabs-height 36
+					;     centaur-tabs-set-icons t
+					;    centaur-tabs-modified-marker "o"
+					;   centaur-tabs-close-button "×"
+					;  centaur-tabs-set-bar 'above)
+					; centaur-tabs-gray-out-icons 'buffer
+					;(centaur-tabs-change-fonts "P22 Underground Book" 160))
 ;; (setq x-underline-at-descent-line t)
 
- (use-package! org-fancy-priorities
-; :ensure t
+(use-package! org-fancy-priorities
+					; :ensure t
   :hook
   (org-mode . org-fancy-priorities-mode)
   :config
-   (setq org-fancy-priorities-list '("⚡" "⬆" "⬇" "☕")))
+  (setq org-fancy-priorities-list '("⚡" "⬆" "⬇" "☕")))
 
 (use-package! cdlatex
-    :after (:any org-mode LaTeX-mode)
-    :hook
-    ((LaTeX-mode . turn-on-cdlatex)
-     (org-mode . turn-on-org-cdlatex)))
+  :after (:any org-mode LaTeX-mode)
+  :hook
+  ((LaTeX-mode . turn-on-cdlatex)
+   (org-mode . turn-on-org-cdlatex)))
 
 
 (use-package! org-super-agenda
@@ -406,7 +407,7 @@
 (use-package! org
   :config
   (setq
-  ; org-bullets-bullet-list '("⁖")
+					; org-bullets-bullet-list '("⁖")
    org-todo-keyword-faces
    '(("TODO" :foreground "#7c7c75" :weight normal :underline t)
      ("WAITING" :foreground "#9f7efe" :weight normal :underline t)
@@ -422,18 +423,18 @@
   (setq company-idle-delay 0.5
         company-minimum-prefix-length 2)
   (setq company-show-numbers t)
-(add-hook 'evil-normal-state-entry-hook #'company-abort)) ;; make aborting less annoying.
+  (add-hook 'evil-normal-state-entry-hook #'company-abort)) ;; make aborting less annoying.
 
-;(use-package! org-xournalpp
-;  :config
-;  (add-hook 'org-mode-hook 'org-xournalpp-mode))
+					;(use-package! org-xournalpp
+					;  :config
+					;  (add-hook 'org-mode-hook 'org-xournalpp-mode))
 (setq-default history-length 1000) ; remembering history from precedent
 (setq-default prescient-history-length 1000)
 ;; Org-mode strike trough done
 (set-face-attribute 'org-headline-done nil :strike-through t)
 ;; Function to remove links but keep description
 (defun afs/org-replace-link-by-link-description ()
-    "Replace an org link by its description or if empty its address"
+  "Replace an org link by its description or if empty its address"
   (interactive)
   (if (org-in-regexp org-link-bracket-re 1)
       (save-excursion
@@ -460,13 +461,13 @@
 (defun my-open-calendar ()
   (interactive)
   (cfw:open-calendar-buffer :contents-sources
-    (list
-     (cfw:org-create-source "Green")  ; orgmode source
-     (cfw:cal-create-source "Orange") ; diary source)
-    )))
+			    (list
+			     (cfw:org-create-source "Green")  ; orgmode source
+			     (cfw:cal-create-source "Orange") ; diary source)
+			     )))
 (defun meain/evil-delete-advice (orig-fn beg end &optional type _ &rest args)
-    "Make d, c, x to not write to clipboard."
-    (apply orig-fn beg end type ?_ args))
+  "Make d, c, x to not write to clipboard."
+  (apply orig-fn beg end type ?_ args))
 
 (advice-add 'evil-delete :around 'meain/evil-delete-advice)
 (advice-add 'evil-change :around 'meain/evil-delete-advice)
@@ -509,16 +510,15 @@
 
 (add-hook 'Info-selection-hook 'info-colors-fontify-node)
 (defun org-pomodoro-prompt ()
-(interactive)
-(org-clock-goto)
-(if (y-or-n-p "Start a new pomodoro?")
-    (progn
-      (org-pomodoro))))
+  (interactive)
+  (org-clock-goto)
+  (if (y-or-n-p "Start a new pomodoro?")
+      (progn
+	(org-pomodoro))))
+(setq-hook! 'web-mode-hook +format-with 'prettier)
 
 (add-hook 'org-pomodoro-break-finished-hook 'org-pomodoro-prompt)
-
 (add-hook 'Info-mode-hook #'mixed-pitch-mode)
 (global-visual-line-mode t)
 (require 'org-roam-protocol)
-;(require 'centered-window)
-
+					;(require 'centered-window)

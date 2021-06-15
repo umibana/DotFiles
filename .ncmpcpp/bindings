@@ -19,6 +19,9 @@ def_key "l"
 def_key "l"
   play_item
 
+def_key ";"
+  show_lyrics
+
 def_key "h"
   jump_to_parent_directory
 

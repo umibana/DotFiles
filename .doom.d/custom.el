@@ -13,7 +13,12 @@
  '(org-journal-file-format "%d-%m-%Y.org")
  '(org-startup-folded 'show4evels)
  '(package-selected-packages
-   '(emmet-mode impatient-mode org-pomodoro org-roam-bibtex org-wild-notifier auctex)))
+   '(prettier-js prettier indium ng2-mode emmet-mode impatient-mode org-pomodoro org-roam-bibtex org-wild-notifier auctex))
+ '(web-mode-auto-close-style 2)
+ '(web-mode-enable-auto-expanding t)
+ '(web-mode-enable-curly-brace-indentation t)
+ '(web-mode-enable-current-column-highlight t)
+ '(web-mode-enable-current-element-highlight t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

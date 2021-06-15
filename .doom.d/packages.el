@@ -81,3 +81,5 @@
   :recipe (:host github
            :repo "anler/centered-window-mode"))
 (package! impatient-mode)
+(package! emmet-mode)
+(package! prettier)
