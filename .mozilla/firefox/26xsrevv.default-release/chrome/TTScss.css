@@ -1,7 +1,6 @@
-
-:root{ 
+:root{
   --dark-0: #151D28;
-  --dark-base: #222222;
+  --dark-base: #1c2023;
   --dark-1: #233143;
   --dark-2: #2A3B51;
   --dark-3: #374E6C;
@@ -16,10 +15,9 @@
   --yellow: #dbc074;
   --green: #5cb8a7;
   --red: #c94f6d;
-  --extension-icon-mask: grayscale(85%) invert(75%) sepia(8%) saturate(862%) hue-rotate(173deg) brightness(88%);
 }
 
-:root.incognito{ 
+:root.incognito{
   --dark-0: #1C0E34;
   --dark-base: #20103c;
   --dark-1: #2F1D4E;
@@ -41,12 +39,10 @@
 
 
 :root{
-    --tab-border-radius: 10px; /* border radius of tabs */
     --animation-duration: 200ms; /* duration of different animations [0s: turn all animations off] */
-    --spacing: 10px; /* spacing between tabs. [<15px: compact tabs] */
     --distance-from-edge: 5px; /* distance between tabs, and left-right edges of sidebar*/
     --hover-text-spacing: 0.2; /* should be left alone. with hover sidebar, if text is visible in collapsed status, increase this */
-
+ --extension-icon-mask: brightness(80%) ;
 
     --ease-in: cubic-bezier(0.32, 0, 0.67, 0);
     --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
@@ -57,23 +53,17 @@
 
 /************UNCUSTOMIZED CSS************/
 #tabbar-container #tabbar{
-   margin-bottom:15px !important;
+   margin-bottom: 15px !important;
 }
 
 :root, #background{
     background:  var(--dark-base) !important;
 }
 
-#all-tabs{
-   margin: 10px var(--distance-from-edge);
-}
-
 tab-item:not(.collapsed) {
     margin-top: var(--spacing);
     border-radius: var(--tab-border-radius);
     border: none !important;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 tab-item.collapsed{
@@ -83,7 +73,7 @@ tab-item.collapsed{
 }
 
 tab-item:not([data-level="0"]):not(.pinned){
-    border-left: dashed 2px var(--light-4) !important;
+    border-left: dashed 2px #c795ae !important;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     margin-top: calc(var(--spacing)/2);
@@ -100,7 +90,7 @@ tab-item tab-favicon{
 }
 
 tab-item .label {
-    color: var(--light-2) !important;
+    color: var(--light-1) !important;
     padding-bottom: 2px;
 }
 
@@ -110,11 +100,11 @@ tab-item .twisty:before{
 }
 
 tab-item.active .label {
-    color: var(--light-0) !important;
+    color: var(--dark-base) !important;
 }
 
 tab-item.active {
-    background: var(--dark-3) !important;
+    background: var(--dark-base) !important;
 }
 
 
@@ -140,7 +130,7 @@ tab-item:not(pinned) tab-closebox {
     border-radius: 50%;
     padding-top: 2px;
     padding-left: 2px;
-    background: var(--light-4);
+  background: var(--dark-base);
     transition   : all var(--animation-duration) var(--ease-out);
 }
 
@@ -150,9 +140,8 @@ tab-item:not(pinned) tab-closebox {
 }
 
 .counter{
-    color: var(--light-4) !important;
+    color: var(--light-1) !important;
     background: var(--dark-2) !important;
-    border-radius: 7px;
     margin: 2px 4px 0px 0px;
     padding: 0 4px;
     padding-bottom: 2px;
@@ -170,12 +159,12 @@ tab-item:not(pinned) tab-closebox {
 :root.left tab-item tab-favicon {
     order: 10 !important;
     margin-right: calc(var(--collapsed-width)*0.) !important;
-    transform: scale(120%) translateX(0px) !important;
+    transform: scale(100%) translateX(0px) !important;
 }
 
 :root.left tab-item .sound-button:after {
     transform: translateX(0px); !important;
-    transition: all calc(var(--animation-duraton)*2.2) var(--ease-out) !important;
+    transition: all calc(var(--animation-duration)*2.2) var(--ease-out) !important;
 }
 
 :root.left tab-item .label{
@@ -211,7 +200,6 @@ tab-item:not(pinned) tab-closebox {
     .favicon-default::before {
     filter: var(--extension-icon-mask); /* change for light theme */
 }
-
 .tab[data-current-favicon-uri="undefined"]
     .favicon
     .favicon-default::before{
@@ -259,8 +247,11 @@ tab-item.pinned {
 
 #all-tabs {
     border: none !important;
+
 }
 #tabbar {
   font-family:"berry";
   font-size:12px;
+  box-shadow: none !important;
+  border:none;
 }

@@ -31,15 +31,15 @@ static const int riodraw_spawnasync =
     0; /* 0 means that the application is only spawned after a successful
         * selection while 1 means that the application is being initialised in
         * the background while the selection is made */
- static char *fonts[] = {"FontAwesome:size=10", "Iosevka:size=10",
+ static char *fonts[] = {"berry:size=10", "FontAwesome:size=10",
                         "Kochi Gothic:size=9"};
-static char normbgcolor[] = "#1c2023";
-static char normbordercolor[] = "#1c2023";
-static char normfgcolor[] = "#e297ac";
-static char selfgcolor[] = "#1c2023";
-static char selbordercolor[] = "#e297ac";
-static char selbgcolor[] = "#e297ac";
-static char hidfgcolor[] = "#8268a3";
+static char normbgcolor[] = "#221822";
+static char normbordercolor[] = "#221822";
+static char normfgcolor[] = "#dcaedc";
+static char selfgcolor[] = "#221822";
+static char selbordercolor[] = "#dcaedc";
+static char selbgcolor[] = "#dcaedc";
+static char hidfgcolor[] = "#e7b4b8";
 static char *colors[][4] = {
     /*               fg           bg           border   */
     [SchemeNorm] = {normfgcolor, normbgcolor, normbordercolor},

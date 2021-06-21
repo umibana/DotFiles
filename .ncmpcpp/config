@@ -22,10 +22,10 @@ progressbar_elapsed_color = "magenta"
 #progressbar_color = "black"
 connected_message_on_startup = no
 
-song_columns_list_format = "(35)[6]{t} (15)[4]{bE} (15)[7]{lrE} (15)[2]{aE} (10)[blue]{nrE} "
+song_columns_list_format = "(35)[6]{t} (15)[7]{bE} (15)[5]{lrE} (15)[6]{aE} (10)[7]{nrE} "
 #### Colors
 #header_window_color = "white"
-#main_window_color =  magenta
+main_window_color = blue
 #alternative_ui_separator_color = black
 
 #### General formatting

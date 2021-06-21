@@ -1,9 +1,9 @@
 #!/bin/sh
 
 if [ -z "$(mpc current)" ] && [ "$(playerctl -p spotify status)" = "Playing" ]; then
-	echo "  $(playerctl -p spotify metadata title) - $(playerctl -p spotify metadata artist)"
+	echo " $(playerctl -p spotify metadata title) - $(playerctl -p spotify metadata artist)"
 elif [ -n "$(mpc current)" ]; then
-	echo "  $(mpc current)"
+	echo " $(mpc current)"
 else
 	:
 fi
