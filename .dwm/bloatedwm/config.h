@@ -35,10 +35,10 @@ static const int riodraw_spawnasync =
                         "Kochi Gothic:size=9"};
 static char normbgcolor[] = "#221822";
 static char normbordercolor[] = "#221822";
-static char normfgcolor[] = "#dcaedc";
+static char normfgcolor[] = "#edc1c4";
 static char selfgcolor[] = "#221822";
-static char selbordercolor[] = "#dcaedc";
-static char selbgcolor[] = "#dcaedc";
+static char selbordercolor[] = "#edc1c4";
+static char selbgcolor[] = "#edc1c4";
 static char hidfgcolor[] = "#e7b4b8";
 static char *colors[][4] = {
     /*               fg           bg           border   */
