@@ -1,6 +1,13 @@
 #!/bin/sh
 [[ -f ~/.zshenv ]] && source ~/.zshenv
 
+
+# Xorg environment variables
+export GLFW_IM_MODULE='ibus'
+export GTK_IM_MODULE='ibus'
+export QT_IM_MODULE='ibus'
+export XMODIFIERS=@im='ibus'
+
 # Changes Touchpad Sensivity and adds tap to click, natural scrolling and move while typing
 xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Profile Enabled' 0, 1 &
 xinput --set-prop 'TPPS/2 IBM TrackPoint' 'libinput Accel Speed' 0.1 &
@@ -26,7 +33,7 @@ clipster -d &
 #Start Emacs
 emacs --daemon &
 # Faster Repeating
-xset r rate 300 50 &
+xset r rate 660 50 &
 # Restores wallpaper
 walchange &
 # wasd with mayus + wd

@@ -134,3 +134,4 @@ alias music='ncmpcpp-ueberzug'
 alias iphone='idevicepair pair;sudo ifuse -o allow_other /mnt'
 alias normify='nitrogen --set-zoom-fill /home/hakuya/Pictures/Wallpapers/y2GRLVk.jpeg'
 alias notetake='xsetwacom --set "Wacom Intuos PT S Pen stylus" MapToOutput eDP1'
+alias gc="git clone"

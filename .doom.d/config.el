@@ -13,13 +13,18 @@
       evil-want-fine-undo t                             ; By default while in insert all changes are one big blob. Be more granular
       auto-save-default t                                    ; Nobody likes to loose work, I certainly don't
       inhibit-compacting-font-caches t      ; When there are lots of glyphs, keep them in memory
-      truncate-string-ellipsis "…")               ; Unicode ellispis are nicer than "...", and also save /precious/ space
+      truncate-string-ellipsis "…"               ; Unicode ellispis are nicer than "...", and also save /precious/ space
+      scroll-margin 2)
 
 (delete-selection-mode 1)                             ; Replace selection when inserting text
 (display-time-mode 1)                                   ; Enable time in the mode-line
 (global-subword-mode 1)                           ; Iterate through CamelCase words
 (global-undo-tree-mode)                           ; Vim like undo instead of emacs one
 (setq line-spacing 0.3)                                   ; seems like a nice line spacing balance.
+
+(unless (string-match-p "^Power N/A" (battery))   ; On laptops...
+  (display-battery-mode 1))                       ; it's nice to know how much power you have
+
 
 (if (eq initial-window-system 'x)                 ; if started by emacs command or desktop file
     (toggle-frame-maximized)
@@ -31,6 +36,8 @@
   :after '(evil-window-split evil-window-vsplit)
   (+ivy/switch-buffer))
 (setq +ivy-buffer-preview t)
+
+(setq-default major-mode 'org-mode) ;; New buffers in org-mode instead of fundamental mode
 
 (defun doom-modeline-conditional-buffer-encoding ()
   (setq-local doom-modeline-buffer-encoding
@@ -66,31 +73,223 @@
              (format (if (buffer-modified-p)  " ◉ %s" "  ●  %s") project-name))))))
 
 (setq doom-font (font-spec :family "Iosevka" :size 16)
-      doom-big-font (font-spec :family "Iosevka" :size 36)
-      doom-variable-pitch-font (font-spec :family "Iosevka" :size 24)
-      doom-serif-font (font-spec :family "Iosevka" :size 24)
-      )
-
+      doom-big-font (font-spec :family "Iosevka" :size 24)
+      doom-variable-pitch-font (font-spec :family "Iosevka" :size 16)
+      doom-unicode-font (font-spec :family "Iosevka")
+      doom-serif-font (font-spec :family "Iosevka Term" :weight 'light))
 ;;light themes
 					;(setq doom-theme 'doom-gruvbox-light)
 					;(setq doom-theme 'zaiste)
 					;(setq doom-theme 'doom-flatwhite)
 ;;dark themes
 (setq-default indent-tabs-mode t)
-(setq doom-theme 'doom-tomorrow-night)
+(setq doom-theme 'doom-dimmedwave)
 
 (setq display-line-numbers-type nil)
 
-
-					; (defun my-buffer-face-mode-variable ()
-					;   "Set font to a variable width (proportional) fonts in current buffer"
-					;   (interactive)
-					;   (setq buffer-face-mode-face '(:family "Iosevka" :height 36 ))
-					;   (buffer-face-mode))
-					; (add-hook 'org-mode-hook 'my-buffer-face-mode-variable)
-
 (setq org-directory "~/Documents/Estudios/org-notes/")
 
+;; Fancy splash image
+(defvar fancy-splash-image-template
+  (expand-file-name "misc/splash-images/emacs-e.svg" doom-private-dir)
+  "Default template svg used for the splash image, with substitutions from ")
+
+(defvar fancy-splash-sizes
+  `((:height 300 :min-height 50 :padding (0 . 2))
+    (:height 250 :min-height 42 :padding (2 . 4))
+    (:height 200 :min-height 35 :padding (3 . 3))
+    (:height 150 :min-height 28 :padding (3 . 3))
+    (:height 100 :min-height 20 :padding (2 . 2))
+    (:height 75  :min-height 15 :padding (2 . 1))
+    (:height 50  :min-height 10 :padding (1 . 0))
+    (:height 1   :min-height 0  :padding (0 . 0)))
+  "list of plists with the following properties
+  :height the height of the image
+  :min-height minimum `frame-height' for image
+  :padding `+doom-dashboard-banner-padding' (top . bottom) to apply
+  :template non-default template file
+  :file file to use instead of template")
+
+(defvar fancy-splash-template-colours
+  '(("$colour1" . keywords) ("$colour2" . type) ("$colour3" . base5) ("$colour4" . base8))
+  "list of colour-replacement alists of the form (\"$placeholder\" . 'theme-colour) which applied the template")
+
+(unless (file-exists-p (expand-file-name "theme-splashes" doom-cache-dir))
+  (make-directory (expand-file-name "theme-splashes" doom-cache-dir) t))
+
+(defun fancy-splash-filename (theme-name height)
+  (expand-file-name (concat (file-name-as-directory "theme-splashes")
+                            theme-name
+                            "-" (number-to-string height) ".svg")
+                    doom-cache-dir))
+
+(defun fancy-splash-clear-cache ()
+  "Delete all cached fancy splash images"
+  (interactive)
+  (delete-directory (expand-file-name "theme-splashes" doom-cache-dir) t)
+  (message "Cache cleared!"))
+
+(defun fancy-splash-generate-image (template height)
+  "Read TEMPLATE and create an image if HEIGHT with colour substitutions as
+   described by `fancy-splash-template-colours' for the current theme"
+  (with-temp-buffer
+    (insert-file-contents template)
+    (re-search-forward "$height" nil t)
+    (replace-match (number-to-string height) nil nil)
+    (dolist (substitution fancy-splash-template-colours)
+      (goto-char (point-min))
+      (while (re-search-forward (car substitution) nil t)
+        (replace-match (doom-color (cdr substitution)) nil nil)))
+    (write-region nil nil
+                  (fancy-splash-filename (symbol-name doom-theme) height) nil nil)))
+
+(defun fancy-splash-generate-images ()
+  "Perform `fancy-splash-generate-image' in bulk"
+  (dolist (size fancy-splash-sizes)
+    (unless (plist-get size :file)
+      (fancy-splash-generate-image (or (plist-get size :template)
+                                       fancy-splash-image-template)
+                                   (plist-get size :height)))))
+
+(defun ensure-theme-splash-images-exist (&optional height)
+  (unless (file-exists-p (fancy-splash-filename
+                          (symbol-name doom-theme)
+                          (or height
+                              (plist-get (car fancy-splash-sizes) :height))))
+    (fancy-splash-generate-images)))
+
+(defun get-appropriate-splash ()
+  (let ((height (frame-height)))
+    (cl-some (lambda (size) (when (>= height (plist-get size :min-height)) size))
+             fancy-splash-sizes)))
+
+(setq fancy-splash-last-size nil)
+(setq fancy-splash-last-theme nil)
+(defun set-appropriate-splash (&rest _)
+  (let ((appropriate-image (get-appropriate-splash)))
+    (unless (and (equal appropriate-image fancy-splash-last-size)
+                 (equal doom-theme fancy-splash-last-theme)))
+    (unless (plist-get appropriate-image :file)
+      (ensure-theme-splash-images-exist (plist-get appropriate-image :height)))
+    (setq fancy-splash-image
+          (or (plist-get appropriate-image :file)
+              (fancy-splash-filename (symbol-name doom-theme) (plist-get appropriate-image :height))))
+    (setq +doom-dashboard-banner-padding (plist-get appropriate-image :padding))
+    (setq fancy-splash-last-size appropriate-image)
+    (setq fancy-splash-last-theme doom-theme)
+    (+doom-dashboard-reload)))
+
+(add-hook 'doom-load-theme-hook #'set-appropriate-splash)
+(add-hook 'window-size-change-functions #'set-appropriate-splash)
+
+; Generate phrases on doom dashboard
+(defvar phrase-api-url
+  (nth (random 3)
+       '(("https://corporatebs-generator.sameerkumar.website/" :phrase)
+         ("https://useless-facts.sameerkumar.website/api" :data)
+         ("https://dev-excuses-api.herokuapp.com/" :text))))
+
+(defmacro phrase-generate-callback (token &optional format-fn ignore-read-only callback buffer-name)
+  `(lambda (status)
+     (unless (plist-get status :error)
+       (goto-char url-http-end-of-headers)
+       (let ((phrase (plist-get (json-parse-buffer :object-type 'plist) (cadr phrase-api-url)))
+             (inhibit-read-only ,(when (eval ignore-read-only) t)))
+         (setq phrase-last (cons phrase (float-time)))
+         (with-current-buffer ,(or (eval buffer-name) (buffer-name (current-buffer)))
+           (save-excursion
+             (goto-char (point-min))
+             (when (search-forward ,token nil t)
+               (with-silent-modifications
+                 (replace-match "")
+                 (insert ,(if format-fn format-fn 'phrase)))))
+           ,callback)))))
+
+(defvar phrase-last nil)
+(defvar phrase-timeout 5)
+
+(defmacro phrase-insert-async (&optional format-fn token ignore-read-only callback buffer-name)
+  `(let ((inhibit-message t))
+     (if (and phrase-last
+              (> phrase-timeout (- (float-time) (cdr phrase-last))))
+         (let ((phrase (car phrase-last)))
+           ,(if format-fn format-fn 'phrase))
+       (url-retrieve (car phrase-api-url)
+                     (phrase-generate-callback ,(or token "\ufeff") ,format-fn ,ignore-read-only ,callback ,buffer-name))
+       ;; For reference, \ufeff = Zero-width no-break space / BOM
+       ,(or token "\ufeff"))))
+
+(defun doom-dashboard-phrase ()
+  (phrase-insert-async
+   (progn
+     (setq-local phrase-position (point))
+     (mapconcat
+      (lambda (line)
+        (+doom-dashboard--center
+         +doom-dashboard--width
+         (with-temp-buffer
+           (insert-text-button
+            line
+            'action
+            (lambda (_)
+              (setq phrase-last nil)
+              (+doom-dashboard-reload t))
+            'face 'doom-dashboard-menu-title
+            'mouse-face 'doom-dashboard-menu-title
+            'help-echo "Random phrase"
+            'follow-link t)
+           (buffer-string))))
+      (split-string
+       (with-temp-buffer
+         (insert phrase)
+         (setq fill-column (min 70 (/ (* 2 (window-width)) 3)))
+         (fill-region (point-min) (point-max))
+         (buffer-string))
+       "\n")
+      "\n"))
+   nil t
+   (progn
+     (goto-char phrase-position)
+     (forward-whitespace 1))
+   +doom-dashboard-name))
+
+(defadvice! doom-dashboard-widget-loaded-with-phrase ()
+  :override #'doom-dashboard-widget-loaded
+  (setq line-spacing 0.2)
+  (insert
+   "\n\n"
+   (propertize
+    (+doom-dashboard--center
+     +doom-dashboard--width
+     (doom-display-benchmark-h 'return))
+    'face 'doom-dashboard-loaded)
+   "\n"
+   (doom-dashboard-phrase)
+   "\n"))
+
+(defun doom-dashboard-draw-ascii-emacs-banner-fn ()
+  (let* ((banner
+          '(",---.,-.-.,---.,---.,---."
+            "|---'| | |,---||    `---."
+            "`---'` ' '`---^`---'`---'"))
+         (longest-line (apply #'max (mapcar #'length banner))))
+    (put-text-property
+     (point)
+     (dolist (line banner (point))
+       (insert (+doom-dashboard--center
+                +doom-dashboard--width
+                (concat
+                 line (make-string (max 0 (- longest-line (length line)))
+                                   32)))
+               "\n"))
+     'face 'doom-dashboard-banner)))
+
+(unless (display-graphic-p) ; for some reason this messes up the graphical splash screen atm
+  (setq +doom-dashboard-ascii-banner-fn #'doom-dashboard-draw-ascii-emacs-banner-fn))
+
+(remove-hook '+doom-dashboard-functions #'doom-dashboard-widget-shortmenu)
+(add-hook! '+doom-dashboard-mode-hook (hide-mode-line-mode 1) (hl-line-mode -1))
+(setq-hook! '+doom-dashboard-mode-hook evil-normal-state-cursor (list nil))
 ;;(use-package! org-ref
 ;;    :after org
 ;;    :init
@@ -158,6 +357,44 @@
       scroll-step 1
       scroll-conservatively 100
       disabled-command-function nil)
+
+(after! doom-modeline
+  (doom-modeline-def-segment buffer-name
+    "Display the current buffer's name, without any other information."
+    (concat
+     (doom-modeline-spc)
+     (doom-modeline--buffer-name)))
+
+  (doom-modeline-def-segment pdf-icon
+    "PDF icon from all-the-icons."
+    (concat
+     (doom-modeline-spc)
+     (doom-modeline-icon 'octicon "file-pdf" nil nil
+                         :face (if (doom-modeline--active)
+                                   'all-the-icons-red
+                                 'mode-line-inactive)
+                         :v-adjust 0.02)))
+
+  (defun doom-modeline-update-pdf-pages ()
+    "Update PDF pages."
+    (setq doom-modeline--pdf-pages
+          (let ((current-page-str (number-to-string (eval `(pdf-view-current-page))))
+                (total-page-str (number-to-string (pdf-cache-number-of-pages))))
+            (concat
+             (propertize
+              (concat (make-string (- (length total-page-str) (length current-page-str)) ? )
+                      " P" current-page-str)
+              'face 'mode-line)
+             (propertize (concat "/" total-page-str) 'face 'doom-modeline-buffer-minor-mode)))))
+
+  (doom-modeline-def-segment pdf-pages
+    "Display PDF pages."
+    (if (doom-modeline--active) doom-modeline--pdf-pages
+      (propertize doom-modeline--pdf-pages 'face 'mode-line-inactive)))
+
+  (doom-modeline-def-modeline 'pdf
+    '(bar window-number pdf-pages pdf-icon buffer-name)
+    '(misc-info matches major-mode process vcs)))
 
 ;;(use-package! zotxt
 ;; :after org)
@@ -291,6 +528,17 @@
 					; centaur-tabs-gray-out-icons 'buffer
 					;(centaur-tabs-change-fonts "P22 Underground Book" 160))
 ;; (setq x-underline-at-descent-line t)
+
+(use-package! org-pretty-table
+  :commands (org-pretty-table-mode global-org-pretty-table-mode))
+(use-package! org-ol-tree
+  :commands org-ol-tree)
+(map! :map org-mode-map
+      :after org
+      :localleader
+      :desc "Outline" "O" #'org-ol-tree)
+(use-package! ox-gfm
+  :after org)
 
 (use-package! org-fancy-priorities
 					; :ensure t
@@ -430,6 +678,17 @@
 					;  (add-hook 'org-mode-hook 'org-xournalpp-mode))
 (setq-default history-length 1000) ; remembering history from precedent
 (setq-default prescient-history-length 1000)
+(set-company-backend!
+  '(text-mode
+    markdown-mode
+    gfm-mode)
+  '(:seperate
+    company-ispell
+    company-files
+    company-yasnippet))
+
+(add-hook 'org-mode-hook 'turn-on-org-cdlatex)
+
 ;; Org-mode strike trough done
 (set-face-attribute 'org-headline-done nil :strike-through t)
 ;; Function to remove links but keep description
@@ -498,6 +757,8 @@
 
 (use-package! info-colors
   :commands (info-colors-fontify-node))
+(add-hook 'Info-selection-hook 'info-colors-fontify-node)
+
 
 (use-package! org-pomodoro
   :commands (org-pomodoro)
@@ -508,7 +769,6 @@
    org-pomodoro-short-break-length 5
    ))
 
-(add-hook 'Info-selection-hook 'info-colors-fontify-node)
 (defun org-pomodoro-prompt ()
   (interactive)
   (org-clock-goto)
@@ -517,8 +777,268 @@
 	(org-pomodoro))))
 (setq-hook! 'web-mode-hook +format-with 'prettier)
 
+
+(defvar mixed-pitch-modes '(org-mode LaTeX-mode markdown-mode gfm-mode Info-mode)
+  "Modes that `mixed-pitch-mode' should be enabled in, but only after UI initialisation.")
+(defun init-mixed-pitch-h ()
+  "Hook `mixed-pitch-mode' into each mode in `mixed-pitch-modes'.
+Also immediately enables `mixed-pitch-modes' if currently in one of the modes."
+  (when (memq major-mode mixed-pitch-modes)
+    (mixed-pitch-mode 1))
+  (dolist (hook mixed-pitch-modes)
+    (add-hook (intern (concat (symbol-name hook) "-hook")) #'mixed-pitch-mode)))
+(add-hook 'doom-init-ui-hook #'init-mixed-pitch-h)
+
+(autoload #'mixed-pitch-serif-mode "mixed-pitch"
+  "Change the default face of the current buffer to a serifed variable pitch, while keeping some faces fixed pitch." t)
+
+(after! mixed-pitch
+  (defface variable-pitch-serif
+    '((t (:family "serif")))
+    "A variable-pitch face with serifs."
+    :group 'basic-faces)
+  (setq mixed-pitch-set-height t)
+  (setq variable-pitch-serif-font (font-spec :family "Iosevka" :size 27))
+  (set-face-attribute 'variable-pitch-serif nil :font variable-pitch-serif-font)
+  (defun mixed-pitch-serif-mode (&optional arg)
+    "Change the default face of the current buffer to a serifed variable pitch, while keeping some faces fixed pitch."
+    (interactive)
+    (let ((mixed-pitch-face 'variable-pitch-serif))
+      (mixed-pitch-mode (or arg 'toggle)))))
+
+(setq projectile-ignored-projects '("~/" "/tmp" "~/.emacs.d/.local/straight/repos/"))
+(defun projectile-ignored-project-function (filepath)
+  "Return t if FILEPATH is within any of `projectile-ignored-projects'"
+  (or (mapcar (lambda (p) (s-starts-with-p p filepath)) projectile-ignored-projects)))
+
+(setq which-key-idle-delay 0.5) ;; I need the help, I really do
+(setq which-key-allow-multiple-replacements t)
+(after! which-key
+  (pushnew!
+   which-key-replacement-alist
+   '(("" . "\\`+?evil[-:]?\\(?:a-\\)?\\(.*\\)") . (nil . "◂\\1"))
+   '(("\\`g s" . "\\`evilem--?motion-\\(.*\\)") . (nil . "◃\\1"))
+   ))
+
+(setq +zen-text-scale 0.8)
+(defvar +zen-serif-p t
+  "Whether to use a serifed font with `mixed-pitch-mode'.")
+(after! writeroom-mode
+  (defvar-local +zen--original-org-indent-mode-p nil)
+  (defvar-local +zen--original-mixed-pitch-mode-p nil)
+  (defvar-local +zen--original-org-pretty-table-mode-p nil)
+  (defun +zen-enable-mixed-pitch-mode-h ()
+    "Enable `mixed-pitch-mode' when in `+zen-mixed-pitch-modes'."
+    (when (apply #'derived-mode-p +zen-mixed-pitch-modes)
+      (if writeroom-mode
+          (progn
+            (setq +zen--original-mixed-pitch-mode-p mixed-pitch-mode)
+            (funcall (if +zen-serif-p #'mixed-pitch-serif-mode #'mixed-pitch-mode) 1))
+        (funcall #'mixed-pitch-mode (if +zen--original-mixed-pitch-mode-p 1 -1)))))
+  (pushnew! writeroom--local-variables
+            'display-line-numbers
+            'visual-fill-column-width
+            'org-adapt-indentation
+            'org-superstar-headline-bullets-list
+            'org-superstar-remove-leading-stars)
+  (add-hook 'writeroom-mode-enable-hook
+            (defun +zen-prose-org-h ()
+              "Reformat the current Org buffer appearance for prose."
+              (when (eq major-mode 'org-mode)
+                (setq display-line-numbers nil
+                      visual-fill-column-width 60
+                      org-adapt-indentation nil)
+                (when (featurep 'org-superstar)
+                  (setq-local org-superstar-headline-bullets-list '("🙘" "🙙" "🙚" "🙛")
+                              ;; org-superstar-headline-bullets-list '("🙐" "🙑" "🙒" "🙓" "🙔" "🙕" "🙖" "🙗")
+                              org-superstar-remove-leading-stars t)
+                  (org-superstar-restart))
+                (setq
+                 +zen--original-org-indent-mode-p org-indent-mode
+                 +zen--original-org-pretty-table-mode-p (bound-and-true-p org-pretty-table-mode))
+                (org-indent-mode -1)
+                (org-pretty-table-mode 1))))
+  (add-hook 'writeroom-mode-disable-hook
+            (defun +zen-nonprose-org-h ()
+              "Reverse the effect of `+zen-prose-org'."
+              (when (eq major-mode 'org-mode)
+                (when (featurep 'org-superstar)
+                  (org-superstar-restart))
+                (when +zen--original-org-indent-mode-p (org-indent-mode 1))
+                ;; (unless +zen--original-org-pretty-table-mode-p (org-pretty-table-mode -1))
+                ))))
+
+(setq yas-triggers-in-field t)
+
+(after! org-superstar
+  (setq org-superstar-headline-bullets-list '("◉" "○" "✸" "✿" "✤" "✜" "◆" "▶")
+        org-superstar-prettify-item-bullets t ))
+
+(setq org-ellipsis " ▾ "
+      org-hide-leading-stars t
+      org-priority-highest ?A
+      org-priority-lowest ?E
+      org-priority-faces
+      '((?A . 'all-the-icons-red)
+        (?B . 'all-the-icons-orange)
+        (?C . 'all-the-icons-yellow)
+        (?D . 'all-the-icons-green)
+        (?E . 'all-the-icons-blue)))
+
+(appendq! +ligatures-extra-symbols
+          `(:checkbox      "☐"
+            :pending       "◼"
+            :checkedbox    "☑"
+            :list_property "∷"
+            :em_dash       "—"
+            :ellipses      "…"
+            :arrow_right   "→"
+            :arrow_left    "←"
+            :title         "𝙏"
+	    :roam_tags     "∷"
+            :subtitle      "𝙩"
+            :author        "𝘼"
+            :date          "𝘿"
+            :property      "☸"
+            :options       "⌥"
+            :startup       "⏻"
+            :macro         "𝓜"
+            :html_head     "🅷"
+            :html          "🅗"
+            :latex_class   "🄻"
+            :latex_header  "🅻"
+            :beamer_header "🅑"
+            :latex         "🅛"
+            :attr_latex    "🄛"
+            :attr_html     "🄗"
+            :attr_org      "⒪"
+            :begin_quote   "❝"
+            :end_quote     "❞"
+            :caption       "☰"
+            :header        "›"
+            :results       "🠶"
+            :begin_export  "⏩"
+            :end_export    "⏪"
+            :properties    "⚙"
+            :end           "∎"
+            :priority_a   ,(propertize "⚑" 'face 'all-the-icons-red)
+            :priority_b   ,(propertize "⬆" 'face 'all-the-icons-orange)
+            :priority_c   ,(propertize "■" 'face 'all-the-icons-yellow)
+            :priority_d   ,(propertize "⬇" 'face 'all-the-icons-green)
+            :priority_e   ,(propertize "❓" 'face 'all-the-icons-blue)))
+(set-ligatures! 'org-mode
+  :merge t
+  :checkbox      "[ ]"
+  :pending       "[-]"
+  :checkedbox    "[X]"
+  :list_property "::"
+  :em_dash       "---"
+  :ellipsis      "..."
+  :arrow_right   "->"
+  :arrow_left    "<-"
+  :roam_tag      "#+roam_tags:"
+  :title         "#+title:"
+  :subtitle      "#+subtitle:"
+  :author        "#+author:"
+  :date          "#+date:"
+  :property      "#+property:"
+  :options       "#+options:"
+  :startup       "#+startup:"
+  :macro         "#+macro:"
+  :html_head     "#+html_head:"
+  :html          "#+html:"
+  :latex_class   "#+latex_class:"
+  :latex_header  "#+latex_header:"
+  :beamer_header "#+beamer_header:"
+  :latex         "#+latex:"
+  :attr_latex    "#+attr_latex:"
+  :attr_html     "#+attr_html:"
+  :attr_org      "#+attr_org:"
+  :begin_quote   "#+begin_quote"
+  :end_quote     "#+end_quote"
+  :caption       "#+caption:"
+  :header        "#+header:"
+  :begin_export  "#+begin_export"
+  :end_export    "#+end_export"
+  :results       "#+RESULTS:"
+  :property      ":PROPERTIES:"
+  :end           ":END:"
+  :priority_a    "[#A]"
+  :priority_b    "[#B]"
+  :priority_c    "[#C]"
+  :priority_d    "[#D]"
+  :priority_e    "[#E]")
+(plist-put +ligatures-extra-symbols :name "⁍")
+
+(setq org-latex-pdf-process '("latexmk -f -pdf -%latex -shell-escape -interaction=nonstopmode -output-directory=%o %f"))
+(after! ox-latex
+  (add-to-list 'org-latex-classes
+               '("scr-article"
+                 "\\documentclass{scrartcl}"
+                 ("\\section{%s}" . "\\section*{%s}")
+                 ("\\subsection{%s}" . "\\subsection*{%s}")
+                 ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                 ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                 ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+  (add-to-list 'org-latex-classes
+               '("blank"
+                 "[NO-DEFAULT-PACKAGES]\n[NO-PACKAGES]\n[EXTRA]"
+                 ("\\section{%s}" . "\\section*{%s}")
+                 ("\\subsection{%s}" . "\\subsection*{%s}")
+                 ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                 ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                 ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+  (add-to-list 'org-latex-classes
+               '("bmc-article"
+                 "\\documentclass[article,code,maths]{bmc}\n[NO-DEFAULT-PACKAGES]\n[NO-PACKAGES]\n[EXTRA]"
+                 ("\\section{%s}" . "\\section*{%s}")
+                 ("\\subsection{%s}" . "\\subsection*{%s}")
+                 ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                 ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                 ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+  (add-to-list 'org-latex-classes
+               '("bmc"
+                 "\\documentclass[code,maths]{bmc}\n[NO-DEFAULT-PACKAGES]\n[NO-PACKAGES]\n[EXTRA]"
+                 ("\\chapter{%s}" . "\\chapter*{%s}")
+                 ("\\section{%s}" . "\\section*{%s}")
+                 ("\\subsection{%s}" . "\\subsection*{%s}")
+                 ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                 ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                 ("\\subparagraph{%s}" . "\\subparagraph*{%s}"))))
+
+(setq org-latex-default-class "scr-article"
+      org-latex-tables-booktabs t
+      org-latex-hyperref-template "
+<<latex-fancy-hyperref>>
+"
+      org-latex-reference-command "\\cref{%s}")
+
+(add-hook 'org-mode-hook #'+org-pretty-mode)
+(custom-set-faces!
+  '(outline-1 :weight extra-bold :height 1.15)
+  '(outline-2 :weight bold :height 1.12)
+  '(outline-3 :weight bold :height 1.10)
+  '(outline-4 :weight semi-bold :height 1.07)
+  '(outline-5 :weight semi-bold :height 1.05)
+  '(outline-6 :weight semi-bold :height 1.03)
+  '(outline-8 :weight semi-bold)
+  '(outline-9 :weight semi-bold))
+
+(custom-set-faces!
+  '(org-document-title :height 1.2))
+(setq org-agenda-deadline-faces
+      '((1.001 . error)
+        (1.0 . org-warning)
+        (0.5 . org-upcoming-deadline)
+        (0.0 . org-upcoming-distant-deadline)))
+
+(setq org-export-headline-levels 5) ; I like nesting
+
+(global-aggressive-indent-mode 1)
+(add-to-list 'aggressive-indent-excluded-modes 'html-mode)
+
+
 (add-hook 'org-pomodoro-break-finished-hook 'org-pomodoro-prompt)
 (add-hook 'Info-mode-hook #'mixed-pitch-mode)
 (global-visual-line-mode t)
 (require 'org-roam-protocol)
-					;(require 'centered-window)

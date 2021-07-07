@@ -31,7 +31,7 @@ static const int riodraw_spawnasync =
     0; /* 0 means that the application is only spawned after a successful
         * selection while 1 means that the application is being initialised in
         * the background while the selection is made */
- static char *fonts[] = {"berry:size=10", "FontAwesome:size=10",
+ static char *fonts[] = {"berry:size=10:antialias=true", "FontAwesome:size=10:autohint=true",
                         "Kochi Gothic:size=9"};
 static char normbgcolor[] = "#221822";
 static char normbordercolor[] = "#221822";
@@ -78,12 +78,14 @@ static const Rule rules[] = {
      *	WM_CLASS(STRING) = instance, class
      *	WM_NAME(STRING) = title
      */
-    /* class        instance      title       	 tags mask    isfloating
-       isterminal  noswallow  monitor */
+    /* class        instance      title       	 tags mask    isfloating isterminal  noswallow  monitor */
     {TERMCLASS, NULL, NULL, 0, 0, 1, 0, -1},
-    {"Steam", NULL, "Friends List", 0, 1, 0, 0, -1},
-    {"feh", NULL, "feh", 0, 1, 0, 0, -1},
-    {"kitty", NULL, NULL, 0, 0, 1, 0, -1},
+    {NULL, NULL, "Friends List", 1 << 3, 1, 0, 0, -1},
+    {NULL, NULL, "Steam", 1 << 3, 0, 0, 0, -1},
+    {"Emacs", NULL, NULL, 1 << 2, 0, 0, 0, -1},
+    {"firefox", NULL, NULL, 1 << 0, 0, 0, 0, -1},
+    {"feh", NULL, "feh", 0, 0, 0, 0, -1},
+    {NULL, "kitty", NULL, 1 << 1, 0, 1, 0, -1},
     {NULL, "spterm", NULL, SPTAG(0), 1, 1, 0, -1},
     {NULL, "spranger", NULL, SPTAG(1), 1, 1, 0, -1},
     {NULL, "spmusic", NULL, SPTAG(2), 1, 1, 0, -1}
@@ -197,7 +199,7 @@ static Key keys[] = {
     {MODKEY, XK_BackSpace, spawn, SHCMD("sysact")},
     {MODKEY | ShiftMask, XK_BackSpace, spawn, SHCMD("sysact")},
 
-    {MODKEY, XK_Tab, spawn, SHCMD("rofi -show window")},
+    {MODKEY, XK_Tab, spawn, SHCMD("appswitch")},
     /* { MODKEY|ShiftMask,		XK_Tab,		spawn, SHCMD("")
      * },
      */
@@ -246,7 +248,7 @@ static Key keys[] = {
     /* { MODKEY|ShiftMask,		XK_s,		spawn, SHCMD("")
      * },
      */
-    {MODKEY, XK_d, spawn, SHCMD("dmenu_run")},
+    {MODKEY, XK_d, spawn, SHCMD("appmenu")},
     {MODKEY | ShiftMask, XK_d, spawn, SHCMD("dselect")},
     /* { MODKEY,			XK_d,		spawn, SHCMD("")
      * }
@@ -394,9 +396,9 @@ static Key keys[] = {
     {0, XF86XK_TouchpadOff, spawn, SHCMD("synclient TouchpadOff=1")},
     {0, XF86XK_TouchpadOn, spawn, SHCMD("synclient TouchpadOff=0")},
     {0, XF86XK_MonBrightnessUp, spawn,
-     SHCMD("xbacklight -inc 5; kill -39 $(pidof dwmblocks)")},
+     SHCMD("xbacklight -inc 10; kill -39 $(pidof dwmblocks)")},
     {0, XF86XK_MonBrightnessDown, spawn,
-     SHCMD("xbacklight -dec 5; kill -39 $(pidof dwmblocks)")},
+     SHCMD("xbacklight -dec 10; kill -39 $(pidof dwmblocks)")},
 
     {MODKEY | AltMask, XK_Down, moveresize, {.v = "0x 25y 0w 0h"}},
     {MODKEY | AltMask, XK_Up, moveresize, {.v = "0x -25y 0w 0h"}},

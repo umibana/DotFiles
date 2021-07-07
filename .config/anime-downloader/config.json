@@ -3,7 +3,7 @@
         "aria2c_for_torrents": false,
         "aria2c_log_level": "error",
         "chunk_size": "10",
-        "download_dir": "/home/hensky0/Videos/Anime",
+        "download_dir": ".",
         "external_downloader": "{aria2}",
         "fallback_qualities": [
             "720p",
@@ -78,9 +78,6 @@
                 "yu",
                 "fembed"
             ],
-            "version": "subbed"
-        },
-        "animefrenzy": {
             "version": "subbed"
         },
         "animekisa": {
@@ -237,7 +234,12 @@
             "version": "dubbed"
         },
         "ryuanime": {
-            "server": "trollvid",
+            "servers": [
+                "vidstream",
+                "mp4upload",
+                "xstreamcdn",
+                "trollvid"
+            ],
             "version": "subbed"
         },
         "vidstream": {
@@ -269,6 +271,13 @@
             ],
             "version": "subbed"
         },
+        "wcostream": {
+            "servers": [
+                "vidstreampro",
+                "mcloud"
+            ],
+            "version": "subbed"
+        },
         "yify": {
             "servers": [
                 "vidstream",
@@ -278,13 +287,12 @@
     },
     "watch": {
         "autoplay_next": true,
-        "download_dir": "/home/hensky0/Videos/Anime",
         "fallback_qualities": [
             "720p",
             "480p",
             "360p"
         ],
-        "log_level": "DEBUG",
+        "log_level": "INFO",
         "mpv_arguments": "",
         "provider": "twist.moe",
         "quality": "1080p"

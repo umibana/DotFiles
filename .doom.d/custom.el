@@ -6,6 +6,7 @@
  '(centered-window-mode t t)
  '(company-idle-delay 0.3)
  '(cwm-incremental-padding-% 0)
+ '(ispell-dictionary "es")
  '(org-agenda-files
    '("~/Documents/Estudios/org-notes/Apuntes USACH/Calculo 2/Teoria.org" "~/Documents/Estudios/org-notes/Apuntes USACH/Algebra 2/Teoria.org" "~/Documents/Estudios/org-notes/Apuntes USACH/Fisica 2/Fisica II Ejercicio.org" "~/Documents/Estudios/org-notes/Apuntes USACH/Fisica 2/Teoria.org" "~/Documents/Estudios/org-notes/Apuntes USACH/Fundamentos Programación/Teoria.org" "~/Documents/Estudios/org-notes/Apuntes USACH/Fundamentos de Computación/FDC.org" "~/Documents/Estudios/org-notes/Apuntes USACH/Introducción a la Ing.Informática/3I.org" "~/Documents/Estudios/org-notes/Daily/19-03-2021.org" "~/Documents/Estudios/org-notes/Daily/2021-03-21.org" "~/Documents/Estudios/org-notes/CoolAscii.org" "~/Documents/Estudios/org-notes/Music.org" "~/Documents/Estudios/org-notes/gtd.org" "~/Documents/Estudios/org-notes/journal.org" "~/Documents/Estudios/org-notes/notes.org" "~/Documents/Estudios/org-notes/todo.org"))
  '(org-journal-date-format "%A, %d %B %Y")
@@ -26,4 +27,13 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((((type tty)))))
- '(fringe ((t (:background "#1c2023")))))
+ '(fringe ((t (:background "#1c2023"))))
+ '(org-document-title ((t (:height 1.2))))
+ '(outline-1 ((t (:weight extra-bold :height 1.15))))
+ '(outline-2 ((t (:weight bold :height 1.12))))
+ '(outline-3 ((t (:weight bold :height 1.1))))
+ '(outline-4 ((t (:weight semi-bold :height 1.07))))
+ '(outline-5 ((t (:weight semi-bold :height 1.05))))
+ '(outline-6 ((t (:weight semi-bold :height 1.03))))
+ '(outline-8 ((t (:weight semi-bold))))
+ '(outline-9 ((t (:weight semi-bold)))))

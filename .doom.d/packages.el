@@ -51,6 +51,7 @@
 ;(package! interleave)                                        not using anymore as org-noter is far superior.
 ;(package! helm-bibtex)
 ;(package! zotxt)
+(package! ox-gfm :pin "99f93011b069e02b37c9660b8fcb45dab086a07f")
 (package! ox-pandoc)
 ;(package! org-roam-bibtex)
 (package! org-noter)
@@ -72,7 +73,6 @@
 ;(package! org-journal)     ;DOOM has org-journal built in, enable using +journal flag in init.el
 (package! info-colors ) ; pretty colors
 (package! beacon) ; global minor mode for a blinking highliter to find where the cursor is.
-(package! cdlatex)
 (package! org-xournalpp
   :recipe (:host gitlab
            :repo "vherrmann/org-xournalpp"
@@ -80,3 +80,9 @@
 (package! impatient-mode)
 (package! emmet-mode)
 (package! prettier)
+(package! org-pretty-table
+  :recipe (:host github :repo "Fuco1/org-pretty-table") :pin "87772a9469d91770f87bfa788580fca69b9e697a")
+(package! org-pretty-tags :pin "5c7521651b35ae9a7d3add4a66ae8cc176ae1c76")
+(package! org-ol-tree :recipe (:host github :repo "Townk/org-ol-tree")
+  :pin "207c748aa5fea8626be619e8c55bdb1c16118c25")
+(package! aggressive-indent)

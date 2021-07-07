@@ -1,5 +1,5 @@
 #define CMDLENGTH 100
-#define delimiter " | "
+#define delimiter "|"
 
 static const Block blocks[] = {
     {"cat /tmp/recordingicon 2>/dev/null", 0, 9},
