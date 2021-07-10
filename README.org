@@ -1,7 +1,7 @@
 #+TITLE: Dotfiles that i use for both my laptop and desktop.
 
 These dots are used with Arch Linux with dwm as its window manager.
-#+ATTR_HTML: :style text-alirn: center;
+#+ATTR_HTML: :style text-align: center;
 [[Pictures/Screenshots/UpdatedDots.png]]
 
 
@@ -17,8 +17,8 @@ These dots are used with Arch Linux with dwm as its window manager.
 
 * Features
 
-+ dwm built off of LukeSmith's build, with added patches such as: awesomebar, movereise,  attachbottom, more layouts and cfacts
-+ dwmblocks with various modules such as: wifi, bluetooth, dual battery status, memory usage, temperature, etc.
++ dwm built off of Luke Smith's build, with added patches such as: awesomebar, movereise,  attachbottom, more layouts and cfacts
++ dwmblocks with various modules such as: wifi, Bluetooth, dual battery status, memory usage, temperature, etc.
 + riced ncmpcpp with cover art
 + riced dunst with mpd notifications
 + mpv with shaders and upscalers
@@ -28,7 +28,7 @@ These dots are used with Arch Linux with dwm as its window manager.
 
 * Before Installing
 
-+ Various of these dots contain my username so they won't work for you outside of the box. mainly Doom emacs in which the org-roam directory is set on my Documents folder
++ Various of these dots contain my username so they won't work for you outside of the box. mainly Doom Emacs in which the org-roam directory is set on my Documents folder
 
 ** For a quick Install please install the following packages:
 
@@ -98,4 +98,4 @@ git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
 #+end_src
 And then run doom sync to synchronize my config.
 ** Firefox CSS
-Move the firefox config to your own and install TST and and apply the css on the addon advanced configuration
+Move the Firefox config to your own and install TST and apply the css on the addon advanced configuration
