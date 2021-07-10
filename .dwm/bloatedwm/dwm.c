@@ -1356,6 +1356,13 @@ void manage(Window w, XWindowAttributes *wa) {
   c->bw = borderpx;
 
   wc.border_width = c->bw;
+  if ((&monocle == c->mon->lt[c->mon->sellt]->arrange) && (!c->isfloating) ||
+      ((nexttiled(c->mon->clients) == c && !nexttiled(c->next) &&
+        (&tile == c->mon->lt[c->mon->sellt]->arrange)))) {
+    wc.border_width = 0;
+    c->w = wc.width += c->bw * 2;
+    c->h = wc.height += c->bw * 2;
+  }
   XConfigureWindow(dpy, w, CWBorderWidth, &wc);
   XSetWindowBorder(dpy, w, scheme[SchemeNorm][ColBorder].pixel);
   configure(c); /* propagates border_width, if size doesn't change */

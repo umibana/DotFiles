@@ -1,7 +1,7 @@
 #+TITLE: Dotfiles that i use for both my laptop and desktop.
 
 These dots are used with Arch Linux with dwm as its window manager.
-#+ATTR_HTML: :style margin-left: auto; margin-right: auto;
+#+ATTR_HTML: :style text-alirn: center;
 [[Pictures/Screenshots/UpdatedDots.png]]
 
 
