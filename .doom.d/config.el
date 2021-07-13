@@ -943,6 +943,45 @@ Also immediately enables `mixed-pitch-modes' if currently in one of the modes."
 
 (setq org-export-headline-levels 5) ; I like nesting
 
+(defun +yas/org-src-lang ()
+  "Try to find the current language of the src/header at `point'.
+Return nil otherwise."
+  (let ((context (org-element-context)))
+    (pcase (org-element-type context)
+      ('src-block (org-element-property :language context))
+      ('inline-src-block (org-element-property :language context))
+      ('keyword (when (string-match "^header-args:\\([^ ]+\\)" (org-element-property :value context))
+                  (match-string 1 (org-element-property :value context)))))))
+
+(defun +yas/org-last-src-lang ()
+  "Return the language of the last src-block, if it exists."
+  (save-excursion
+    (beginning-of-line)
+    (when (re-search-backward "^[ \t]*#\\+begin_src" nil t)
+      (org-element-property :language (org-element-context)))))
+
+(defun +yas/org-most-common-no-property-lang ()
+  "Find the lang with the most source blocks that has no global header-args, else nil."
+  (let (src-langs header-langs)
+    (save-excursion
+      (goto-char (point-min))
+      (while (re-search-forward "^[ \t]*#\\+begin_src" nil t)
+        (push (+yas/org-src-lang) src-langs))
+      (goto-char (point-min))
+      (while (re-search-forward "^[ \t]*#\\+property: +header-args" nil t)
+        (push (+yas/org-src-lang) header-langs)))
+
+    (setq src-langs
+          (mapcar #'car
+                  ;; sort alist by frequency (desc.)
+                  (sort
+                   ;; generate alist with form (value . frequency)
+                   (cl-loop for (n . m) in (seq-group-by #'identity src-langs)
+                            collect (cons n (length m)))
+                   (lambda (a b) (> (cdr a) (cdr b))))))
+
+    (car (cl-set-difference src-langs header-langs :test #'string=))))
+
 (global-aggressive-indent-mode 1)
 (add-to-list 'aggressive-indent-excluded-modes 'html-mode)
 

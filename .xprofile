@@ -43,7 +43,7 @@ xmodmap ~/.Xmodmap &
 # Enables notification services
 dunst &
 # PulseEffects
-pulseeffects --gapplication-service &
+#pulseeffects --gapplication-service &
 # Enable docking on xsession start
 monitorCheck &
 # Power manager

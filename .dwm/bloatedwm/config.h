@@ -71,7 +71,7 @@ static const char emacsname[] = "emacs@";
 /* tagging */
 static const int statmonval = 0;
 static const char *tags[] = {"一", "二", "三", "四", "五",
-                             "六", "七", "八", "九"};
+"六", "七", "八", "九"};
 
 static const Rule rules[] = {
     /* xprop(1):
@@ -376,6 +376,7 @@ static Key keys[] = {
     {0, XF86XK_AudioMicMute, spawn,
      SHCMD("pactl set-source-mute @DEFAULT_SOURCE@ toggle")},
     {0, XF86XK_PowerOff, spawn, SHCMD("sysact")},
+    {MODKEY, XF86XK_Display, spawn, SHCMD("fixdock")},
     {0, XF86XK_Display, spawn, SHCMD("select-monitor-layout")},
     {0, XF86XK_Tools, spawn, SHCMD("lxrandr")},
     {0, XF86XK_Calculator, spawn, SHCMD(TERMINAL " -e bc -l")},
