@@ -5,10 +5,11 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["#160f16" "#964C7B" "#74DFC4" "#FFE261" "#a88fa8" "#e297ac" "#B4DCE7" "#FFFFFF"])
- '(centered-window-mode t)
+ '(centered-window-mode t t)
  '(company-idle-delay 0.3)
+ '(cursor-type 'bar)
  '(custom-safe-themes
-   '("0ee5a432e3cc0d501bedd4b4b1727f26b497f30eaadd4d88eb11e6592b8c845e" "33688d926f9c8f000710f19bd8b7cbd7eea11831eec419fe530da275434370b5" "d81c895eadb0e60e6608aca22200684d54f29d4b7e8a4550a83139de6ddee7db" "2c9dc3ab1cbde9d4a3cd129b945d39e19fe7107708edec589118b14d24c01dac" default))
+   '("e3c64e88fec56f86b49dcdc5a831e96782baf14b09397d4057156b17062a8848" "1758c0354c6293250671064c2a514e5865737119687a6d8b165e0de99c8315c8" "34e89196734641234800804ecdb2c20505e81586b816cc906eb319c377225ff5" "22c8110ceeade36347426926ae4adac25067743f49354fd04d9d49c051cb5149" "1628747d8ce8ec330ded1d5ad169655ec4f3b8509f80786c5e79d23a3828719f" "a25bcda02a75e1f05bab5b5d33f93c60b19e2aa15243ef3f948ac1dd19bd0591" "fd86f8746ab30d970d927449b11829e43c286410566b43ea013c8779e2df6d64" "0ee5a432e3cc0d501bedd4b4b1727f26b497f30eaadd4d88eb11e6592b8c845e" "33688d926f9c8f000710f19bd8b7cbd7eea11831eec419fe530da275434370b5" "d81c895eadb0e60e6608aca22200684d54f29d4b7e8a4550a83139de6ddee7db" "2c9dc3ab1cbde9d4a3cd129b945d39e19fe7107708edec589118b14d24c01dac" default))
  '(cwm-incremental-padding-% 0)
  '(default-input-method "japanese")
  '(fci-rule-color "#544863")
