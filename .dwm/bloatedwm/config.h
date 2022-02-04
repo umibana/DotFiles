@@ -6,7 +6,7 @@
 #define AltMask Mod1Mask
 
 /* appearance */
-static unsigned int borderpx = 3; /* border pixel of windows */
+static unsigned int borderpx = 0; /* border pixel of windows */
 static unsigned int snap = 10;    /* snap pixel */
 static unsigned int gappih = 5;   /* horiz inner gap between windows */
 static unsigned int gappiv = 5;   /* vert inner gap between windows */
@@ -31,7 +31,8 @@ static const int riodraw_spawnasync =
     0; /* 0 means that the application is only spawned after a successful
         * selection while 1 means that the application is being initialised in
         * the background while the selection is made */
- static char *fonts[] = {"berry:size=10:antialias=true", "FontAwesome:size=10:autohint=true",
+static char *fonts[] = {"berry:size=10:antialias=true",
+                        "FontAwesome:size=10:autohint=true",
                         "Kochi Gothic:size=9"};
 static char normbgcolor[] = "#221822";
 static char normbordercolor[] = "#221822";
@@ -71,14 +72,15 @@ static const char emacsname[] = "emacs@";
 /* tagging */
 static const int statmonval = 0;
 static const char *tags[] = {"一", "二", "三", "四", "五",
-"六", "七", "八", "九"};
+                             "六", "七", "八", "九"};
 
 static const Rule rules[] = {
     /* xprop(1):
      *	WM_CLASS(STRING) = instance, class
      *	WM_NAME(STRING) = title
      */
-    /* class        instance      title       	 tags mask    isfloating isterminal  noswallow  monitor */
+    /* class        instance      title       	 tags mask    isfloating
+       isterminal  noswallow  monitor */
     {TERMCLASS, NULL, NULL, 0, 0, 1, 0, -1},
     {NULL, NULL, "Friends List", 1 << 3, 1, 0, 0, -1},
     {NULL, NULL, "Steam", 1 << 3, 0, 0, 0, -1},
@@ -96,7 +98,7 @@ static const Rule rules[] = {
 static float mfact = 0.55;  /* factor of master area size [0.05..0.95] */
 static int nmaster = 1;     /* number of clients in master area */
 static int resizehints = 1; /* 1 means respect size hints in tiled resizals */
-#define FORCE_VSPLIT                                                    \
+#define FORCE_VSPLIT                                                           \
   0 /* nrowgrid layout: force two clients to always split vertically */
 #include "vanitygaps.c"
 static const Layout layouts[] = {
