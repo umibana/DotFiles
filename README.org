@@ -1,3 +1,5 @@
+* I use MacOS as my main operating system now, so these dots will be rarely updated
+
 #+TITLE: Dotfiles that i use for both my laptop and desktop.
 
 These dots are used with Arch Linux with dwm as its window manager.
